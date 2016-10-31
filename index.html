@@ -29,7 +29,9 @@
 	<style></style>
 
 	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
-	<style></style>
+	<style>
+		body,html{height:100%}.wrapper,body{position:relative}a:focus,a:hover{color:inherit;text-decoration:none}.main__header,.wrapper{width:100%;background-color:#222}.about__description,body{line-height:1.6}@media only screen and (max-width:1200px){.item__content{font-size:1.2em}.item__content .image__full .image__full-img{max-width:90%}}@media only screen and (max-width:992px){.item__content{font-size:1.2em}.item__content .image__full .image__full-img{max-width:88%}}@media only screen and (max-width:768px){.header__navigation{display:none}.navigation__button-show{display:inline-block}.sidebar{display:block}.item__content{font-size:1.3em}.item__content .image__full .image__full-img{max-width:80%}.item__content .content__text,.show__demo{opacity:1}.about__description{padding-left:6.3%}.description__title{font-size:2.8em}.description__summary{font-size:1.6em;line-height:1.6}.contacts__title,.skills__title{font-size:1.4em;font-weight:400}.animated{-webkit-transition-property:none!important;transition-property:none!important;-ms-transform:none!important;-webkit-transform:none!important;transform:none!important;-webkit-animation:none!important;animation:none!important}}@media only screen and (max-width:480px){.main__item{padding:0}.item__content{width:100%;font-size:1.1em}.description__summary{font-size:1.2em}.contacts__list .list__item,.skills__list .list__item{font-size:1.4rem}}@media only screen and (min-width:769px){.wrapper .container-fluid{padding-left:0;padding-right:0}}html{width:100%;font-size:10px}body{width:100%;font-size:16px;min-width:320px;font-family:RobotoRegular,sans-serif;color:#fff}.hidden{display:none}.wrapper{min-height:100%;overflow:hidden}a{color:inherit}a:focus{outline:0}.contacts__list .list__item .item__link:hover,.footer__copyright .confidence-policy:hover{text-decoration:underline}ul{margin:0;padding:0}ul li{list-style-type:none}.main__header{display:block;position:fixed;border-bottom:1px solid #7a7a7a;z-index:10}.header__wrap::after{clear:both;content:"";display:table}.header__title{float:left;font-family:Montserrat,sans-serif;font-size:1.5em}.header__navigation{float:right}.navigation__list{font-size:0}.navigation__item{padding-top:24px;display:inline-block;font-size:1.4rem;text-transform:uppercase;-webkit-transition:all .2s ease;transition:all .2s ease}.navigation__item:hover{color:#bdbdbd}.navigation__item.active{color:#ff5252}.navigation__item .item__link{display:inline-block;padding-left:15px;padding-right:15px;font-weight:700}.header__corner-left{padding-right:0;text-align:right}.navigation__button-show{padding-top:22px;display:none;text-transform:uppercase;font-size:1.8rem}.navigation__button-show.active,.navigation__button-show:hover{color:#ff5252}.header__corner-right{display:none;padding-left:0}.main{margin-top:72px}.main__content_about{padding-top:50px;padding-bottom:40px;display:none}.main__content_about.active{display:block}.main__content_about .description__summary,.main__content_about .description__title{margin-top:0;margin-bottom:0}.description__title{margin-top:0;font-size:3.5em;font-weight:400;color:#ff5252;border-top:2px solid #7a7a7a}.description__summary{font-size:2em;line-height:1.3}.description__contacts,.description__skills{padding-top:40px;line-height:2}.contacts__list,.skills__list{padding-left:15px}.contacts__list .list__item,.skills__list .list__item{list-style:square inside}.contacts__title,.skills__title{margin-top:0;margin-bottom:10px;font-size:1.5em;color:#ff5252;border-top:1px solid #7a7a7a}.contacts__list .list__item{list-style-type:disc}.contacts__list .list__item span{padding-left:15px;color:#ff5252}.empty{height:41px}.main__footer{position:relative;margin-top:-41px;height:40px;font-size:10px;font-weight:400;line-height:40px;text-transform:uppercase;border-top:1px solid #7a7a7a}.footer__copyright{text-align:center}.footer__copyright .creator{padding-left:2px;padding-right:2px;color:#ff5252}
+	</style>
 
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
@@ -84,8 +86,8 @@
 		</header>
 
 		<main class="main">
-            
-            <section class="main__content main__content_about active">
+
+			<section class="main__content main__content_about active">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
@@ -96,7 +98,6 @@
 										Привет! Меня зовут Евгений Белоусов, я начинающий фронт-енд разработчик, имеющий за плечами пол года опыта верстки.
 										Люблю работать над различными проэктами, любой сложности. К работе отношусь ответственно,
 										не боюсь ставить перед собой трудные задачи и успешно их решать.
-
 									</p>
 									<div class="description__skills">
 										<h3 class="skills__title">Навыки и опыт:</h3>
@@ -115,8 +116,8 @@
 											<li class="list__item">e-mail &#58;<span>rikardo1618@gmail.com</span></li>
 											<li class="list__item">Skype &#58;<span>white198727</span></li>
 											<li class="list__item">
-											Facebook &#58;
-											<span><a href="https://www.facebook.com/profile.php?id=100010292203587" class="item__link" target="_blank">Evgeniy Belousov</a></span>
+												Facebook &#58;
+												<span><a href="https://www.facebook.com/profile.php?id=100010292203587" class="item__link" target="_blank">Evgeniy Belousov</a></span>
 											</li>
 											<li class="list__item">
 												Профиль на Weblancer &#58;
@@ -130,18 +131,19 @@
 					</div>
 				</div>
 			</section>
-            
+
 			<section class="main__content main__content_portfolio">
 				<div class="container-fluid">
 					<div class="row first__row">
 						<div class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 							<div class="row">
+
 								<div class="col-lg-4 col-sm-6 main__item">
 									<div class="item__content">
 										<div class="item__content-color-overlay"></div>
 										<div class="content__description">
 										<div class="show__demo">
-											<a href="luxury/index.html" class="demo__button" target="_blank">Посмотреть презентацию</a>
+											<a href="../../../Luxury/app/index.html" class="demo__button" target="_blank">Посмотреть презентацию</a>
 										</div>
 										<p class="content__text">
 											Адаптивная страница магазина с BootStrap-сеткой и jQuery-анимацией + Формы входа и регистрации.
@@ -154,7 +156,7 @@
 										<div class="item__content-color-overlay"></div>
 										<div class="content__description">
 											<div class="show__demo">
-												<a href="mstone/index.html" class="demo__button" target="_blank">Посмотреть презентацию</a>
+												<a href="../../../MStone/index.html" class="demo__button" target="_blank">Посмотреть презентацию</a>
 											</div>
 											<p class="content__text">
 												Адаптивная страница магазина с BootStrap-сеткой и jQuery-анимацией + Формы входа и регистрации.
@@ -167,7 +169,7 @@
 										<div class="item__content-color-overlay"></div>
 										<div class="content__description">
 											<div class="show__demo">
-												<a href="simplex/index.html" class="demo__button" target="_blank">Посмотреть презентацию</a>
+												<a href="../../../Simplex/index.html" class="demo__button" target="_blank">Посмотреть презентацию</a>
 											</div>
 											<p class="content__text">
 												Адаптивная страница магазина с BootStrap-сеткой и jQuery-анимацией + Формы входа и регистрации.
@@ -180,7 +182,7 @@
 										<div class="item__content-color-overlay"></div>
 										<div class="content__description">
 											<div class="show__demo">
-												<a href="amazing/index.html" class="demo__button" target="_blank">Посмотреть презентацию</a>
+												<a href="../../../Amazing/index.html" class="demo__button" target="_blank">Посмотреть презентацию</a>
 											</div>
 											<p class="content__text">
 												Адаптивная страница магазина с BootStrap-сеткой и jQuery-анимацией + Формы входа и регистрации.
@@ -193,7 +195,7 @@
 										<div class="item__content-color-overlay"></div>
 										<div class="content__description">
 											<div class="show__demo">
-												<a href="landx/index.html" class="demo__button" target="_blank">Посмотреть презентацию</a>
+												<a href="../../../landX/index.html" class="demo__button" target="_blank">Посмотреть презентацию</a>
 											</div>
 											<p class="content__text">
 												Адаптивная страница магазина с BootStrap-сеткой и jQuery-анимацией + Формы входа и регистрации.
@@ -206,7 +208,7 @@
 										<div class="item__content-color-overlay"></div>
 										<div class="content__description">
 											<div class="show__demo">
-												<a href="webstudio/index.html" class="demo__button" target="_blank">Посмотреть презентацию</a>
+												<a href="../../../WebStudio/index.html" class="demo__button" target="_blank">Посмотреть презентацию</a>
 											</div>
 											<p class="content__text">
 												Адаптивная страница магазина с BootStrap-сеткой и jQuery-анимацией + Формы входа и регистрации.
@@ -214,12 +216,13 @@
 										</div>
 									</div>
 								</div>
+
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			
+
 		</main>
 
 		<div class="empty"></div>
