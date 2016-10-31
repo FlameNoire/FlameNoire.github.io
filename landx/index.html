@@ -6,9 +6,24 @@
 		<title>LandX</title>
 		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/media.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/eb0f5bb35e.css">
 		<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,300italic,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,600,700italic,600italic,400italic' rel='stylesheet' type='text/css'>
+        
+        <!--[if IE 9]> 
+            <style>
+                #touch-menu {
+                    background: url("img/menu_button.svg") no-repeat center top;
+                    webkit-background-size: 30px;
+                    background-size: 30px;
+                }
+                #touch-menu .fa {
+                    opacity: 0;
+                }
+            </style>
+        <![endif]-->
+    
 
 	</head>
 	<body>
@@ -40,11 +55,11 @@
 					<h2 class="header-title">Get the Best <span class="text-accent">Solution</span> for Your <span>Business</span></h2>
 					<p class="header-info">Accelerator photo sharing business school drop out ramen hustle crush it revenue traction platforms. Coworking viral landing page user base.</p>
 					<section class="user-info">
-						<form action="#">
-							<input type="text" placeholder="Your Name">
-							<input type="text" placeholder="Your E-Mail">
-							<input type="text" placeholder="Phone Number">
-							<input type="button" value="Get started">
+						<form action="#" method="get">
+							<input type="text" placeholder="Your Name" name="user_name">
+							<input type="text" placeholder="Your E-Mail" name="user_email">
+							<input type="text" placeholder="Phone Number" name="user_phone">
+							<input type="submit" value="Get started">
 						</form>
 						<span class="register-now">Register Now and Get FREE Trial</span>
 					</section>
