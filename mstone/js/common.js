@@ -3,6 +3,7 @@
  */
 
 $(document).ready(function() {
+
     $("#portfolio_grid").mixItUp();
 
     $(".portfolio_row li").click(function() {
@@ -16,11 +17,13 @@ $(document).ready(function() {
         midClick: true
     });
 
-    function heightDetect() {
-        $(".main_head, .s_contacts").css("height", $(window).height());
-
-    }
     heightDetect();
+
+    function heightDetect() {
+        var h = $(window).height();
+        $(".main_head, .s_contacts").css("height", h);
+    }
+
     $(window).resize(function() {
         heightDetect();
     });

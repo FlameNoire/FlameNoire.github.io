@@ -132,25 +132,107 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+    /*.img_xs, .img_md_lg {
+        display: none;
+    }
 
+    .about_img_md, .about_img_sm_lg, .about_img_hd, .about_img_ret {
+        display: none;
+    }*/
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    .img_sm_hd, .img_md_lg {
+        display: none;
+    }
 
+    .img_xs {
+        display: block;
+    }
+
+    .about_img_xs, .about_img_md, .about_img_hd, .about_img_ret {
+        display: none;
+    }
+    .about_img_sm_lg {
+        display: block;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    .img_xs, .img_md_lg {
+        display: none;
+    }
+    .img_sm_hd {
+        display: block;
+    }
 
+    .about_img_md, .about_img_sm_lg, .about_img_hd, .about_img_ret {
+        display: none;
+    }
+    .about_img_xs {
+        display: block;
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    .img_xs, .img_sm_hd {
+        display: none;
+    }
+    .img_md_lg {
+        display: block;
+    }
 
+    .about_img_xs, .about_img_sm_lg, .about_img_hd, .about_img_ret {
+        display: none;
+    }
+    .about_img_md {
+        display: block;
+    }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+    .about_img_xs, .about_img_md, .about_img_hd, .about_img_ret {
+        display: none;
+    }
+    .about_img_sm_lg {
+        display: block;
+    }
+}
 
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1440px) {
+    .img_xs, .img_md_lg {
+        display: none;
+    }
+    .img_sm_hd {
+        display: block;
+    }
+
+    .about_img_xs, .about_img_md, .about_img_sm_lg, .about_img_ret {
+        display: none;
+    }
+    .about_img_hd {
+        display: block;
+    }
+}
+
+/* iPad 3&4, Retina */
+@media only screen and (min-width : 2048px) {
+    .img_sm_hd, .img_md_lg {
+        display: none;
+    }
+    .img_xs {
+        display: block;
+    }
+
+    .about_img_xs, .about_img_md, .about_img_sm_lg, .about_img_hd {
+        display: none;
+    }
+    .about_img_ret {
+        display: block;
+    }
 }
