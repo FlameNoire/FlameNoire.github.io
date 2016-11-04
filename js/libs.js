@@ -51,7 +51,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 					ths.removeClass(inEffect).addClass(outEffect).css("opacity", "1");
 				};
 			}, {
-				offset: "95%"
+				offset: "80%"
 			});
 
 		});
