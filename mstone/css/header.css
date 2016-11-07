@@ -160,6 +160,32 @@ section,
 .s_about .scroll_icon a:hover {
   background-image: url("../img/chevron_dark.svg"); }
 
+@media only screen and (max-width: 992px) {
+  .main_head .navigation li {
+    font-size: 2.5rem; } }
+
+@media only screen and (max-width: 768px) {
+  .main_head .navigation li {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    /*font-size: 2.4rem;*/
+    /*line-height: 2.4rem;*/ } }
+
+@media only screen and (max-width: 480px) {
+  .main_head .navigation {
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+  .main_head .navigation li {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem; }
+  .logo_container,
+  .top_wrapper .top_text {
+    margin-top: -50px; }
+  .top_wrapper .top_text h1 {
+    font-size: 3rem; } }
+
 /*********** FONTS ************/
 /* open-sans-300 - latin */
 @font-face {

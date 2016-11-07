@@ -401,16 +401,17 @@ section,
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-    .navigation li {
+    .s_about .navigation li,
+    .s_portfolio .navigation li,
+    .s_contacts .navigation li {
         font-size: 2.5rem; }
-    .logo_container {
-        font-size: 20rem;
-        line-height: 20rem; }
     .about_text h1 {
         font-size: 4rem;
         line-height: 4rem;
     }
     .about_text p {  font-size: 2.2rem;  }
+
+
 }
 
 /* Small Devices, Tablets */
@@ -437,7 +438,13 @@ section,
         animation: none !important
     }
 
-    .navigation li {
+    #portfolio_grid {
+        text-align: center;
+    }
+
+    .s_about .navigation li,
+    .s_portfolio .navigation li,
+    .s_contacts .navigation li {
         padding-left: 1.1rem;
         padding-right: 1.1rem;
         /*font-size: 2.4rem;*/
@@ -451,11 +458,15 @@ section,
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-    .navigation {
+    .s_about .navigation,
+    .s_portfolio .navigation,
+    .s_contacts .navigation {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
-    .navigation li {
+    .s_about .navigation li,
+    .s_portfolio .navigation li,
+    .s_contacts .navigation li {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         font-size: 1.2rem;
@@ -463,16 +474,6 @@ section,
     }
     .portfolio_row li {
         font-size: 1.2rem;
-    }
-    .logo_container {
-        font-size: 15rem;
-        line-height: 15rem; }
-    .logo_container,
-    .top_wrapper .top_text {
-        margin-top: -50px;
-    }
-    .top_wrapper .top_text h1 {
-        font-size: 3rem;
     }
 
     .s_about .navigation {  margin-bottom: 3.5rem;  }
