@@ -33,11 +33,13 @@ $(document).ready(function() {
 
 $(window).load(function() {
 
+    // $(".loader_inner").fadeOut();
+    // $(".loader").delay(200).fadeOut("slow");
 
-    $(".top_text h1").animated("fadeInDown", "fadeOutUp");
-    $(".navigation").animated("fadeInDown", "fadeOutUp");
-    $(".footer_scroll p").animatedFull("fadeInDown", "fadeOutUp");
-    $(".scroll_icon span").animatedFull("fadeInDown", "fadeOutUp");
+    // $(".top_text h1").animated("fadeInDown", "fadeOutUp");
+    // $(".navigation").animated("fadeInDown", "fadeOutUp");
+    // $(".footer_scroll p").animatedFull("fadeInDown", "fadeOutUp");
+    // $(".scroll_icon span").animatedFull("fadeInDown", "fadeOutUp");
     $(".about_foto").animated("fadeInLeft", "fadeOutRight");
     $(".about_text").animated("fadeInRight", "fadeOutLeft");
     $(".my_mail").animated("fadeInLeft", "fadeOutRight");
