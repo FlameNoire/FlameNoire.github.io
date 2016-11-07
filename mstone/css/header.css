@@ -99,11 +99,6 @@ section,
   text-align: center;
   vertical-align: middle; }
 
-.logo_container {
-  font-size: 250px;
-  line-height: 250px;
-  color: #f3f3f3; }
-
 .top_wrapper .top_text {
   display: inline-block;
   -webkit-transition: all 2s ease;
@@ -116,6 +111,7 @@ section,
   font-weight: 300;
   text-transform: uppercase;
   font-size: 4.5rem;
+  line-height: 2;
   margin: 0 20px;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
@@ -146,27 +142,23 @@ section,
   font-size: 4rem; }
 
 .scroll_icon a {
-  color: #f3f3f3; }
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("../img/chevron_white.svg") no-repeat; }
 
 .scroll_icon a:hover {
+  background-image: url("../img/chevron_grey.svg");
   color: #bebebe; }
 
-.s_about .footer_scroll,
-.s_about .scroll_icon a {
+.s_about .footer_scroll {
   color: #bebebe; }
+
+.s_about .scroll_icon a {
+  background-image: url("../img/chevron_grey.svg"); }
 
 .s_about .scroll_icon a:hover {
-  color: #333333; }
-
-.scroll_icon span {
-  display: inline-block; }
-
-.footer_scroll p,
-.scroll_icon span {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s; }
+  background-image: url("../img/chevron_dark.svg"); }
 
 /*********** FONTS ************/
 /* open-sans-300 - latin */
