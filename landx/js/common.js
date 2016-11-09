@@ -29,13 +29,7 @@ $(document).ready(function () {
             type: "POST",
             url: "mail.php",
             data: $(this).serialize()
-        }).done(function() {
-			alert("Спасибо за заявку!");
-			setTimeout(function() {
-				$.magnificPopup.close();
-				$(".forms").trigger("reset");
-			}, 1000);
-		});
+        });
         return false;
     });
     
