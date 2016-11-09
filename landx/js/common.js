@@ -20,6 +20,50 @@ $(document).ready(function () {
 
     $('.sign-up').click(function () {
         $(this).closest('.offer').addClass('active').siblings().removeClass('active');
-    })
+    });
+
+    //Аякс отправка форм
+    //Документация: http://api.jquery.com/jquery.ajax/
+    $(".forms").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: $(this).serialize()
+        }).done(function() {
+			alert("Спасибо за заявку!");
+			setTimeout(function() {
+				$.magnificPopup.close();
+				$(".forms").trigger("reset");
+			}, 1000);
+		});
+        return false;
+    });
+    
+//    if($.browser.msie) { // Условие для вызова только в IE
+//		$("form").find("input[type='text']").each(function() {
+//			var tp = $(this).attr("placeholder");
+//			$(this).attr('value',tp).css('color','#ccc');
+//		}).focusin(function() {
+//			var val = $(this).attr('placeholder');
+//			if($(this).val() == val) {
+//				$(this).attr('value','').css('color','#303030');
+//			}
+//		}).focusout(function() {
+//			var val = $(this).attr('placeholder');
+//			if($(this).val() == "") {
+//				$(this).attr('value', val).css('color','#ccc');
+//			}
+//		});
+//
+//		/* Protected send form */
+//		$("form").submit(function() {
+//			$(this).find("input[type='text']").each(function() {
+//				var val = $(this).attr('placeholder');
+//				if($(this).val() == val) {
+//					$(this).attr('value','');
+//				}
+//			})
+//		});
+//	}
 
 });
