@@ -8,10 +8,7 @@ $subject   = "Новая заявка с сайта \"$sitename\"";
 $name = trim($_POST["user_name"]);
 $email = trim($_POST["user_email"]);
 $phone = trim($_POST["user_phone"]);
-$formname = trim($_POST["formname"]);
-
 $message = "
-Форма: $formname <br>
 Имя: $name <br>
 E-mail: $email <br>
 Телефон: $phone

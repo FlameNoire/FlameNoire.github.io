@@ -29,6 +29,11 @@ $(document).ready(function () {
             type: "POST",
             url: "mail.php",
             data: $(this).serialize()
+        }).done(function() {
+            alert("1");
+            setTimeout(function() {
+                $(".forms").trigger("reset");
+            }, 1000);
         });
         return false;
     });
