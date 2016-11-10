@@ -2,13 +2,13 @@ $(document).ready(function() {
 
     $(".popup").magnificPopup({type:"image"});
 
-    function heightDetect() {
-        $(".main_head").css("height", $(window).height());
-    }
-    heightDetect();
-    $(window).resize(function() {
-        heightDetect();
-    });
+    // function heightDetect() {
+    //     $(".main_head").css("height", $(window).height());
+    // }
+    // heightDetect();
+    // $(window).resize(function() {
+    //     heightDetect();
+    // });
 
     $(".toggle_mnu").click(function() {
         $(".sandwich").toggleClass("active");
@@ -33,9 +33,10 @@ $(document).ready(function() {
     });
 });
 	
+/*
 $(window).load(function() {
     
     $(".loader_inner").fadeOut();
-    $(".loader").delay(400).fadeOut("slow");
+    $(".loader").delay(200).fadeOut("slow");
 
-}); 
+}); */
