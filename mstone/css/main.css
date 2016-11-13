@@ -1,26 +1,7 @@
-/*html {  font-size: 10px;  }
-body {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    min-width: 320px;
-    position: relative;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    background-color: #f7f7f7;
-    overflow-x: hidden;
-}
 
-!*body input:focus:required:invalid,*!
-!*body textarea:focus:required:invalid {  color: red;  }*!
+/************** PRELOADER ***************/
 
-!*body input:required:valid,*!
-!*body textarea:required:valid {  color: green;  }*!
-
-.hidden {  display: none;  }
-
-!************* PRELOADER **************!
-
+/*
 .loader {
     background: none repeat scroll 0 0 #ffffff;
     bottom: 0;
@@ -46,143 +27,7 @@ body {
     top: 50%;
     position: absolute;
 }
-
-
-!*********** HEADER ************!
-
-
-section,
-.main_head {  position: relative;  }
-
-.main_head {
-    min-height: 480px;
-    text-align: center;
-}
-.navigation_wrap {
-    padding-left: 65px;
-    padding-right: 65px;
-}
-.navigation {
-    padding-bottom: 3.4rem;
-    padding-top: 3.4rem;
-    position: relative;
-    display: block;
-    width: 100%;
-    text-align: center;
-    z-index: 100;
-    border-bottom: 1px solid #f3f3f3;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    animation-duration: 2s;
-}
-.s_about .navigation,
-.s_contacts .navigation {  border-bottom: 1px solid #bebebe;  }
-.s_about .navigation {  margin-bottom: 7.5rem;  }
-.navigation ul,
-.navigation li,
-.social_wrap ul,
-.social_wrap li{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.navigation li {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    display: inline-block;
-    font-size: 2.4rem;
-    line-height: 2.4rem;
-    text-transform: uppercase;
-}
-
-.navigation a {  color: #f3f3f3;  }
-.navigation a:hover,
-.navigation a:focus {  color: #bebebe;  }
-.s_about .navigation a,
-.s_contacts .navigation a{  color: #bebebe;  }
-.s_about .navigation a:hover,
-.s_about .navigation a:focus,
-.s_contacts .navigation a:hover,
-.s_contacts .navigation a:focus {  color: #333;  }
-
-.top_wrapper {
-    display: table;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-}
-.top_wrapper .top_descr,
-.contacts_wrapper .contacts_descr {  display: table-row;  }
-.top_wrapper .top_descr .top_centered,
-.contacts_wrapper .contacts_descr .contacts_centered {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-.logo_container {
-    font-size: 250px;
-    line-height: 250px;
-    color: #f3f3f3;
-}
-.top_wrapper .top_text {
-    display: inline-block;
-    -webkit-transition: all 2s ease;
-    transition: all 2s ease;
-}
-.top_wrapper .top_text h1 {
-    display: inline-block;
-    color: #f3f3f3;
-    font-family: 'lato', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 4.5rem;
-    margin: 0 20px;
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    animation-delay: 1s;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-}
-.top_wrapper .top_text h1 span {  font-weight: 600;  }
-.footer_scroll {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    color: #f3f3f3;
-    z-index: 50;
-}
-.footer_scroll p {
-    display: inline-block;
-    font-family: 'lato', sans-serif;
-    font-weight: 600;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-}
-.scroll_icon {
-    margin-bottom: 20px;
-    font-size: 4rem;
-}
-.scroll_icon a {  color: #f3f3f3;  }
-.scroll_icon a:hover {  color: #bebebe;  }
-.s_about .footer_scroll,
-.s_about .scroll_icon a {  color: #bebebe;  }
-.s_about .scroll_icon a:hover {  color: #333333;  }
-.scroll_icon span {  display: inline-block;  }
-.footer_scroll p,
-.scroll_icon span {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    animation-delay: 1s;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-}*/
+*/
 
 
 /************** ABOUT ME ***************/
@@ -211,6 +56,13 @@ section,
 .about_foto img {
     width: 100%;
     height: auto;
+}
+.s_about .footer_scroll {  color: #bebebe;  }
+.s_about .scroll_icon a {
+    background-image: url("../img/chevron_grey.svg");
+}
+.s_about .scroll_icon a:hover {
+    background-image: url("../img/chevron_dark.svg")
 }
 
 
