@@ -102,7 +102,7 @@ $(function() {
 	function animateElements() {
 
 		$(".show__demo").animated("fadeIn", "fadeOut");
-		$(".content__text").animated("fadeInUp", "fadeOutDown");
+		$(".content__text").animated("fadeInUp");
 	}
 
 	function windowResize() {
