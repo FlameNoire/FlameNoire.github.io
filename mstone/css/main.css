@@ -2575,6 +2575,10 @@ img.mfp-img {
   clip: auto; }
 
 /************** ABOUT ME ***************/
+.logo_container img {
+  width: 250px;
+  height: 225px; }
+
 .s_about {
   padding-bottom: 20rem;
   background-color: #f3f3f3;
@@ -2790,6 +2794,18 @@ img.mfp-img {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .logo_container img {
+    width: 200px;
+    height: 180px; }
+  .top_wrapper .top_text h1 {
+    margin: 0; }
+  .footer_scroll p {
+    margin-bottom: 0; }
+  .scroll_icon {
+    margin-bottom: 0; }
+    .scroll_icon a {
+      width: 20px;
+      height: 20px; }
   .s_about .navigation li, .s_portfolio .navigation li, .s_contacts .navigation li {
     font-size: 2.5rem; }
   .about_text h1 {
@@ -2811,6 +2827,9 @@ img.mfp-img {
     /*CSS animations*/
     -webkit-animation: none !important;
     animation: none !important; }
+  .logo_container img {
+    width: 120px;
+    height: 100px; }
   #portfolio_grid {
     text-align: center; }
   .s_about .navigation li, .s_portfolio .navigation li, .s_contacts .navigation li {
@@ -2824,6 +2843,9 @@ img.mfp-img {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .navigation_wrap {
+    padding-left: 20px;
+    padding-right: 20px; }
   .s_about .navigation, .s_portfolio .navigation, .s_contacts .navigation {
     padding-top: 2rem;
     padding-bottom: 2rem; }

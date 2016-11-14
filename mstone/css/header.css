@@ -199,9 +199,14 @@ section,
     font-size: 2.5rem; } }
 
 @media only screen and (max-width: 768px) {
+  .main_head .navigation {
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
   .main_head .navigation li {
     padding-left: 1.1rem;
-    padding-right: 1.1rem; } }
+    padding-right: 1.1rem; }
+  .top_wrapper .top_text h1 {
+    font-size: 3rem; } }
 
 @media only screen and (max-width: 480px) {
   .main_head .navigation {
@@ -210,10 +215,5 @@ section,
   .main_head .navigation li {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    font-size: 1.2rem;
-    line-height: 1.2rem; }
-  .logo_container,
-  .top_wrapper .top_text {
-    margin-top: -50px; }
-  .top_wrapper .top_text h1 {
-    font-size: 3rem; } }
+    font-size: 1.6rem;
+    line-height: 1.6rem; } }
