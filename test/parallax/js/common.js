@@ -1,5 +1,15 @@
 $(function() {
 
+    //Chrome Smooth Scroll
+    try {
+        $.browserSelector();
+        if($("html").hasClass("chrome")) {
+            $.smoothScroll();
+        }
+    } catch(err) {
+        
+    };
+
 
     var sect2Pos = $('.screen-2').offset(),
         sect3Pos = $('.screen-3').offset(),
