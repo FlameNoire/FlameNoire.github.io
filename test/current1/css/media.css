@@ -1,0 +1,80 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  body {
+    color: #666; }
+  .section-eleven-action .gift-img {
+    padding-top: 0; }
+  .section-eleven-action .action-timer-wrap {
+    padding-top: 20px; }
+  .section-eleven-action .action-price {
+    bottom: 170px;
+    right: 517px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .section-first .section-first-content .col-md-6:nth-child(1n) .content-item {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: left;
+    padding-right: 0;
+    padding-left: 30px;
+    width: 70%;
+    background-position: top 10px left 0; }
+  .section-first-content {
+    background-position: right 50px top; }
+  .section-second-wrap .top-text {
+    margin-top: 0; }
+  .section-second-content .content-item {
+    padding-left: 0;
+    padding-right: 0; }
+  .section-second-content .col-md-6:nth-child(1n) {
+    text-align: center; }
+  .section-third-item {
+    text-align: center; }
+    .section-third-item .item-img {
+      display: inline-block; }
+  .product-images {
+    margin-bottom: 0; }
+    .product-images .product-img {
+      margin: 0 0 40px; }
+  .section-six-content {
+    padding-right: 20px;
+    background-size: 50%; }
+  .section-six-wrap .ordering-form {
+    margin-bottom: 0; }
+  .section-six-wrap .action-gift {
+    padding-left: 15px; }
+  .section-six-wrap .action-price {
+    bottom: 140px;
+    right: 249px; }
+  .action-timer-wrap {
+    padding-top: 15px;
+    float: left; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  header {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .section-first-content {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .section-seven-wrap {
+    padding-left: 20px; }
+  .product-spec {
+    padding-left: 0; }
+    .product-spec .spec-list {
+      margin-bottom: 50px; }
+  .section-nine-wrap {
+    padding-left: 80px; }
+  .footer-wrap {
+    padding-left: 20px; }
+  .section-six-content {
+    padding-right: 100px; } }
+
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
