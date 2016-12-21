@@ -754,3 +754,7 @@ section {
     .footer-wrap .panel-right .organization {
       font-size: 14px;
       line-height: 1.2; }
+
+@media screen and (min-width: 0px) {
+  .section-first-content .content-item {
+    background-image: url("../img/accept.png"); } }
