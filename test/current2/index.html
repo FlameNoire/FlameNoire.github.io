@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Page</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <!-- Template Basic Images End -->
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body id="home">
+
+<div class="wrapper">
+
+  <!--HEADER-->
+  <header class="main-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-xs-5 h-left-sm">
+          <a class="logo-wrap">
+            <img src="img/logo-hatsan.png" alt="hatsan">
+          </a>
+        </div>
+        <div class="col-md-6 col-xs-7 col-md-offset-3 h-right-sm">
+          <div class="cont-inf">
+            <div class="cont-inf-item">
+              +38 (098) <span class="phone-accent">675-37-36</span>
+              <span class="work-time">с 09:00 - 18:00</span>
+            </div>
+            <div class="cont-inf-item">
+              +38 (093) <span class="phone-accent">839-16-00</span>
+              <span class="work-time">сб, вс - выходные</span>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <ul class="navigation">
+            <li class="nav-item"><a href="#">О компании</a></li>
+            <li class="nav-item"><a href="#">Гарантия</a></li>
+            <li class="nav-item"><a href="#">Доставка и оплата</a></li>
+            <li class="nav-item"><a href="#">Контакты</a></li>
+          </ul>
+          <a href="#" class="nav-show">Меню</a>
+        </nav>
+        <div class="col-xs-12 main-header-bottom clearfix">
+          <a href="#" class="all-hatsan">Все винтовки Hatsan</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--HEADER END-->
+
+  <!--MAIN CONTENT-->
+
+  <div class="main">
+    <section class="panel-top">
+      <div class="container">
+        <div class="row">
+
+          <form method="GET" action="/search">
+            <div class="basket-wrap">
+              <div id="jcart">
+                <div class="smallCart basket_num">
+                  0</div>
+
+                <a href="/checkout" title="Корзина"><img src="img/basket.gif" width="22" height="14" border="0">Корзина</a>
+
+
+                <script>
+                  function plus(id){
+                    var old_val = Number($('#jcartItemQty-'+id).val());
+                    old_val = old_val+1;
+                    $('#jcartItemQty-'+id).val(old_val);
+                    $('#jcartItemQty-'+id).keyup();
+                  }
+
+                  function minus(id){
+                    var old_val = Number($('#jcartItemQty-'+id).val());
+                    if(old_val != 1){
+                      old_val = old_val-1;
+                      $('#jcartItemQty-'+id).val(old_val);
+                      $('#jcartItemQty-'+id).keyup();
+                    }
+                  }
+                </script>
+                <div style="display: none; padding: 20px;" id="modal_cart">
+                  <!--modal-->
+                  <table>
+                    <thead>
+                    <tr>
+                      <th colspan="2">
+                        Ваша корзина
+                      </th>
+                    </tr>
+                    </thead>
+                    <tbody id="j-mod">
+
+                    <tr>
+                      <td id="jcart-empty" colspan="2">Ваша корзина пуста!</td>
+                    </tr>
+
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                      <th colspan="2">
+                        <a href="/checkout" style="padding-left: 30px;" class="f-right">Оформить заказ</a>
+                        <a href="" class="f-right simplemodal-close">Продолжить покупки</a>
+                        <!--subtotal-->
+                        <span id="jcart-subtotal">Всего: <span class="b">0 грн.</span></span><!--/subtotal-->
+                      </th>
+                    </tr>
+                    </tfoot>
+                  </table>
+                  <!--modal end-->
+                </div>
+                <div id="jcart-tooltip">Товар добавлен!</div>
+
+              </div>
+            </div>
+
+            <label class="top_search">
+              <input  class="top_search_text" name="q" size="20" maxlength="255" style="width:140px;" type="text">
+              <input value="НАЙТИ" class="top_search_button" type="submit">
+            </label>
+
+          </form>
+
+        </div>
+      </div>
+    </section>
+    <section class="products-list">
+      <div class="container">
+        <div class="row">
+          <h1 class="products-title">Пневматические винтовки Hatsan - Хатсан</h1>
+        </div>
+        <div class="row">
+
+          <div class="col-md-2 col-sm-4 product-item">
+            <div class="product-img">
+              <a href="product.html">
+                <img src="img/thumb_hatsan-125-camo.jpg" alt="">
+              </a>
+            </div>
+            <div class="product-descr">
+              <a href="product.html">Hatsan 125 CAMO Hatsan 125 CAMO Hatsan 125 CAMO</a>
+              <span class="prod_nal">4752 грн.</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 product-item">
+            <div class="product-img">
+              <a href="product.html">
+                <img src="img/thumb_hatsan-125-camo.jpg" alt="">
+              </a>
+            </div>
+            <div class="product-descr">
+              <a href="product.html">Hatsan 125 CAMO</a>
+              <span class="prod_nal">4752 грн.</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 product-item">
+            <div class="product-img">
+              <a href="product.html">
+                <img src="img/thumb_hatsan-125-camo.jpg" alt="">
+              </a>
+            </div>
+            <div class="product-descr">
+              <a href="product.html">Hatsan 125 CAMO</a>
+              <span class="prod_nal red">4752 грн.</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 product-item">
+            <div class="product-img">
+              <a href="product.html">
+                <img src="img/thumb_hatsan-125-camo.jpg" alt="">
+              </a>
+            </div>
+            <div class="product-descr">
+              <a href="product.html">Hatsan 125 CAMO</a>
+              <span class="prod_nal">4752 грн.</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 product-item">
+            <div class="product-img">
+              <a href="product.html">
+                <img src="img/thumb_hatsan-125-camo.jpg" alt="">
+              </a>
+            </div>
+            <div class="product-descr">
+              <a href="product.html">Hatsan 125 CAMO</a>
+              <span class="prod_nal">4752 грн.</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 product-item">
+            <div class="product-img">
+              <a href="product.html">
+                <img src="img/thumb_hatsan-125-camo.jpg" alt="">
+              </a>
+            </div>
+            <div class="product-descr">
+              <a href="product.html">Hatsan 125 CAMO</a>
+              <span class="prod_nal red">4752 грн.</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 product-item">
+            <div class="product-img">
+              <a href="product.html">
+                <img src="img/thumb_hatsan-125-camo.jpg" alt="">
+              </a>
+            </div>
+            <div class="product-descr">
+              <a href="product.html">Hatsan 125 CAMO</a>
+              <span class="prod_nal">4752 грн.</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 product-item">
+            <div class="product-img">
+              <a href="product.html">
+                <img src="img/thumb_hatsan-125-camo.jpg" alt="">
+              </a>
+            </div>
+            <div class="product-descr">
+              <a href="product.html">Hatsan 125 CAMO</a>
+              <span class="prod_nal">4752 грн.</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 product-item">
+            <div class="product-img">
+              <a href="product.html">
+                <img src="img/thumb_hatsan-125-camo.jpg" alt="">
+              </a>
+            </div>
+            <div class="product-descr">
+              <a href="product.html">Hatsan 125 CAMO</a>
+              <span class="prod_nal red">4752 грн.</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 product-item">
+            <div class="product-img">
+              <a href="product.html">
+                <img src="img/thumb_hatsan-125-camo.jpg" alt="">
+              </a>
+            </div>
+            <div class="product-descr">
+              <a href="product.html">Hatsan 125 CAMO Hatsan 125 CAMO Hatsan 125 CAMO</a>
+              <span class="prod_nal">4752 грн.</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 product-item">
+            <div class="product-img">
+              <a href="product.html">
+                <img src="img/thumb_hatsan-125-camo.jpg" alt="">
+              </a>
+            </div>
+            <div class="product-descr">
+              <a href="product.html">Hatsan 125 CAMO</a>
+              <span class="prod_nal">4752 грн.</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 product-item">
+            <div class="product-img">
+              <a href="product.html">
+                <img src="img/thumb_hatsan-125-camo.jpg" alt="">
+              </a>
+            </div>
+            <div class="product-descr">
+              <a href="product.html">Hatsan 125 CAMO Hatsan 125 CAMO Hatsan 125 CAMO</a>
+              <span class="prod_nal">4752 грн.</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 product-item">
+            <div class="product-img">
+              <a href="product.html">
+                <img src="img/thumb_hatsan-125-camo.jpg" alt="">
+              </a>
+            </div>
+            <div class="product-descr">
+              <a href="product.html">Hatsan 125 CAMO</a>
+              <span class="prod_nal">4752 грн.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="home-text">
+      <div class="container">
+        <div class="row">
+          <div class="home-text-wrap">
+
+            <h2>Качество оружия с пневматическими винтовками Hatsan</h2>
+            <br>
+            Посещая наш интернет магазин, клиент, безусловно, ищет качественный товар и хочет получить ответы на вопросы, сравнить цены и выбрать для себя, лучший вариант, купить для себя что-то весьма надежное и уникальное. Специализируясь на реализации пневматического оружия, мы подобрали самый востребованный товар для любителей и профессионалов в сфере пневматического оружия.
+            <br>
+            <br>
+            <h2>Почему собственно, пневматика Hatsan?</h2>
+            <br>
+            Человек, который уже имел удовольствие произвести стрельбу из винтовок торговой марки Хатсан, воистину оценит качество предоставленное производителем. Мощные, по своим техническим характеристикам, удобные благодаря своему новейшему дизайну, восхитят даже настоящих ценителей оружия. Также наша команда специалистов, быстро, а главное качественно поможет выбрать клиенту самый лучший вариант согласно требованиям, по сравнительно низким ценам.
+            <br>
+            <br>
+            Турецкая фирма пневматических винтовок Hatsan, которая производит этот первоклассный товар, всегда заботится о репутации. Конкуренция на рынке достаточно высока, но данная торговая марка уже довольно давно оправдала себя как качественный, добросовестный производитель. Разработчики воплощают в своем товаре технологии, которые:
+            <br>
+            <br>
+            <ol>
+              <li>Обеспечивают производительность на долгие годы.</li>
+              <li>Облегчают эксплуатацию.</li>
+              <li>Максимально достигают удобства в применении.</li>
+              <li>Заботятся о безопасности, дабы устранить всякие риски связанные с использованием.</li>
+            </ol>
+            <br>
+            <p><b>Купить винтовку Хатсан</b> сегодня не составляет большой проблемы, так как они представлены практически в каждом магазине пневматики и в интернет-магазинах.</p>
+            Перед тем, как эти классные и очень хорошие воздушки попали на прилавки магазинов, проходили довольно длительную проверку. Долгие годы тестирования, вдохновляли на создание все более качественного товара. Вот к примеру: Довольно хорошая, пневматическая винтовка (<a
+                  href="#">Hatsan MOD 125 Sniper</a>), которая пользуется отличным спросом как любителей, так и профессионалов данного вида оружия. Также из самих распространенных и зарекомендовавших себя на рынке пневматических винтовок Хатсан, является винтовка, калибром 4,5мм, (<a
+                  href="#">Hatsan Striker 1000s</a>), у которой первичная скорость вылета, составляет 305 метра в секунду. Остальные варианты ничем не отличаются в качестве и безопасности использования.
+            <br>
+            <br>
+            <h3>Хатсан "Магнум" (Magnum) класса</h3>
+            <br>
+            Почти все винтовки Hatsan относятся к классу Magnum, так как они подойдут для охоты на небольшую дичь и их скорость вылета пули составляет 305 - 400 м./с. Такие винтовки являются очень мощными но при этом обладают относительно большой массой. Стоит так же учитывать, что прицелы низкого качества и слабой удоропрочностью, могут выходить из строя при выстреле с такой пневматики.
+            <br>
+            <br>
+            <h3>Покупая пневматику в нашем магазине</h3>
+            <br>
+            Перед тем как купить какой-нибудь товар в нашем, оружейном интернет магазине, Вы получите полную консультацию от специалистов нашего отдела по использованию товара и его техническим характеристикам. Наш магазин расширяется и наполняется товаром, что позволит Вам сделать свой выбор исходя из большого ассортимента. Мы работаем непосредственно с производителем, что позволяет Вам, приобретать хороший товар по достаточно низким ценам.
+            <br>
+            <br>
+            В нашем магазине вам будет предоставлено:
+            <br>
+            <ol>
+              <li>Гарантийное обслуживание.</li>
+              <li>Быстрая доставка.</li>
+              <li>Приложение необходимой документации к товару.</li>
+              <li>Доставка по всей территории нашей страны.</li>
+              <li>Индивидуальный, осмысленный подход к каждому клиенту.</li>
+            </ol>
+            <br>
+            Если предоставленные нами аргументы Вас удовлетворили, читайте далее: Как же у нас купить пневматическую винтовку Hatsan? Если Вы уже решили для себя вопрос о приобретении воздушки в нашем магазине, тогда нет ничего проще.
+            <br>
+            <br>
+            Для этого Вам понадобится:
+            <br>
+            <ol>
+              <li>Зайти на страницу выбранного Вами товара.</li>
+              <li>Далее, нажимаете на зеленую кнопку (купить).</li>
+              <li>Проходите по тексту - (оформить заказ).</li>
+              <li>Выбираете, какой нужен способ доставки и оплаты.</li>
+              <li>Заполняете поля с указанием ваших данных и телефона.</li>
+              <li>Нажимаете на серую кнопку - (оформить заказ). После ввода вышеперечисленного, с вами свяжется наш менеджер. Также вы можете позвонить нам по указанным в верхнем углу телефонам и обсудить с нашими специалистами детали покупки.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!--MAIN CONTENT END-->
+
+  <div class="empty"></div>
+</div>
+<footer id="footer" class="main-footer">
+  <div class="container">
+    <div class="footer-wrap">
+      <div class="footer-content">
+        <div class="row">
+          <div class="col-md-2 col-sm-3">
+            <div class="socials">
+              <a href="" target="_blank" title="ВКонтакте" class="soc-item">
+                <img src="img/vk1.gif" alt="ВКонтакте" width="26" height="26" border="0">
+              </a>
+              <a href="" target="_blank" title="Facebook" class="soc-item">
+                <img src="img/fb1.gif" alt="Facebook" width="26" height="26" border="0">
+              </a>
+              <a href="" target="_blank" title="Twitter" class="soc-item">
+                <img src="img/tw1.gif" alt="Twitter" width="26" height="26" border="0">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-3">
+            <div class="copyright">
+              <span class="copy-accent">© hatsan.net.ua</span>
+              Все права защищены<br />
+              2010 - 2016
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-3">
+            <div class="footer-menu">
+              <span class="menu-accent">Интернет-магазин</span>
+              <ul>
+                <li><a href="">Гарантия</a></li>
+                <li><a href="">Доставка и оплата</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-md-offset-3 col-sm-3">
+            <div class="footer-contacts">
+              <span class="contacts-accent">Контакты</span>
+              (098) 675-37-36<br />
+              (093) 839-16-00 info@hatsan.net.ua
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-sub-bg"></div>
+    </div>
+  </div>
+</footer>
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv/es5-shim.min.js"></script>
+<script src="js/html5shiv/html5shiv.min.js"></script>
+<script src="js/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="js/html5shiv/respond.min.js"></script>
+<![endif]-->
+
+<script src="js/jquery-2.2.1.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
