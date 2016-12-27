@@ -53,6 +53,7 @@ input {
 
 .wrapper {
   min-height: 100%;
+  width: 100%;
   min-width: 320px;
   overflow: hidden;
   position: relative; }
@@ -384,6 +385,7 @@ input {
   padding-bottom: 10px;
   margin-top: -136px;
   height: 136px;
+  width: 100%;
   min-width: 320px;
   font-size: 11px;
   overflow: hidden; }
