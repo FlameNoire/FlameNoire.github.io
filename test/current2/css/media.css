@@ -176,7 +176,9 @@
     padding-left: 0;
     width: 50%; }
   .main-header .cont-inf {
-    font-size: 8px; }
+    font-size: 9px; }
+  .cont-inf .phone-accent {
+    font-size: 12px; }
   .main-header .cont-inf-item {
     padding-left: 7px;
     padding-right: 15px; }
