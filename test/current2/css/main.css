@@ -55,7 +55,7 @@ input {
   min-height: 100%;
   width: 100%;
   max-width: 100%;
-  min-width: 310px;
+  min-width: 300px;
   overflow: hidden;
   position: relative; }
 
@@ -388,7 +388,7 @@ input {
   height: 136px;
   width: 100%;
   max-width: 100%;
-  min-width: 310px;
+  min-width: 300px;
   font-size: 11px;
   overflow: hidden; }
 
