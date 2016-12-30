@@ -139,6 +139,8 @@
         background-color: #e6e6e6;
         -webkit-transition: all .3s ease;
         transition: all .3s ease; }
+    .top_menu .prod_box .prod_img_wrap .tip {
+      display: none; }
     .top_menu .close {
       display: block; }
   .top_menu_list {
@@ -396,7 +398,7 @@
     font-size: 11px;
     padding-right: 0; }
   ul.tabs-1 {
-    font-size: 12px; }
+    font-size: 11px; }
   .ui-tabs .ui-tabs-nav li a {
     padding: 5px 3px; }
   .foto-block a {
