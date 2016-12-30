@@ -329,6 +329,8 @@ input {
       color: #e9f5ff; }
     .header_panel .menu .menu_item:focus {
       outline: none; }
+  .header_panel .menu .item_cont {
+    padding: 10px 20px 20px; }
   .header_panel .menu .heading {
     font-size: 16px;
     color: #333333;
