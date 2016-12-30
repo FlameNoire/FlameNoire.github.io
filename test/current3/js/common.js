@@ -11,39 +11,38 @@
 
     }*/
 
+    ///////////// TOP MENU
+
+    function menuOpen() {
+        $('.menu-show').click(function (e) {
+            e.preventDefault();
+            $('.top_menu_list').addClass("active");
+        });
+    }
+    function menuHide() {
+        $('.top_menu_buttons .close').click(function () {
+            $('.top_menu_list').removeClass("active");
+        });
+    }
+    menuOpen();
+    menuHide();
+
+    /////////////////////////////////////////////
+
 
     ////////// CATEGORIES MENU
 
-    /*var wWidth = $(window).width();
 
-    $(window).resize(function () {
-        menuDesk();
+    $( ".menu_wrap" ).accordion({
+        header: ".menu_item",
+        collapsible: true,
+        active: "false",
+        heightStyle: "content"
     });
-    
-    menuDesk();*/
 
-    //Device detecting
-    if(device.mobile() || device.tablet()) {
-        $( ".menu_wrap" ).accordion({
-            header: ".menu_item",
-            collapsible: true,
-            active: "false",
-            heightStyle: "content"
-        });
-    } else {
-        $('.menu_item').hover(function () {
-            $('.item_cont').hide();
-            $(this).next().show();
-        }, function () {
-            $(this).next().delay(300).hide(0);
-        });
-        $('.item_cont').hover(function () {
-            $(this).show(0);
-        }, function () {
-            $(this).delay(300).hide(0);
-        });
-    }
     ////////////////////////////
+
+    ///////////// TABS
 
     var user_tabs = $("#tabs").tabs({
         activate: function(event, ui) {
@@ -62,6 +61,8 @@
             $("div[id='all']").css("display", "none");
         }
     });
+
+    /////////////////////////////
 
 
     $(".owl-carousel").owlCarousel({
@@ -90,60 +91,5 @@
     });
 
 
-
-    /*function menuDesk() {
-        if( wWidth > 992 ) {
-            $('.menu_item').hover(function () {
-                $('.item_cont').hide();
-                $(this).next().show();
-            }, function () {
-                $(this).next().delay(300).hide(0);
-            });
-            $('.item_cont').hover(function () {
-                $(this).show(0);
-            }, function () {
-                $(this).delay(300).hide(0);
-            });
-        } else {
-            $( ".menu_wrap" ).accordion({
-                header: ".menu_item",
-                collapsible: true,
-                active: "false",
-                heightStyle: "content"
-            });
-        }
-    }*/
-
-    // function menuMob() {
-    //     if ( wWidth < 993 )
-    //         $( ".menu_wrap" ).accordion({
-    //             header: ".menu_item",
-    //             collapsible: true,
-    //             active: "false",
-    //             heightStyle: "content"
-    //         });
-    // }
-
-
-
-    //////////////////////////////////////////////
-
-    ///////////// TOP MENU
-
-    function menuOpen() {
-        $('.menu-show').click(function (e) {
-            e.preventDefault();
-            $('.top_menu_list').addClass("active");
-        });
-    }
-    function menuHide() {
-        $('.top_menu_buttons .close').click(function () {
-            $('.top_menu_list').removeClass("active");
-        });
-    }
-    menuOpen();
-    menuHide();
-
-    /////////////////////////////////////////////
 
 })(jQuery);
