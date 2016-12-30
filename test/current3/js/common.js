@@ -80,12 +80,14 @@
 
     /// For mobile
 
-    $( ".menu_wrap" ).accordion({
-        header: ".menu_item",
-        collapsible: true,
-        active: "false",
-        heightStyle: "content"
-    });
+    if ( wWidth < 993 ) {
+        $( ".menu_wrap" ).accordion({
+            header: ".menu_item",
+            collapsible: true,
+            active: "false",
+            heightStyle: "content"
+        });
+    }
 
     //////////////////////////////////////////////
 
