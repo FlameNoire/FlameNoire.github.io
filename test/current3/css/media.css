@@ -139,10 +139,10 @@
         background-color: #e6e6e6;
         -webkit-transition: all .3s ease;
         transition: all .3s ease; }
-    .top_menu .prod_box .prod_img_wrap .tip {
-      display: none; }
     .top_menu .close {
       display: block; }
+  .prod_box .tip {
+    display: none; }
   .top_menu_list {
     display: block;
     position: absolute;
