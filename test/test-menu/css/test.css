@@ -115,7 +115,6 @@ input {
     z-index: -10;
     left: 0;
     top: 100%;
-    min-width: 700px;
     background-color: #fff;
     border: 1px solid #13417C;
     -webkit-border-radius: 6px;
@@ -159,7 +158,8 @@ input {
 
 @media only screen and (min-width: 993px) {
   .item_cont {
-    display: block !important; } }
+    display: block !important;
+    min-width: 700px; } }
 
 @media only screen and (max-width: 992px) {
   .category_menu {
