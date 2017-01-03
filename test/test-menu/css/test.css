@@ -122,9 +122,9 @@ input {
     -webkit-box-shadow: 6px 6px 6px 0 rgba(51, 51, 51, 0.6);
             box-shadow: 6px 6px 6px 0 rgba(51, 51, 51, 0.6);
     overflow: hidden;
-    opacity: 0.5;
-    -webkit-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease; }
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease; }
     .category_menu .item_cont:hover {
       opacity: 1;
       z-index: 10; }
