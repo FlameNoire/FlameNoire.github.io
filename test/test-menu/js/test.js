@@ -5,7 +5,7 @@
 
     $('.item_link').click(function (e) {
         
-        if( $(window).width() < 993 || device.tablet() || device.mobile() ) {
+        if( $(window).width() < 1201 || device.tablet() || device.mobile() ) {
             e.preventDefault();
             $('.item_cont').not($(this).next()).slideUp(300);
             $(this).next().slideToggle();
