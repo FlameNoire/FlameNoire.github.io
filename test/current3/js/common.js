@@ -32,12 +32,14 @@
 
     ////////// CATEGORIES MENU
 
+    $('.item_link').click(function (e) {
 
-    $( ".menu_wrap" ).accordion({
-        header: ".menu_item",
-        collapsible: true,
-        active: "false",
-        heightStyle: "content"
+        if( $(window).width() < 1201 || device.tablet() || device.mobile() ) {
+            e.preventDefault();
+            $('.item_cont').not($(this).next()).slideUp(300);
+            $(this).next().slideToggle();
+        }
+
     });
 
     ////////////////////////////
