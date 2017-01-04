@@ -93,6 +93,8 @@ input {
   content: "";
   display: table; }
 
+.header_panel {margin-top: 100px;}
+
 .category_menu {
   position: relative;
   padding-left: 35px;
