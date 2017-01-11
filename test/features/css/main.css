@@ -1,0 +1,136 @@
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  width: 100%;
+  min-height: 100%;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333;
+  background-color: #fdfdfd; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    list-style: none; }
+
+p {
+  padding: 0;
+  margin: 1em 0; }
+
+a, a:link, a:visited {
+  color: #32628B; }
+
+a:focus {
+  color: inherit; }
+
+a:hover {
+  color: #000; }
+
+a.active {
+  text-decoration: none;
+  color: #000; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 2em 0;
+  text-align: center; }
+
+button {
+  display: block;
+  padding: 0;
+  border: none; }
+
+input {
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.wrapper {
+  width: 100%;
+  min-width: 250px;
+  border: 1px solid #999;
+  overflow-x: hidden;
+  position: relative; }
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+#menu_flex-nav {
+  margin-top: 100px; }
+  #menu_flex-nav .menu-button {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #00A0B0; }
+  #menu_flex-nav .navicon {
+    color: #fff; }
+  #menu_flex-nav .flexnav > li {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; }
+    #menu_flex-nav .flexnav > li a {
+      color: #fff;
+      background-color: #00A0B0; }
+      #menu_flex-nav .flexnav > li a:hover {
+        text-decoration: none; }
+      #menu_flex-nav .flexnav > li a:focus {
+        text-decoration: none; }
+    #menu_flex-nav .flexnav > li ul li a {
+      background-color: #EB6841; }
+    #menu_flex-nav .flexnav > li ul li ul li a {
+      background-color: #EDC951; }
+
+@media all and (min-width: 800px) {
+  #menu_flex-nav .flexnav > li a {
+    border: none; } }
+
+#slider_slick {
+  margin-top: 100px;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  background: #3498DB; }
+  #slider_slick .slick-slider_1 {
+    width: 500px;
+    margin: 0 auto; }
+    #slider_slick .slick-slider_1 a {
+      display: block;
+      width: 500px;
+      text-align: center;
+      overflow: hidden;
+      background: #fff; }
+      #slider_slick .slick-slider_1 a img {
+        width: 100%;
+        height: auto;
+        display: inline-block; }
+
+#slider_owl {
+  margin-top: 100px;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  background: #EB6841; }
+
+#menu_super-fish {
+  margin-top: 100px; }
+
+#grid_masonry {
+  margin-top: 100px;
+  background-color: #999; }
+  #grid_masonry .grid-sizer {
+    width: 20%; }
+
+#bootstrap_grid {
+  margin-top: 100px; }
+  #bootstrap_grid .block-wrap {
+    vertical-align: top;
+    margin-bottom: 30px; }
+  #bootstrap_grid .text-box {
+    display: inline-block;
+    background-color: #999; }
