@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Привал</title>
+  <title>Features Examples</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Template Basic Images Start -->
@@ -13,713 +13,354 @@
   <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
   <!-- Template Basic Images End -->
   <!--<link rel="stylesheet" href="css/bootstrap-grid.min.css">-->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.css">
-  <link rel="stylesheet" href="css/owl.theme.css">
-  <link rel="stylesheet" href="css/owl.transitions.css">
+  <link rel="stylesheet" href="css/libs.css">
+  <link rel="stylesheet" href="css/flexnav.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/superfish.css" media="screen">
+  <link rel="stylesheet" href="css/camera.css" media="screen">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/media.css">
-  <script src="js/jquery-2.2.1.min.js"></script>
+  <!--<link rel="stylesheet" href="css/media.css">-->
 </head>
 <body id="home">
 
 <div class="wrapper">
 
-  <!--HEADER-->
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur distinctio ipsam laudantium! Autem harum itaque perspiciatis. Architecto atque ipsa nemo praesentium quidem sunt veniam! Amet commodi corporis deserunt distinctio, dolor dolore illo ipsa iure iusto modi non officia omnis praesentium quod tempora vero voluptatibus! A aliquam aperiam beatae, blanditiis culpa dicta eveniet, fuga illum in ipsa iure laborum minima nemo nisi nostrum odit placeat quasi rerum unde voluptas. Et molestias odit quasi tempora. Consequatur cumque dicta, distinctio dolore doloribus earum, enim facilis fugiat inventore minima molestiae officia perspiciatis possimus quasi suscipit, tempora voluptatibus. Ad, at delectus fuga quisquam ratione tenetur!
 
-  <header class="main_header">
-    <nav class="top_menu">
-      <ul class="top_menu_list clearfix">
-        <li class="top_menu_buttons clearfix">
-          <span class="home"><a href="index.html"></a></span>
-          <button class="close"></button>
-        </li>
-        <li><a href="#" rel="nofollow">Гарантия</a></li>
-        <li><a href="#" rel="nofollow">Акции</a></li>
-        <li><a href="#" rel="nofollow">Вакансии</a></li>
-        <li><a href="#" rel="nofollow">Условия использования сайта</a></li>
-        <li><a href="#">Производители</a></li>
-        <li><a href="#" rel="nofollow">О нас</a></li>
-        <li><a href="#" rel="nofollow">Доставка и оплата</a></li>
-        <li><a href="#">Статьи</a></li>
-        <li><a href="#" rel="nofollow">Контакты</a></li>
-      </ul>
-      <a href="#" class="menu-show">Меню</a>
-    </nav>
-    <div class="header_panel">
-      <div class="header_center">
-        <div class="header_center_row">
-          <div class="logo">
-            <a href="index.html"><img src="img/logo.png" alt="Интернет магазин Привал"></a>
-          </div>
 
-          <div class="search_wrap">
-            <form id="search_form" class="clearfix" action="" method="get">
-              <input name="q" autocomplete="off" id="search_box" placeholder="Поиск по каталогу" type="text">
-              <input value="Поиск" id="search_button" type="submit">
+  <section id="menu_flex-nav">
 
-              <div id="search_advice_wrapper">
-                <div class="advice_variant">
-                  <div class="advice_image">
-                    <img src="img/ganzo-g702.jpg" alt="">
-                  </div>
-                  <div class="advice_text">
-                    <span class="name">Ganzo G702</span>
-                    <span class="price">378грн.</span>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
+    <div class="menu-button">Menu</div>
 
-          <div class="telephones">
+    <ul class="flexnav clearfix" data-breakpoint="800">
+      <li>
+        <a href="#">menu item 1</a>
+        <ul>
+          <li><a href="#">menu item 1.1</a></li>
+          <li><a href="#">menu item 1.1</a></li>
+          <li><a href="#">menu item 1.1</a></li>
+          <li>
+            <a href="#">menu item 1.1</a>
             <ul>
-              <li>(044) 592-77-02</li>
-              <li>(098) 675-37-36</li>
+              <li><a href="#">menu item 1.2</a></li>
+              <li><a href="#">menu item 1.2</a></li>
+              <li><a href="#">menu item 1.2</a></li>
+              <li><a href="#">menu item 1.2</a></li>
+              <li><a href="#">menu item 1.2</a></li>
+              <li><a href="#">menu item 1.2</a></li>
             </ul>
-            <ul>
-              <li>(093) 839-16-00</li>
-              <li>(095) 764-33-29</li>
-            </ul>
-            <br>
-            <span class="address"><small>г. Киев, ул. Викентия Хвойки, 21</small></span>
-          </div>
-
-          <div id="cart-info" class="cart_box">
-            <a style="display:none" class="nyroClick" href="/catalog/shoping_cart"></a>
-            <div id="test0" onclick="$('a.nyroClick').trigger( 'click' );">
-              <div id="test0">
-                <a class="cart-link" rel="nofollow" href="/catalog/shoping_cart?show=1">Корзина</a>
-                <div>0 товаров</div>
-              </div>
-            </div>
-            <span id="compare-link" class="compare">Сравнение: 0</span>
-          </div>
-
-        </div>
-      </div>
-      <div id="menu" class="category_menu">
-        <ul class="menu_wrap clearfix">
-          <li class="menu_item">
-            <a class="item_link" href="#">Охота</a>
-            <div class="item_cont clearfix">
-              <ul>
-                <li><a class="heading" href="#">Оружие</a></li>
-                <li><a href="#">Пневматические винтовки</a></li>
-                <li><a href="#">Стартовые пистолети</a></li>
-                <li><a href="#">Луки</a></li>
-                <li><a href="#">Мечи</a></li>
-                <li><a href="#">Сабли</a></li>
-                <li><a href="#">Пневматические пистолеты</a></li>
-                <li><a href="#">Револьверы Флобера</a></li>
-                <li><a href="#">Рогатки</a></li>
-                <li><a href="#">Арбалеты</a></li>
-                <li><a href="#">Тренировочное оружие</a></li>
-                <li><a href="#">Тактические ручки</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Аксессуары для оружия</a></li>
-                <li><a href="#">Целеуказатели</a></li>
-                <li><a href="#">Кейсы</a></li>
-                <li><a href="#">Магазины</a></li>
-                <li><a href="#">Глушители</a></li>
-                <li><a href="#">Сабли</a></li>
-                <li><a href="#">Сошки</a></li>
-                <li><a href="#">Затыльники</a></li>
-                <li><a href="#">Приклады</a></li>
-                <li><a href="#">Цевья</a></li>
-                <li><a href="#">Крепления</a></li>
-                <li><a href="#">Антабки</a></li>
-                <li><a href="#">Чехлы</a></li>
-                <li><a href="#">Погонные ремни</a></li>
-                <li><a href="#">Пистолетные рукояти</a></li>
-                <li><a href="#">Пули и патроны</a></li>
-                <li><a href="#">Кобуры</a></li>
-                <li><a href="#">Аксессуары для пневматики</a></li>
-                <li><a href="#">Средства по уходу за оружием</a></li>
-                <li><a href="#">Патронташи</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Одежда для охотников</a></li>
-                <li><a href="#">Костюмы</a></li>
-                <li><a href="#">Куртки</a></li>
-                <li><a href="#">Штаны</a></li>
-                <li><a href="#">Комбинезоны</a></li>
-                <li><a href="#">Жилеты</a></li>
-                <li><a href="#">Термобелье</a></li>
-                <li><a href="#">Термоноски</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Обувь</a></li>
-                <li><a href="#">Сапоги</a></li>
-                <li><a href="#">Ботинки</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Оптика</a></li>
-                <li><a href="#">Дальномеры</a></li>
-                <li><a href="#">Прицелы</a></li>
-                <li><a href="#">Бинокли</a></li>
-                <li><a href="#">Подзорные трубы</a></li>
-                <li><a href="#">Телескопы</a></li>
-                <li><a href="#">Приборы ночного видения</a></li>
-                <li><a href="#">Аксессуары к оптике</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Прочее</a></li>
-                <li><a href="#">Сумки</a></li>
-                <li><a href="#">Фонари для охоты</a></li>
-                <li><a href="#">Манки</a></li>
-                <li><a href="#">Очки</a></li>
-                <li><a href="#">Чучела</a></li>
-                <li><a href="#">Подсумки</a></li>
-                <li><a href="#">Пояса и ремни</a></li>
-              </ul>
-            </div>
           </li>
-
-          <li class="menu_item">
-            <a class="item_link" href="#">Рыбалка</a>
-            <div class="item_cont clearfix">
-              <ul>
-                <li><a class="heading" href="#">Лодки и все для них</a></li>
-                <li><a href="#">Лодки</a></li>
-                <li><a href="#">Эхолоты</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Одежда для рыбаков</a></li>
-                <li><a href="#">Термобелье</a></li>
-                <li><a href="#">Костюмы</a></li>
-                <li><a href="#">Заброды</a></li>
-                <li><a href="#">Куртки</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Обувь для рыбаков</a></li>
-                <li><a href="#">Ботинки</a></li>
-                <li><a href="#">Сапоги</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Рыболовные снасти</a></li>
-                <li><a href="#">Удилища</a></li>
-                <li><a href="#">Катушки</a></li>
-                <li><a href="#">Воблеры</a></li>
-                <li><a href="#">Вершинки</a></li>
-                <li><a href="#">Шпули</a></li>
-                <li><a href="#">Комели</a></li>
-                <li><a href="#">Чехлы для удилища</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Разное</a></li>
-                <li><a href="#">Ножи</a></li>
-                <li><a href="#">Фонари для рыбалки</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="menu_item">
-            <a class="item_link" href="#">Одежда и обувь</a>
-            <div class="item_cont clearfix">
-              <ul>
-                <li><a class="heading" href="#">Обувь</a></li>
-                <li><a href="#">Сапоги</a></li>
-                <li><a href="#">Ботинки</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Верхняя одежда</a></li>
-                <li><a href="#">Свитера, пуловеры, кофты</a></li>
-                <li><a href="#">Плащи, дождевики, пончо</a></li>
-                <li><a href="#">Комбинезоны</a></li>
-                <li><a href="#">Штаны</a></li>
-                <li><a href="#">Жилеты</a></li>
-                <li><a href="#">Костюмы</a></li>
-                <li><a href="#">Флисовые куртки</a></li>
-                <li><a href="#">Футболки и майки</a></li>
-                <li><a href="#">Рубашки и тенниски</a></li>
-                <li><a href="#">Куртки</a></li>
-                <li><a href="#">Перчатки</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Головные уборы</a></li>
-                <li><a href="#">Шапки</a></li>
-                <li><a href="#">Кепки</a></li>
-                <li><a href="#">Водонепроницаемые шапки</a></li>
-                <li><a href="#">Балаклавы</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Белье и носки</a></li>
-                <li><a href="#">Термобелье</a></li>
-                <li><a href="#">Термоноски</a></li>
-                <li><a href="#">Водонепроницаемые носки</a></li>
-                <li><a href="#">Носки</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Средства защиты</a></li>
-                <li><a href="#">Разгрузочные жилеты, бронежилеты</a></li>
-                <li><a href="#">Бронепластины</a></li>
-                <li><a href="#">Шлемы</a></li>
-                <li><a href="#">Наколенники и налокотники</a></li>
-                <li><a href="#">Наушники</a></li>
-                <li><a href="#">Стрелковые очки</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="menu_item">
-            <a class="item_link" href="turizm-i-kemping.html">Туризм и кемпинг</a>
-            <div class="item_cont clearfix">
-              <ul>
-                <li><a class="heading" href="#">Все для барбекю</a></li>
-                <li><a href="#">Мангалы</a></li>
-                <li><a href="#">Казанки</a></li>
-                <li><a href="#">Барбекю и гриль</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Термопродукция</a></li>
-                <li><a href="#">Автохолодильники</a></li>
-                <li><a href="#">Фляги</a></li>
-                <li><a href="#">Термосы</a></li>
-                <li><a href="#">Термобоксы и термосумки</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Газовое оборудование</a></li>
-                <li><a href="#">Грили</a></li>
-                <li><a href="#">Аксессуары</a></li>
-                <li><a href="#">Обогреватели</a></li>
-                <li><a href="#">Газовые лампы</a></li>
-                <li><a href="#">Газовые плиты</a></li>
-                <li><a href="#">Газовые горелки</a></li>
-                <li><a href="#">Газовые резаки</a></li>
-                <li><a href="#">Газовые баллоны</a></li>
-                <li><a href="#">Питьевые системы</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Кемпинг</a></li>
-                <li><a href="#">Наборы для пикника</a></li>
-                <li><a href="#">Складная мебель</a></li>
-                <li><a href="#">Надувная мебель</a></li>
-                <li><a href="#">Посуда туристическая</a></li>
-                <li><a href="#">Зарядные устройства</a></li>
-                <li><a href="#">Аптечки</a></li>
-                <li><a href="#">Полотенца</a></li>
-                <li><a href="#">Чемоданы</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Туризм</a></li>
-                <li><a href="#">Фонарики</a></li>
-                <li><a href="#">Рюкзаки</a></li>
-                <li><a href="#">Бинокли</a></li>
-                <li><a href="#">Палатки и тенты</a></li>
-                <li><a href="#">Спальники</a></li>
-                <li><a href="#">Топоры</a></li>
-                <li><a href="#">Коврики</a></li>
-                <li><a href="#">Гермомешки</a></li>
-                <li><a href="#">Треккинговые палки</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Ножи и мультиинструменты</a></li>
-                <li><a href="nozhi.html">Ножи</a></li>
-                <li><a href="#">Наборы ножей</a></li>
-                <li><a href="#">Огниво</a></li>
-                <li><a href="#">Мультиинструменты</a></li>
-                <li><a href="#">Точила для ножей</a></li>
-                <li><a href="#">Чехлы и ножны</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="menu_item">
-            <a class="item_link" href="#">Спорт</a>
-            <div class="item_cont clearfix">
-              <ul>
-                <li><a href="#">Солнцезащитные очки</a></li>
-                <li><a href="#">Снегоступы</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Лыжный спорт</a></li>
-                <li><a href="#">Горнолыжные перчатки</a></li>
-                <li><a href="#">Горнолыжные маски</a></li>
-                <li><a href="#">Горнолыжные шлемы</a></li>
-                <li><a href="#">Горнолыжные ботинки</a></li>
-                <li><a href="#">Ракетки для настольного тенниса</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Все для плавания</a></li>
-                <li><a href="#">Шапочки для плавания</a></li>
-                <li><a href="#">Очки для плавания</a></li>
-              </ul>
-              <ul>
-                <li><a class="heading" href="#">Велоспорт</a></li>
-                <li><a href="#">Велосипеды</a></li>
-                <li><a href="#">Комплектующие для велосипедов</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="menu_item">
-            <a class="item_link" href="#">Прочее</a>
-            <div class="item_cont clearfix">
-              <ul>
-                <li><a href="#">Сабли</a></li>
-                <li><a href="#">Биты</a></li>
-                <li><a href="#">Подарки на стол</a></li>
-                <li><a href="#">Фонарики брелки</a></li>
-                <li><a href="#">Бумеранги</a></li>
-                <li><a href="#">Трости</a></li>
-                <li><a href="#">Лазерные указки</a></li>
-                <li><a href="#">Метеостанции</a></li>
-              </ul>
-              <ul>
-                <li><a href="#">Барометры</a></li>
-                <li><a href="#">Мечи</a></li>
-              </ul>
-            </div>
-          </li>
-
+          <li><a href="#">menu item 1.1</a></li>
         </ul>
+      </li>
+      <li>
+        <a href="#">menu item 2</a>
+        <ul>
+          <li><a href="#">menu item 2.1</a></li>
+          <li><a href="#">menu item 2.1</a></li>
+          <li><a href="#">menu item 2.1</a></li>
+          <li><a href="#">menu item 2.1</a></li>
+          <li><a href="#">menu item 2.1</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">menu item 3</a>
+        <ul>
+          <li><a href="#">menu item 3.1</a></li>
+          <li><a href="#">menu item 3.1</a></li>
+          <li><a href="#">menu item 3.1</a></li>
+          <li><a href="#">menu item 3.1</a></li>
+          <li><a href="#">menu item 3.1</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">menu item 4</a>
+        <ul>
+          <li><a href="#">menu item 4.1</a></li>
+          <li><a href="#">menu item 4.1</a></li>
+          <li><a href="#">menu item 4.1</a></li>
+          <li><a href="#">menu item 4.1</a></li>
+          <li><a href="#">menu item 4.1</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">menu item 5</a>
+      </li>
+    </ul>
 
-      </div>
+  </section>
+
+  <section id="slider_slick">
+
+    <h2>Carousel Slick.js</h2>
+
+    <div class="slick-slider_1">
+      <a href="#"><img src="http://lorempixel.com/400/200" alt=""></a>
+      <a href="#"><img src="http://lorempixel.com/500/200" alt=""></a>
+      <a href="#"><img src="http://lorempixel.com/400/220" alt=""></a>
+      <a href="#"><img src="http://lorempixel.com/500/220" alt=""></a>
     </div>
-  </header>
 
-  <!--HEADER END-->
+  </section>
 
+  <section id="slider_owl">
 
-  <main>
+    <h2>Owl Carousel 2</h2>
 
-      <div class="main_wrap">
+    <div class="owl-carousel owl-theme">
+      <a href="#"><img src="http://lorempixel.com/400/200" alt=""></a>
+      <a href="#"><img src="http://lorempixel.com/500/200" alt=""></a>
+      <a href="#"><img src="http://lorempixel.com/400/220" alt=""></a>
+      <a href="#"><img src="http://lorempixel.com/500/220" alt=""></a>
+      <a href="#"><img src="http://lorempixel.com/400/210" alt=""></a>
+      <a href="#"><img src="http://lorempixel.com/450/210" alt=""></a>
+      <a href="#"><img src="http://lorempixel.com/480/200" alt=""></a>
+    </div>
 
-        <!--MAIN CONTENT-->
+  </section>
 
-        <section class="main_content">
+  <section id="menu_super-fish" class="clearfix">
 
-          <div class="carousel_wrap">
+    <ul class="sf-menu clearfix">
+      <li>
+        <a href="#">menu item 1</a>
+        <ul>
+          <li><a href="#">menu item 1.1</a></li>
+          <li><a href="#">menu item 1.1</a></li>
+          <li><a href="#">menu item 1.1</a></li>
+          <li>
+            <a href="#">menu item 1.1</a>
+            <ul>
+              <li><a href="#">menu item 1.2</a></li>
+              <li><a href="#">menu item 1.2</a></li>
+              <li><a href="#">menu item 1.2</a></li>
+              <li><a href="#">menu item 1.2</a></li>
+              <li><a href="#">menu item 1.2</a></li>
+              <li><a href="#">menu item 1.2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">menu item 1.1</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">menu item 2</a>
+        <ul>
+          <li><a href="#">menu item 2.1</a></li>
+          <li><a href="#">menu item 2.1</a></li>
+          <li><a href="#">menu item 2.1</a></li>
+          <li><a href="#">menu item 2.1</a></li>
+          <li><a href="#">menu item 2.1</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">menu item 3</a>
+        <ul>
+          <li><a href="#">menu item 3.1</a></li>
+          <li><a href="#">menu item 3.1</a></li>
+          <li><a href="#">menu item 3.1</a></li>
+          <li><a href="#">menu item 3.1</a></li>
+          <li><a href="#">menu item 3.1</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">menu item 4</a>
+        <ul>
+          <li><a href="#">menu item 4.1</a></li>
+          <li><a href="#">menu item 4.1</a></li>
+          <li><a href="#">menu item 4.1</a></li>
+          <li><a href="#">menu item 4.1</a></li>
+          <li><a href="#">menu item 4.1</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">menu item 5</a>
+      </li>
+    </ul>
 
-            <div class="carousel_box">
+  </section>
 
-              <div class="owl-carousel my_carousel">
-                <a class="car_item">
-                  <img src="img/slide1.jpg" alt="">
-                </a>
-                <a class="car_item">
-                  <img src="img/slide2.jpg" alt="">
-                </a>
-                <a class="car_item">
-                  <img src="img/slide3.jpg" alt="">
-                </a>
-                <a class="car_item">
-                  <img src="img/slide4.jpg" alt="">
-                </a>
-              </div>
+  <section id="grid_masonry">
 
-            </div>
-
-          </div>
-
-          <!--CATEGORIES-->
-
-          <div class="categories clearfix">
-            
-            <div class="categories_item">
-              <div class="categories_image">
-                <a href="#">
-                  <img src="img/227.jpg" alt="">
-                </a>
-              </div>
-              <div class="categories_descr">
-                <a class="title black" href="#">Туризм и кемпинг</a>
-                <ul>
-                  <li><a href="#">Газовое оборудование</a></li>
-                  <li><a href="#">Питьевые системы</a></li>
-                  <li><a href="#">Коврики</a></li>
-                  <li><a href="#">Гермомешки</a></li>
-                  <li><a href="nozhi.html">Ножи</a></li>
-                  <li><a href="#">Мультитулы</a></li>
-                  <li><a href="#">Рюкзаки</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="categories_item">
-              <div class="categories_image">
-                <a href="#">
-                  <img src="img/228.jpg" alt="">
-                </a>
-              </div>
-              <div class="categories_descr">
-                <a class="title black" href="#">Охота</a>
-                <ul>
-                  <li><a href="#">Пояса и ремни</a></li>
-                  <li><a href="#">Очки</a></li>
-                  <li><a href="#">Оружие</a></li>
-                  <li><a href="#">Оптика</a></li>
-                  <li><a href="#">Ножи</a></li>
-                  <li><a href="#">Тактические ручки</a></li>
-                  <li><a href="#">Обувь</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="categories_item">
-              <div class="categories_image">
-                <a href="#">
-                  <img src="img/231.jpg" alt="">
-                </a>
-              </div>
-              <div class="categories_descr">
-                <a class="title black" href="#">Рыбалка</a>
-                <ul>
-                  <li><a href="#">Вершинки</a></li>
-                  <li><a href="#">Лодки</a></li>
-                  <li><a href="#">Эхолоты</a></li>
-                  <li><a href="#">Катушки</a></li>
-                  <li><a href="#">Удилища</a></li>
-                  <li><a href="#">Воблеры</a></li>
-                  <li><a href="#">Заброды</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="categories_item">
-              <div class="categories_image">
-                <a href="#">
-                  <img src="img/232.jpg" alt="">
-                </a>
-              </div>
-              <div class="categories_descr">
-                <a class="title black" href="#">Одежда и обувь</a>
-                <ul>
-                  <li><a href="#">Перчатки</a></li>
-                  <li><a href="#">Верхняя одежда</a></li>
-                  <li><a href="#">Головные уборы</a></li>
-                  <li><a href="#">Белье и носки</a></li>
-                  <li><a href="#">Средства защиты</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="categories_item">
-              <div class="categories_image">
-                <a href="#">
-                  <img src="img/233.jpg" alt="">
-                </a>
-              </div>
-              <div class="categories_descr">
-                <a class="title black" href="#">Полезные вещи</a>
-                <ul>
-                  <li><a href="#">Метеостанции</a></li>
-                  <li><a href="#">Биты</a></li>
-                  <li><a href="#">Сабли</a></li>
-                  <li><a href="#">Бумеранги</a></li>
-                  <li><a href="#">Трости</a></li>
-                  <li><a href="#">Мечи</a></li>
-                  <li><a href="#">Барометры</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="categories_item">
-              <div class="categories_image">
-                <a href="#">
-                  <img src="img/415.jpg" alt="">
-                </a>
-              </div>
-              <div class="categories_descr">
-                <a class="title black" href="#">Автотовары</a>
-                <ul>
-                  <li><a href="#">Автобагажники</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="categories_item">
-              <div class="categories_image">
-                <a href="#">
-                  <img src="img/289.jpg" alt="">
-                </a>
-              </div>
-              <div class="categories_descr">
-                <a class="title black" href="#">Спорт товары</a>
-                <ul>
-                  <li><a href="#">Горнолыжное снаряжение</a></li>
-                  <li><a href="#">Солнцезащитные очки</a></li>
-                  <li><a href="#">Велосипеды</a></li>
-                  <li><a href="#">Снегоступы</a></li>
-                  <li><a href="#">Сноубординг</a></li>
-                  <li><a href="#">Дайвинг и подводная охота</a></li>
-                  <li><a href="#">Ракетки для настольного тенниса</a></li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-
-          <!--CATEGORIES END-->
-
-          <!--VIEWED PRODUCTS-->
-
-          <div class="visited_box">
-
-            <p class="title">Вы смотрели</p>
-
-            <div class="visited_products">
-
-              <div class="products_item">
-                <div class="product_img_box">
-                  <a href="#">
-                    <img class="product_img" src="img/thumb_krossovki-evolv-cruzer.jpg" alt="">
-                  </a>
-                </div>
-                <div class="product_text">
-                  <a href="#">Кроссовки Evolv Cruzer</a>
-                  <br>
-                  <span class="b green">2108 грн.</span>
-                </div>
-              </div>
-              <div class="products_item">
-                <div class="product_img_box">
-                  <a href="#">
-                    <img class="product_img" src="img/thumb_polotentse-nikwax-towel-l.jpg" alt="">
-                  </a>
-                </div>
-                <div class="product_text">
-                  <a href="#">Полотенце Nikwax Towel L</a>
-                  <br>
-                  <span class="b green">1069 грн.</span>
-                </div>
-              </div>
-              <div class="products_item">
-                <div class="product_img_box">
-                  <a href="#">
-                    <img class="product_img" src="img/thumb_destroyer-dsrh-222-xxs51-52.jpg" alt="">
-                  </a>
-                </div>
-                <div class="product_text">
-                  <a href="#">Destroyer DSRH-222 XXS(51-52)</a>
-                  <br>
-                  <span class="b">Нет в наличии</span>
-                </div>
-              </div>
-              <div class="products_item">
-                <div class="product_img_box">
-                  <a href="#">
-                    <img class="product_img" src="img/ganzo-g702.jpg" alt="">
-                  </a>
-                </div>
-                <div class="product_text">
-                  <a href="#">Нож Ganzo G702, чехол</a>
-                  <br>
-                  <span class="b green">459 грн.</span>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-          <!--VIEWED PRODUCTS END-->
-
-          <!--BLOCK WITH DESCRIPTION-->
-
-          <div id="text-description-page">
-            <div class="desc_box short">
-
-              <div>
-                <h1 class="title">Интернет магазин товаров для активного отдыха №1</h1>
-                <p>Добро пожаловать в наш <b>магазин товаров для активного отдыха</b>! В нашем удобном каталоге товаров вы сможете найти все, что необходимо профессионалу и любителю активного отдыха или экстремального спорта. Загляните в наш каталог – там обязательно найдется именно тот товар, о котором вы давно мечтали!</p>
-                <h2>Преимущества заказа именно в магазине<br></h2>
-                <p><br>Наш интернет магазин товаров для отдыха предлагает широчайший ассортимент ножей, мультиинструментов, лодок, палаток и рыболовных снастей, оптических приборов – словом, всё, что может понадобиться в походе. А если вы хотите преподнести сувенир заядлому экстремалу, посмотрите специальный раздел нашего каталога: там вы найдете большое количество тематических сувениров!<br>Мы внимательно следим за качеством наших товаров и стараемся сделать так, чтобы то, что вы купили, служило долго и надежно. На все представленные у нас товары для активного отдыха предусмотрены сертификаты качества и фирменная гарантия производителей. <br>В нашем магазине <b>prival.com.ua</b> работают профессиональные и опытные менеджеры, которые прекрасно разбираются в качествах и технических возможностях представленных товаров. Если вы затрудняетесь с выбором, смело звоните к нам в офис, и компетентный сотрудник поможет вам подобрать удобную палатку, вместительную лодку, качественный нож или надежный фонарь, которые окажутся для вас весьма удачным приобретением.<br></p>
-                <h2>Где лучше купить товары для активного отдыха в Киеве ?</h2><br>
-                Вы можете приобрести нужные вам товары для отдыха и в обычном магазине. Но сейчас все больше и больше людей предпочитают совершать покупки в интернет-магазинах, и тому есть множество причин:<br>
-                <ul>
-                  <li>Цены в интернет-магазинах значительно ниже, чем в традиционных магазинах, так как у онлайн-продавцов отсутствует ряд расходов на аренду и зарплаты для сотрудников. </li>
-                  <li>Вы можете выбрать удобную для вас форму оплаты - есть варианты с предоплатой товара, с постоплатой, оплатой картой или при помощи электронного кошелька. Просто выберите наиболее удобный вам способ!</li>
-                  <li>Мы доставим купленный вами товар по указанному адресу. Если вам удобнее забрать покупку самостоятельно, вы можете сделать это по своему усмотрению.</li>
-                  <li>В интернет-магазинах вы не встретите назойливых продавцов, которые будут уговаривать вас купить что-либо ненужное. Вы сами выбираете товар! И при этом можете даже не обращаться к продавцу, если точно знаете, что именно вам нужно - просто найдите желаемую модель в каталоге и заполните электронную форму заказа!</li>
-                  <li>On-line магазины открыты в любое время суток, и вы сможете, сидя на диване, выбрать и купить все необходимое, заказав доставку на удобное вам время.</li>
-                </ul>
-                В нашем магазине вы подберете себе просторную палатку, спальный мешок, многофункциональный охотничий нож и сможете полностью экипироваться для того, чтобы отправиться на поиски приключений!<br>
-                <p></p>
-                Источник: <a target="_blank" href="https://plus.google.com/114026972848618146956?rel=author" rel="nofollow">Юрий Бодров</a>
-              </div>
-
-              <p><a id="more">Читать подробнее</a></p>
-
-            </div>
-          </div>
-
-          <!--BLOCK WITH DESCRIPTION-->
-
-        </section>
-
-        <!--MAIN CONTENT END-->
-
-        <!--RIGHT SIDEBAR-->
-
-        <aside class="sidebar-right">
-
-          <section class="partners">
-            <p class="h3">Наши партнеры</p>
-            <img src="img/logo_armytek.png">
-            <img alt="Партнеры" src="img/logos.jpg">
-          </section>
-
-        </aside>
-
-        <!--RIGHT SIDEBAR-->
-
+    <div class="grid">
+      <div class="grid-sizer"></div>
+      <div class="grid-item"><img src="http://lorempixel.com/200/300" alt=""></div>
+      <div class="grid-item" style="width: 270px; background-color: #EB6841;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eaque eum harum illum, molestiae nobis quisquam repellat veritatis. Alias commodi dolores molestias natus nostrum! A adipisci asperiores aspernatur, at cumque dolor ea facilis id illo inventore laudantium nesciunt obcaecati officia praesentium quibusdam recusandae rem repudiandae similique, sit ut veritatis vero.</p>
       </div>
-
-  </main>
-
-
-  <!--FOOTER-->
-
-  <footer class="main_footer">
-    <div class="footer_wrap clearfix">
-      <div class="f_info">
-        <span class="b">Прием заказов по телефону</span><br>
-        Без выходных: с 9:00 до 18:00<br>
-        <span class="b">Прием заказов через сайт:</span> 24/7<br>
-        <span class="b">График работы доставки</span><br>
-        Пн-Пт: с 12:00 до 19:00<br>
-
-        <br>
+      <div class="grid-item"><img src="http://lorempixel.com/300/400" alt=""></div>
+      <div class="grid-item"><img src="http://lorempixel.com/200/320" alt=""></div>
+      <div class="grid-item" style="width: 300px; background-color: #3498DB;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eaque eum harum illum, molestiae nobis quisquam repellat veritatis. Alias commodi dolores molestias natus nostrum! A adipisci asperiores aspernatur, at cumque dolor ea facilis id illo inventore laudantium nesciunt obcaecati officia praesentium quibusdam recusandae rem repudiandae similique, sit ut veritatis vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda delectus dicta dolore eligendi eum impedit incidunt itaque laudantium nam nulla odit provident rem repudiandae sint sit, tenetur unde velit!</p>
       </div>
-      <div class="f_contacts">
-        <span class="b">Контакты</span><br>
-
-        (044) 592-77-02<br>
-        (093) 839-16-00<br>
-        (098) 675-37-36<br>
-        (095) 764-33-29<br>
-        info@prival.com.ua<br>
-        <br>
+      <div class="grid-item"><img src="http://lorempixel.com/300/420" alt=""></div>
+      <div class="grid-item"><img src="http://lorempixel.com/200/300" alt=""></div>
+      <div class="grid-item" style="width: 270px; background-color: #EB6841;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eaque eum harum illum, molestiae nobis quisquam repellat veritatis. Alias commodi dolores molestias natus nostrum! A adipisci asperiores aspernatur, at cumque dolor ea facilis id illo inventore laudantium nesciunt obcaecati officia praesentium quibusdam recusandae rem repudiandae similique, sit ut veritatis vero.</p>
       </div>
-      <div class="f_links">
-        &copy;
-        <a href="/">Интернет магазин товаров для активного отдыха</a>
-        <br>
-        "Привал" 2010 - 2016<br>
-        <a rel="nofollow" href="/content/delivery">Доставка</a>
-        <a rel="nofollow" href="/content/delivery">Оплата</a>
-        <a rel="nofollow" href="/content/dileram">Дилерам</a>
-        <a rel="nofollow" href="/content/contacts">Контакты</a>
-        <br>
-        <a rel="nofollow" href="/content/terms_of_use">Условия использования сайта</a>
-        <a href="/sitemap_page">Карта сайта</a>
-        <br>
-        <br>
-        <div class="socials">
-          <a target="_blank" rel="nofollow" href="http://vk.com/privalcomua"><img alt="Мы в Vkontekte" src="img/vkontakte.png">
-          </a>
-          <a target="_blank" rel="nofollow" href="http://www.facebook.com/fonariki.net.ua"><img alt="Мы в Facebook" src="img/facebook.png">
-          </a>
-          <a target="_blank" rel="nofollow" href="https://twitter.com/Fonarikinetua"><img alt="Мы в Twitter" src="img/twitter.png">
-          </a>
-          <a target="_blank" rel="nofollow" href="https://plus.google.com/103393228792608398719">
-            <img src="img/gplus.png" alt="" width="27">
-          </a>
+      <div class="grid-item"><img src="http://lorempixel.com/300/400" alt=""></div>
+      <div class="grid-item" style="width: 600px; background-color: #3498DB;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eaque eum harum illum, molestiae nobis quisquam repellat veritatis. Alias commodi dolores molestias natus nostrum! A adipisci asperiores aspernatur, at cumque dolor ea facilis id illo inventore laudantium nesciunt obcaecati officia praesentium quibusdam recusandae rem repudiandae similique, sit ut veritatis vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda delectus dicta dolore eligendi eum impedit incidunt itaque laudantium nam nulla odit provident rem repudiandae sint sit, tenetur unde velit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nemo quo similique veniam! A asperiores aut commodi cum cupiditate deleniti dolore, doloribus ducimus eius eligendi enim error exercitationem explicabo fugiat, harum hic impedit inventore ipsam, iste iusto labore magnam magni maiores nemo odit pariatur placeat qui similique tempore tenetur totam veritatis voluptate voluptates! Ad consectetur debitis delectus, deleniti dicta dignissimos, ducimus eaque esse harum incidunt itaque labore laboriosam laborum minima minus natus nemo nesciunt nostrum nulla officiis optio perferendis, quam qui repellendus similique sit tempora vel veritatis vitae voluptate. Accusamus aliquid atque corporis eaque excepturi exercitationem neque officia rerum ullam. Dolorem doloremque eos iusto non officiis qui sapiente, tempora? Debitis est natus pariatur? Animi aspernatur cupiditate dicta dolores fuga labore perferendis quibusdam reiciendis? Accusantium amet animi aspernatur dicta doloribus, et laudantium mollitia natus quos temporibus. Accusantium, ad aperiam asperiores aut consequuntur corporis delectus distinctio explicabo inventore ipsa iure iusto labore quas quibusdam tempora velit voluptatum. Aut iure laudantium saepe voluptate? A ad assumenda culpa cumque eos eum hic iure maiores quaerat quia. Accusantium ad beatae dolore dolorem ducimus ea et ex id, ipsam pariatur quae, quasi reprehenderit? Amet blanditiis facilis harum ipsum, nemo perferendis perspiciatis placeat qui quis ratione, sint.</p>
+      </div>
+      <div class="grid-item"><img src="http://lorempixel.com/200/320" alt=""></div>
+      <div class="grid-item" style="width: 300px; background-color: #3498DB;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eaque eum harum illum, molestiae nobis quisquam repellat veritatis. Alias commodi dolores molestias natus nostrum! A adipisci asperiores aspernatur, at cumque dolor ea facilis id illo inventore laudantium nesciunt obcaecati officia praesentium quibusdam recusandae rem repudiandae similique, sit ut veritatis vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda delectus dicta dolore eligendi eum impedit incidunt itaque laudantium nam nulla odit provident rem repudiandae sint sit, tenetur unde velit!</p>
+      </div>
+      <div class="grid-item"><img src="http://lorempixel.com/300/420" alt=""></div>
+      <div class="grid-item"><img src="http://lorempixel.com/200/300" alt=""></div>
+      <div class="grid-item" style="width: 270px; background-color: #EB6841;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eaque eum harum illum, molestiae nobis quisquam repellat veritatis. Alias commodi dolores molestias natus nostrum! A adipisci asperiores aspernatur, at cumque dolor ea facilis id illo inventore laudantium nesciunt obcaecati officia praesentium quibusdam recusandae rem repudiandae similique, sit ut veritatis vero.</p>
+      </div>
+      <div class="grid-item"><img src="http://lorempixel.com/300/400" alt=""></div>
+      <div class="grid-item"><img src="http://lorempixel.com/200/320" alt=""></div>
+      <div class="grid-item" style="width: 300px; background-color: #3498DB;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eaque eum harum illum, molestiae nobis quisquam repellat veritatis. Alias commodi dolores molestias natus nostrum! A adipisci asperiores aspernatur, at cumque dolor ea facilis id illo inventore laudantium nesciunt obcaecati officia praesentium quibusdam recusandae rem repudiandae similique, sit ut veritatis vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda delectus dicta dolore eligendi eum impedit incidunt itaque laudantium nam nulla odit provident rem repudiandae sint sit, tenetur unde velit!</p>
+      </div>
+      <div class="grid-item"><img src="http://lorempixel.com/300/420" alt=""></div>
+    </div>
+
+  </section>
+
+  <section id="camera_slide-show">
+
+    <h2>Camera Slide Show</h2>
+
+    <div class="camera_wrap camera_blue_skin">
+      <div data-src="img/foto_1.jpg"></div>
+      <div data-src="img/foto_3.jpg"></div>
+      <div data-src="img/foto_6.jpg"></div>
+      <div data-src="img/foto_8.jpg"></div>
+    </div>
+
+  </section>
+
+  <section id="bootstrap_grid">
+    <div class="container">
+      <div class="row">
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+          <h2>Block 1</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad alias aliquam architecto atque autem consectetur consequuntur cum cumque, dolor eaque eum eveniet harum hic in ipsum iste iure iusto magnam odio optio repellendus saepe sed sit totam ullam voluptatem. Animi asperiores assumenda atque debitis exercitationem explicabo officiis voluptates?</p>
+          </div>
         </div>
-
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+          <h2>Block 2</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam commodi consectetur, culpa cumque doloremque eaque expedita fugit illo illum laudantium mollitia nemo, nihil officiis quidem quis quo recusandae, repellat reprehenderit soluta suscipit veniam voluptatem.</p>
+          </div>
+        </div>
+        <div class="clearfix visible-sm"></div>
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+          <h2>Block 3</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto commodi dicta dolorem incidunt numquam omnis, quae quo rem sequi similique suscipit tempora ut? Iure minima nam omnis perferendis veritatis? A ad beatae dolorem iure minus nisi odit quisquam sed suscipit vel! Dignissimos, fuga voluptates. Doloremque error laborum tempora vero.</p>
+          </div>
+        </div>
+        <div class="clearfix visible-md visible-lg"></div>
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+          <h2>Block 4</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad alias aliquam architecto atque autem consectetur consequuntur cum cumque, dolor eaque eum eveniet harum hic in ipsum iste iure iusto magnam odio optio repellendus saepe sed sit totam ullam voluptatem. Animi asperiores assumenda atque debitis exercitationem explicabo officiis voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam deleniti dolores eveniet ipsum similique tempora? Minus neque praesentium tenetur!</p>
+          </div>
+        </div>
+        <div class="clearfix visible-sm"></div>
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+          <h2>Block 5</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam commodi consectetur, culpa cumque doloremque eaque expedita fugit illo illum laudantium mollitia nemo, nihil officiis quidem quis quo recusandae, repellat reprehenderit soluta suscipit veniam voluptatem.</p>
+          </div>
+        </div>
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+          <h2>Block 6</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto commodi dicta dolorem incidunt numquam omnis, quae quo rem sequi similique suscipit tempora ut? Iure minima nam omnis perferendis veritatis? A ad beatae dolorem iure minus nisi odit quisquam sed suscipit vel! Dignissimos, fuga voluptates. Doloremque error laborum tempora vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, recusandae.</p>
+          </div>
+        </div>
+        <div class="clearfix visible-sm"></div>
+        <div class="clearfix visible-md visible-lg"></div>
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+          <h2>Block 7</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad alias aliquam architecto atque autem consectetur consequuntur cum cumque, dolor eaque eum eveniet harum hic in ipsum iste iure iusto magnam odio optio repellendus saepe sed sit totam ullam voluptatem. Animi asperiores assumenda atque debitis exercitationem explicabo officiis voluptates?</p>
+          </div>
+        </div>
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+          <h2>Block 8</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam commodi consectetur, culpa cumque doloremque eaque expedita fugit illo illum laudantium mollitia nemo, nihil officiis quidem quis quo recusandae, repellat reprehenderit soluta suscipit veniam voluptatem.</p>
+          </div>
+        </div>
+        <div class="clearfix visible-sm"></div>
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+          <h2>Block 9</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto commodi dicta dolorem incidunt numquam omnis, quae quo rem sequi similique suscipit tempora ut? Iure minima nam omnis perferendis veritatis? A ad beatae dolorem iure minus nisi odit quisquam sed suscipit vel! Dignissimos, fuga voluptates. Doloremque error laborum tempora vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, recusandae.</p>
+          </div>
+        </div>
+        <div class="clearfix visible-md visible-lg"></div>
+      </div>
+      <div class="row" style="display: none">
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+            <h2>Block 1</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad alias aliquam architecto atque autem consectetur consequuntur cum cumque, dolor eaque eum eveniet harum hic in ipsum iste iure iusto magnam odio optio repellendus saepe sed sit totam ullam voluptatem. Animi asperiores assumenda atque debitis exercitationem explicabo officiis voluptates?</p>
+          </div>
+        </div>
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+            <h2>Block 2</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam commodi consectetur, culpa cumque doloremque eaque expedita fugit illo illum laudantium mollitia nemo, nihil officiis quidem quis quo recusandae, repellat reprehenderit soluta suscipit veniam voluptatem.</p>
+          </div>
+        </div>
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+            <h2>Block 3</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto commodi dicta dolorem incidunt numquam omnis, quae quo rem sequi similique suscipit tempora ut? Iure minima nam omnis perferendis veritatis? A ad beatae dolorem iure minus nisi odit quisquam sed suscipit vel! Dignissimos, fuga voluptates. Doloremque error laborum tempora vero.</p>
+          </div>
+        </div>
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+            <h2>Block 4</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad alias aliquam architecto atque autem consectetur consequuntur cum cumque, dolor eaque eum eveniet harum hic in ipsum iste iure iusto magnam odio optio repellendus saepe sed sit totam ullam voluptatem. Animi asperiores assumenda atque debitis exercitationem explicabo officiis voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam deleniti dolores eveniet ipsum similique tempora? Minus neque praesentium tenetur!</p>
+          </div>
+        </div>
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+            <h2>Block 5</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam commodi consectetur, culpa cumque doloremque eaque expedita fugit illo illum laudantium mollitia nemo, nihil officiis quidem quis quo recusandae, repellat reprehenderit soluta suscipit veniam voluptatem.</p>
+          </div>
+        </div>
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+            <h2>Block 6</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto commodi dicta dolorem incidunt numquam omnis, quae quo rem sequi similique suscipit tempora ut? Iure minima nam omnis perferendis veritatis? A ad beatae dolorem iure minus nisi odit quisquam sed suscipit vel! Dignissimos, fuga voluptates. Doloremque error laborum tempora vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, recusandae.</p>
+          </div>
+        </div>
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+            <h2>Block 7</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad alias aliquam architecto atque autem consectetur consequuntur cum cumque, dolor eaque eum eveniet harum hic in ipsum iste iure iusto magnam odio optio repellendus saepe sed sit totam ullam voluptatem. Animi asperiores assumenda atque debitis exercitationem explicabo officiis voluptates?</p>
+          </div>
+        </div>
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+            <h2>Block 8</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam commodi consectetur, culpa cumque doloremque eaque expedita fugit illo illum laudantium mollitia nemo, nihil officiis quidem quis quo recusandae, repellat reprehenderit soluta suscipit veniam voluptatem.</p>
+          </div>
+        </div>
+        <div class="block-wrap col-md-4 col-sm-6 col-xs-12">
+          <div class="text-box">
+            <h2>Block 9</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto commodi dicta dolorem incidunt numquam omnis, quae quo rem sequi similique suscipit tempora ut? Iure minima nam omnis perferendis veritatis? A ad beatae dolorem iure minus nisi odit quisquam sed suscipit vel! Dignissimos, fuga voluptates. Doloremque error laborum tempora vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, recusandae.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <!--FOOTER END-->
+
 
 </div>
 
@@ -731,9 +372,16 @@
 <![endif]-->
 
 
-<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery-2.2.1.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
 <script src="js/device.js"></script>
+<script src="js/hoverinternt.js"></script>
+<script src="js/jquery.flexnav.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/superfish.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/camera.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>
