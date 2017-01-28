@@ -1,0 +1,23 @@
+/* font-family: "PFDinDisplay"; */
+@font-face {
+  font-family: "PFDinDisplay";
+  src: url("../fonts/PFDinDisplay/PFDinDisplay.eot");
+  src: url("../fonts/PFDinDisplay/PFDinDisplay.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinDisplay/PFDinDisplay.woff") format("woff"), url("../fonts/PFDinDisplay/PFDinDisplay.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+
+/* font-family: "PFDinMedium"; */
+@font-face {
+  font-family: "PFDinMedium";
+  src: url("../fonts/PFDinMedium/PFDinMedium.eot");
+  src: url("../fonts/PFDinMedium/PFDinMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinMedium/PFDinMedium.woff") format("woff"), url("../fonts/PFDinMedium/PFDinMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+
+/* font-family: "HelveticaOblique"; */
+@font-face {
+  font-family: 'HelveticaOblique';
+  src: url("../fonts/HelveticaOblique/HelveticaOblique.eot");
+  src: url("../fonts/HelveticaOblique/HelveticaOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaOblique/HelveticaOblique.woff") format("woff"), url("../fonts/HelveticaOblique/HelveticaOblique.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
