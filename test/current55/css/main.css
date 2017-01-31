@@ -805,7 +805,8 @@ section.s_license {
           border-radius: 50%;
   border: 1px solid white;
   cursor: pointer;
-  color: transparent; }
+  color: transparent;
+  outline: none; }
 
 .slick-prev {
   left: -75px;
