@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<!-- Template Basic Images End -->
+
+	<!-- Bootstrap (latest) Grid Styles Only -->
+
+	<!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
+	<style>@@include('header.min.css')</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load Fonts CSS Start -->
+	<script>
+		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS End -->
+
+	<!-- Load Custom CSS Start -->
+	<!--<Deject>--><script>loadCSS( "header.min.css?ver=1.0.0", false, "all" );</script><!--</Deject>-->
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load Custom CSS End -->
+
+	<!-- Load Custom CSS Compiled without JS Start -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+	<!-- Load Custom CSS Compiled without JS End -->
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color End -->
+
+</head>
+
+<body>
+
+<header id="home" class="first_screen">
+	<div class="container">
+		<div class="panel_top clearfix">
+			<a href="/" class="site_logo"><img src="img/logo.png" alt=" "></a>
+
+			<nav class="navigation">
+				<ul class="nav_list">
+					<li><a href="#home">Главная</a></li>
+					<li class="active"><a href="#services">Товары</a></li>
+					<li><a href="#reviews">Отзывы</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="phones">
+				<span>8 708 108 16 96 </span>
+				<span>8 707 820 27 07 </span>
+			</div>
+		</div>
+
+		<h1 class="main_title">Гранит <span class="underline">Мрамор</span> Керамогранит</h1>
+		<p class="title_caption">Натуральный камень - секрет красоты вашего дома!</p>
+
+		<div class="action_top clearfix">
+			<div class="action_left">
+				<p class="action_text">
+					<span class="accent">Внимание</span>
+					Купите <span class="underline">гранит</span> или <span class="underline">керамогранит</span> со скидкой
+				</p>
+				<div class="action_timer">
+					<span class="action_date accent">31 <span>до мая</span></span>
+					<div class="timer">
+						<p class="timer_text">до окончания акции-скидки осталось:</p>
+						<img src="img/count_03.png" alt=" ">
+					</div>
+				</div>
+			</div>
+			<div class="action_right">
+				<p class="action_text">
+					<span class="discount">
+					-30<span class="accent">%</span>
+					</span><br>
+					<span class="accent underline">с</span><span class="underline">кидка</span>
+				</p>
+			</div>
+		</div>
+
+	</div>
+</header>
+
+<section id="services" class="s_services">
+	<div class="container">
+		<h2 class="s_title">Наши <span class="accent underline">товары</span> и <span class="accent underline">услуги</span></h2>
+		<p class="title_caption">Натуральный камень - секрет красоты вашего дома!</p>
+
+		<div class="services_carousel">
+			<div class="carousel_item clearfix">
+				<div class="service_img"><img src="img/img-1.jpg" alt=" "></div>
+				<div class="service_text">
+					<h4 class="service_title">Натуральный камень</h4>
+					<p class="title_caption">более 40 видов</p>
+					<ul>
+						<li>Гранит </li>
+						<li>Керамогранит </li>
+						<li>Мрамор </li>
+						<li>Травертин </li>
+						<li>Брусчатка </li>
+						<li>Балясины</li>
+					</ul>
+				</div>
+				<div class="service_img"><img src="img/img-2.jpg" alt=" "></div>
+			</div>
+			<div class="carousel_item clearfix">
+				<div class="service_img"><img src="img/img-1.jpg" alt=" "></div>
+				<div class="service_text">
+					<h4 class="service_title">Натуральный камень</h4>
+					<p class="title_caption">более 40 видов</p>
+					<ul>
+						<li>Гранит </li>
+						<li>Керамогранит </li>
+						<li>Мрамор </li>
+						<li>Травертин </li>
+						<li>Брусчатка </li>
+						<li>Балясины</li>
+					</ul>
+				</div>
+				<div class="service_img"><img src="img/img-2.jpg" alt=" "></div>
+			</div>
+			<div class="carousel_item clearfix">
+				<div class="service_img"><img src="img/img-1.jpg" alt=" "></div>
+				<div class="service_text">
+					<h4 class="service_title">Натуральный камень</h4>
+					<p class="title_caption">более 40 видов</p>
+					<ul>
+						<li>Гранит </li>
+						<li>Керамогранит </li>
+						<li>Мрамор </li>
+						<li>Травертин </li>
+						<li>Брусчатка </li>
+						<li>Балясины</li>
+					</ul>
+				</div>
+				<div class="service_img"><img src="img/img-2.jpg" alt=" "></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="s_choose">
+	<div class="bg_overlay">
+		<div class="container">
+			<div class="choose_wrap clearfix">
+				<div class="choose_img"><img src="img/book.png" alt=" "></div>
+				<div class="choose_descr">
+					<h2 class="s_title">Как <span class="underline">правильно</span> выбрать</h2>
+					<p class="title_caption accent">Советы эксперта по выбору натурального камня</p>
+					<p class="choose_text">Данное пособие поможет Вам сделать правильный
+						выбор при подборе натурального камня или изделий
+						из натурального камня.</p>
+					<a href="#" class="form_btn">скачать бесплатно</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="s_advantages">
+	<h2 class="s_title title_decor">
+		<span class="title_wrap">
+			<span class="accent">Наши </span> <span class="accent underline">Приемущества</span>
+		</span>
+	</h2>
+	<p class="title_caption title_caption-decor">Почему мы лучше конкурентов? Зачем заказывать у нас?</p>
+	<div class="container">
+		<div class="advantages_wrap">
+			<div class="advantages_item">
+				<div class="advantage_img"><img src="img/img-3.jpg" alt=" "></div>
+				<div class="advantage_descr">
+					<p class="item_title">Цена ниже чем у конкурентов</p>
+					<p class="item_text">- мы стараемся минимизировать затраты
+						на логистику чтобы удержать низкую цену
+						на натуральные камни и готовые изделия</p>
+				</div>
+			</div>
+			<div class="advantages_item">
+				<div class="advantage_img"><img src="img/img-4.jpg" alt=" "></div>
+				<div class="advantage_descr">
+					<p class="item_title">доставка в течении 12 часов</p>
+					<p class="item_text">- быстрая собственная доставка по
+						г. Алматы <br>
+						- бесплатная доставка по Казахстану</p>
+				</div>
+			</div>
+			<div class="advantages_item">
+				<div class="advantage_img"><img src="img/img-5.jpg" alt=" "></div>
+				<div class="advantage_descr">
+					<p class="item_title">гарантия качества</p>
+					<p class="item_text">- соответствие размеров, диагонали <br>
+						- замена в случае повреждения <br>
+						- соответствие стандатрам качества</p>
+				</div>
+			</div>
+			<div class="advantages_item">
+				<div class="advantage_img"><img src="img/img-6.jpg" alt=" "></div>
+				<div class="advantage_descr">
+					<p class="item_title">Большой ассортимент</p>
+					<p class="item_text">- более 70 видов керамических плиток <br>
+						- более 40 видов натуральных камней</p>
+				</div>
+			</div>
+			<div class="advantages_item">
+				<div class="advantage_img"><img src="img/img-7.jpg" alt=" "></div>
+				<div class="advantage_descr">
+					<p class="item_title">прямые поставки</p>
+					<p class="item_text">- мы доставляем камни напрямую <br>
+						с карьеров России и Китая</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="action_block">
+			<div class="container">
+				<div class="action_wrap clearfix">
+					<div class="action_left">
+						<p class="action_text">
+							<span class="accent">Внимание <span class="small">до мая </span>31</span>
+							Купите <span class="underline">гранит</span> или <span class="underline">керамогранит</span> со скидкой
+						</p>
+						<div class="btn_wrap">
+							<a href="#" class="form_btn">Оформить заказ</a>
+						</div>
+					</div>
+					<div class="action_right">
+						<p class="action_text">
+						<span class="discount">
+						-30<span class="accent">%</span>
+						</span><br>
+							<span class="accent underline">с</span><span class="underline">кидка</span>
+						</p>
+						<div class="action_timer">
+							<div class="timer">
+								<p class="timer_text">до окончания акции-скидки осталось:</p>
+								<img src="img/count_03.png" alt=" ">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</section>
+
+<section class="s_stat">
+	<div class="container">
+		<h2 class="s_title"><span class="accent">Немного
+ </span> <span class="accent underline">цифр</span></h2>
+	</div>
+		<div class="stat_wrap">
+			<div class="row clearfix">
+				<div class="container">
+					<div class="stat_item">
+						<p class="stat_digits">63 <span>тонны</span></p>
+						<p class="stat_text">натуральных камней <br>
+							отгруженно за время работы <br>
+							компании </p>
+					</div>
+					<div class="stat_item">
+						<p class="stat_digits">67</p>
+						<p class="stat_text">успешных проекта выполнено <br>
+							компанией Alatau Tas в 2016 году</p>
+					</div>
+					<div class="stat_item">
+						<p class="stat_digits">1 400 <span>м<sup>2</sup></span></p>
+						<p class="stat_text">натурального камня <br>
+							установлено нашими <br>
+							специалистами</p>
+					</div>
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="container">
+					<div class="stat_item">
+						<p class="stat_digits">20 000 <span>тг.</span></p>
+						<p class="stat_text">самый дешовый проект из <br>
+							натурального камня на который <br>
+							было израсходовано 1м2 материала</p>
+					</div>
+					<div class="stat_item">
+						<p class="stat_digits">1 104 <span>м<sup>п</sup></span></p>
+						<p class="stat_text">услуг по цеху было оказано <br>
+							по одному крупному проекту <br>
+							в г. Алматы</p>
+					</div>
+					<div class="stat_item">
+						<p class="stat_digits">6.7 <span>млн</span></p>
+						<p class="stat_text">тенге было заложено на самый <br>
+							дорогой проект, который был <br>
+							реализован  нашей компанией</p>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+
+<section class="s_clients">
+	<div class="container">
+		<h2 class="s_title">среди наших <span class="underline">клиентов</span></h2>
+		<p class="title_caption">Мы Вам подходим если Вы...</p>
+		<div class="clients_block_top clearfix">
+			<div class="block_top_item">
+				<p class="block_top_text">СТРОИТЕЛЬНАЯ <br>
+					ОРГАНИЗАЦИЯ</p>
+				<div class="block_top_img"><img src="img/cl_ic1.png" alt=" "></div>
+			</div>
+			<div class="block_top_item">
+				<p class="block_top_text">ВЫ СТРОИТЕ <br>
+					КОТЕДЖ</p>
+				<div class="block_top_img"><img src="img/cl_ic2.png" alt=" "></div>
+			</div>
+			<div class="block_top_item">
+				<p class="block_top_text">У ВАС <br>
+					БИЗНЕС-ЦЕНТР</p>
+				<div class="block_top_img"><img src="img/cl_ic3.png" alt=" "></div>
+			</div>
+			<div class="block_top_item">
+				<p class="block_top_text">АДМИНИСТРАТИВНОЕ <br>
+					ЗДАНИЕ</p>
+				<div class="block_top_img"><img src="img/cl_ic4.png" alt=" "></div>
+			</div>
+		</div>
+		<p class="title_caption">Нам доверяют следующие компании:</p>
+		<div class="clients_block_bottom">
+			<img src="img/clients_img.png" alt=" ">
+		</div>
+	</div>
+</section>
+
+<section id="reviews" class="s_reviews">
+	<h2 class="s_title title_decor">
+		<span class="title_wrap">
+			<span class="underline">Отзывы </span> <span class="accent">и благодарности</span>
+		</span>
+	</h2>
+	<p class="title_caption title_caption-decor">Наши клиенты выразившие благодарность за проделанную работу</p>
+	<div class="container">
+
+		<div class="reviews_carousel">
+			<div class="carousel_item">
+				<div class="review_img">
+					<img src="img/rev1.jpg" alt=" ">
+				</div>
+			</div>
+			<div class="carousel_item">
+				<div class="review_img">
+					<img src="img/rev2.jpg" alt=" ">
+				</div>
+			</div>
+			<div class="carousel_item">
+				<div class="review_img">
+					<img src="img/rev3.jpg" alt=" ">
+				</div>
+			</div>
+			<div class="carousel_item">
+				<div class="review_img">
+					<img src="img/rev1.jpg" alt=" ">
+				</div>
+			</div>
+			<div class="carousel_item">
+				<div class="review_img">
+					<img src="img/rev2.jpg" alt=" ">
+				</div>
+			</div>
+			<div class="carousel_item">
+				<div class="review_img">
+					<img src="img/rev3.jpg" alt=" ">
+				</div>
+			</div>
+		</div>
+		
+		<div class="reviews_videos clearfix">
+			<div class="videos_item">
+				<div class="video_wrap">
+					<img src="img/youtube_img-1.jpg" alt=" ">
+				</div>
+			</div>
+			<div class="videos_item">
+				<div class="video_wrap">
+					<img src="img/youtube_img-1.jpg" alt=" ">
+				</div>
+			</div>
+			<div class="videos_item">
+				<div class="video_wrap">
+					<img src="img/youtube_img-1.jpg" alt=" ">
+				</div>
+			</div>
+			<div class="videos_item">
+				<div class="video_wrap">
+					<img src="img/youtube_img-1.jpg" alt=" ">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="s_choose">
+	<div class="bg_overlay">
+		<div class="container">
+			<div class="choose_wrap clearfix">
+				<div class="choose_img"><img src="img/book.png" alt=" "></div>
+				<div class="choose_descr">
+					<h2 class="s_title">Как <span class="underline">правильно</span> выбрать</h2>
+					<p class="title_caption accent">Советы эксперта по выбору натурального камня</p>
+					<p class="choose_text">Данное пособие поможет Вам сделать правильный
+						выбор при подборе натурального камня или изделий
+						из натурального камня.</p>
+					<a href="#" class="form_btn">скачать бесплатно</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="s_working">
+	<div class="container">
+		<h2 class="s_title"><span class="underline">схема </span>нашей работы</h2>
+		<p class="title_caption">Как мы взаимодействуем с клиентами</p>
+
+		<div class="working_wrap clearfix">
+			<div class="working_item">
+				<div class="working_caption">ЗАЯВКА</div>
+				<div class="working_img">
+					<img src="img/work1.jpg" alt=" ">
+				</div>
+				<div class="working_text">Вы оставляете заявку на сайте</div>
+			</div>
+			<div class="working_item">
+				<div class="working_caption">ЗВОНОК</div>
+				<div class="working_img">
+					<img src="img/work2.jpg" alt=" ">
+				</div>
+				<div class="working_text">Мы связываемся с вами для того <br>
+					чтобы уточнить детали заказа</div>
+			</div>
+			<div class="working_item">
+				<div class="working_caption">ОФОРМЛЕНИЕ</div>
+				<div class="working_img">
+					<img src="img/work3.jpg" alt=" ">
+				</div>
+				<div class="working_text">После принятия решения <br> оформляем с Вами заказ</div>
+			</div>
+			<div class="working_item">
+				<div class="working_caption">ДОСТАВКА</div>
+				<div class="working_img">
+					<img src="img/work4.jpg" alt=" ">
+				</div>
+				<div class="working_text">Доставляем заказ в течении 12 <br> часов</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="contacts" class="s_ask">
+	<div class="container">
+		<h2 class="s_title">Остались <span class="accent underline">вопросы?</span></h2>
+		<p class="title_caption">Напишите свой вопрос или пожелание</p>
+
+		<div class="ask_form">
+			<form action="mail.php" class="ask forms" method="post">
+
+				<label>
+					<span>Ваше имя</span>
+					<input type="text" name="name" placeholder="Введите Ваше имя" required>
+				</label>
+
+				<label>
+					<span>Телефон</span>
+					<input type="text" name="phone" placeholder="Ваш телефон" required>
+				</label>
+
+				<label>
+					<span>Сообщение</span>
+					<textarea name="message" placeholder="Напишите сообщение" rows="4"></textarea>
+				</label>
+
+				<p class="form_text">Отправляя форму, я соглашаюсь с политикой обработки  персональн</p>
+
+				<div class="button-wrap">
+					<button class="submit-btn">Отправить</button>
+				</div>
+
+				<input type="hidden" name="formname" value="Заявка с верхней формы">
+
+			</form>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container clearfix">
+		<div class="f_socials">
+			<div class="copyright">&copy; 2017, ТОО «Alatau Tas»</div>
+			<div class="soc_wrap">
+				<a href="#" class="soc_item"><img src="img/vk.png" alt="vk" class="soc_"></a>
+				<a href="#" class="soc_item"><img src="img/tw.png" alt="twitter" class="soc_"></a>
+				<a href="#" class="soc_item"><img src="img/insta.png" alt="instagram" class="soc_"></a>
+				<a href="#" class="soc_item"><img src="img/fb.png" alt="facebook" class="soc_"></a>
+			</div>
+		</div>
+		<div class="f_contacts">
+			<div class="address">г.Алматы ул. Ауэзова д.1Б</div>
+			<div class="f_phones">
+				<span>8 707 820 27 07</span>
+				<span>8 708 108 16 96</span>
+			</div>
+		</div>
+		<div class="f_nav">
+			<nav class="navigation">
+				<ul class="nav_list">
+					<li><a href="#home">Главная</a></li>
+					<li class="active"><a href="#services">Наши товары</a></li>
+					<li><a href="#reviews">Отзывы</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+			<p class="f_nav_text">Гранит, керамогранит, мрамор, натуральные камни в г. Алматы</p>
+			<div class="design">Дизайн сайта — Чернигин В. | Разработка — amanzhol.com</div>
+		</div>
+	</div>
+</footer>
+
+<a href="#" class="to_top">
+	<img src="img/to_top.png" alt=" ">
+</a>
+
+<div class="test-fonts">
+<!--	<div style="font-family: MuseoSansRegular" class="MuseoSansRegular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cum delectus facilis in laborum magnam magni nulla quaerat reiciendis sequi!</div>
+	<div style="font-family: MuseoSansBold" class="MuseoSansBold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur esse id impedit modi quaerat quos reiciendis repellendus, sequi similique sunt?</div>
+	<div style="font-family: MuseoSansItalic" class="MuseoSansItalic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores illum inventore iste libero numquam obcaecati quas quisquam, sed tempora voluptas!</div>
+	<div style="font-family: MuseoSansLight" class="MuseoSansLight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at delectus, deleniti et facere ipsa molestiae necessitatibus qui rem ullam.</div>
+	<div style="font-family: MuseoSansMedium" class="MuseoSansMedium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolores doloribus eligendi et fuga quae quasi quia quibusdam unde voluptates!</div>
+	<div style="font-family: MuseoSansBlack" class="MuseoSansBlack">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dignissimos fugit iusto provident quam quasi quod tenetur voluptate. Ad, quam?</div>
+	<div style="font-family: MuseoSansBoldItalic" class="MuseoSansBoldItalic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem culpa earum excepturi expedita explicabo facilis labore mollitia obcaecati officiis.</div>
+	<div style="font-family: MuseoSansMediumItalic" class="MuseoSansMediumItalic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur dolorum facere in ipsam maiores recusandae ullam veritatis vero. Quod.</div>
+	<div style="font-family: MuseoSansLightItalic" class="MuseoSansLightItalic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cupiditate ea eaque facilis hic, magnam nesciunt odio possimus quibusdam ratione.</div>
+	<div style="font-family: MuseoSansBlackItalic" class="MuseoSansBlackItalic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur corporis, deserunt ducimus earum error eveniet laboriosam minima totam voluptates.</div>-->
+</div>
+
+	<!-- Optimized loading JS Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.min.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Optimized loading JS End -->
+
+</body>
+</html>

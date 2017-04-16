@@ -1,0 +1,541 @@
+@import "bourbon"
+@import "libs"
+
+//Custom styles here
+
+.to_top
+  display: block
+  position: fixed
+  right: 90px
+  bottom: 230px
+  width: 78px
+  height: 78px
+  text-align: center
+  opacity: 0.57
+  background-color: black
+  border-radius: 7px
+  line-height: 76px
+  vertical-align: middle
+  img
+    display: inline-block
+    line-height: 78px
+    vertical-align: middle
+.to_top
+  display: none
+
+.title_wrap
+  display: inline-block
+  max-width: 1246px
+.title_caption-decor
+  max-width: 1246px
+  margin: 0 auto
+.title_decor
+  overflow: hidden
+.title_decor:before, .title_decor:after
+  content: ''
+  margin-top: 15px
+  display: inline-block
+  vertical-align: middle
+  box-sizing: border-box
+  width: 100%
+  height: 11px
+  background: url("../img/title_after.png") repeat-x bottom
+  border: solid #fdfdfd
+  border-width: 0 89px
+.title_decor:before
+  margin-left: -100%
+.title_decor:after
+  margin-right: -100%
+
+.s_reviews
+  .title_decor:before, .title_decor:after
+    border-color: #ebeff3
+    border-width: 0 45px
+
+
+
+.s_advantages
+  padding-top: 70px
+  background: url("../img/bg-line-3.png") repeat-x bottom, url("../img/bg-marble-white.jpg")
+  .title_caption
+    margin-bottom: 50px
+
+.advantages_wrap
+  padding: 0 81px
+  text-align: center
+
+.advantages_item
+  margin-right: 220px
+  display: inline-block
+  margin-bottom: 25px
+  height: 343px
+  width: 430px
+  &:nth-child(2n), &:last-child
+    margin-right: 0
+  &:last-child
+    margin-bottom: 10px
+  &:nth-child(1)
+    position: relative
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      right: -95px
+      top: 100px
+      width: 96px
+      height: 388px
+      background: url("../img/after-4.png") no-repeat
+  &:nth-child(2)
+    position: relative
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      left: -94px
+      top: 100px
+      width: 96px
+      height: 388px
+      background: url("../img/after-3.png") no-repeat
+  &:last-child
+    position: relative
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      left: 205px
+      top: -186px
+      width: 22px
+      height: 186px
+      background: url("../img/after-2.png") no-repeat
+
+  .advantage_img
+    height: 200px
+    overflow: hidden
+    img
+      width: 100%
+      height: auto
+  .advantage_descr
+    padding-top: 10px
+    height: 143px
+    overflow: hidden
+    padding-left: 20px
+    text-align: left
+    .item_title
+      margin-bottom: 8px
+      font-family: "MuseoSansBlack"
+      font-size: 22px
+      text-transform: uppercase
+      text-decoration: underline
+      color: #06803c
+    .item_text
+      font-size: 20px
+      line-height: 24px
+
+
+
+.s_choose
+  .bg_overlay
+    padding-top: 13px
+    background: url("../img/bg-marble-grey.jpg")
+    -webkit-background-size: cover
+    background-size: cover
+.s_choose
+  padding-top: 22px
+  padding-bottom: 20px
+  background: url("../img/bg-line-2.png") repeat-x left top, url("../img/bg-line-2.png") repeat-x left bottom
+
+.choose_wrap
+  margin: 0 auto
+  width: 850px
+.choose_img
+  float: left
+  width: 220px
+  overflow: hidden
+  img
+    width: 100%
+    height: auto
+
+.choose_descr
+  position: relative
+  padding-top: 5px
+  float: left
+  padding-left: 40px
+  width: 630px
+  .s_title
+    font-family: "MuseoSansBlack"
+    font-size: 43px
+    line-height: 1.1
+    text-align: justify
+    -moz-text-align-last: justify
+    text-align-last: justify
+    text-transform: uppercase
+  .title_caption
+    text-align: left
+    font-size: 25px
+    margin-bottom: 8px
+  .choose_text
+    font-size: 21px
+    line-height: 25px
+
+.form_btn
+  position: absolute
+  display: inline-block
+  bottom: -50px
+  right: 0
+  padding: 0 35px
+  font-size: 20px
+  line-height: 54px
+  text-transform: uppercase
+  border: 3px solid #06803c
+  border-radius: 10em
+  &:hover
+    text-decoration: underline
+
+.action_block
+  padding-top: 52px
+  padding-bottom: 35px
+  background: url("../img/bg-line-2.png") repeat-x left top, url("../img/bg-line-2.png") repeat-x left bottom
+
+  .action_left
+    margin-right: 140px
+    .small
+      display: inline-block
+      width: 75px
+      font-size: 30px
+      line-height: 1.1
+    .action_text
+      margin-bottom: 30px
+    .btn_wrap
+      text-align: right
+    .form_btn
+      position: static
+
+  .action_right
+    float: left
+    padding: 0
+    .action_text
+      display: inline-block
+      padding-top: 8px
+      margin-bottom: 15px
+      line-height: 0.8
+  .timer_text
+    font-family: "MuseoSansLightItalic"
+    font-size: 20px
+    text-align: center
+
+
+
+.s_stat
+  padding-top: 30px
+  padding-bottom: 65px
+  background: url("../img/bg-marble-grey2.jpg")
+  -webkit-background-size: cover
+  background-size: cover
+
+  .s_title
+    margin-bottom: 50px
+    font-family: "MuseoSansBold"
+    font-size: 43px
+
+.stat_wrap
+  .row
+    .container
+      display: table
+    &:first-child
+      border-bottom: 1px solid #4c4c4c
+      .stat_item
+        padding-top: 0
+.stat_item
+  padding-left: 50px
+  padding-top: 30px
+  padding-bottom: 10px
+  display: table-cell
+  .stat_digits
+    font-family: "MuseoSansMedium"
+    font-size: 70px
+    span
+      font-size: 59px
+  .stat_text
+    color: #06803c
+    font-size: 21px
+    line-height: 1.2
+  &:first-child
+    padding-left: 0
+    width: 388px
+    border-right: 1px solid #4c4c4c
+  &:nth-child(2)
+    width: 490px
+    border-right: 1px solid #4c4c4c
+
+
+
+.s_clients
+  padding-top: 80px
+  padding-bottom: 52px
+  background: url("../img/bg-line-3.png") repeat-x, url("../img/bg-line-2.png") repeat-x bottom, url("../img/bg-marble-white.jpg")
+  .s_title
+    margin-bottom: 15px
+.clients_block_top
+  margin-top: 80px
+  margin-bottom: 110px
+.block_top_item
+  width: 311px
+  float: left
+  text-align: left
+  .block_top_text
+    display: inline-block
+    font-family: "MuseoSansBlack"
+    font-size: 26px
+    text-transform: uppercase
+    text-align: center
+    line-height: 1.15
+.clients_block_bottom
+  margin-top: 20px
+
+
+
+.s_reviews
+  padding: 112px 0 60px
+  background: #ebeff3
+  .s_title
+    margin-bottom: 15px
+  .title_caption
+    margin-bottom: 42px
+
+.reviews_carousel
+  margin: 0 auto 50px
+  width: 1150px
+  position: relative
+  .carousel_item
+    width: 383px
+    padding-left: 14px
+    padding-right: 14px
+    height: 535px
+    background: url("../img/shadow.png") no-repeat bottom
+    .review_img
+      height: 481px
+      overflow: hidden
+      border: 2px solid #e1e1e1
+      opacity: 0.6
+      &:hover
+        border: 2px solid #df0024
+        opacity: 1
+      img
+        width: 100%
+        height: auto
+  .slick-arrow
+    top: 195px
+  .slick-prev
+    left: -44px
+  .slick-next
+    right: -44px
+.slick-arrow
+  position: absolute
+  width: 44px
+  height: 87px
+  cursor: pointer
+.slick-prev
+  background: url("../img/sl_arr_l.png") no-repeat
+.slick-next
+  background: url("../img/sl_arr_r.png") no-repeat
+
+.videos_item
+  padding: 0 50px
+  margin-bottom: 90px
+  float: left
+  &:nth-last-child(1)
+    margin-bottom: 0
+  &:nth-last-child(2)
+    margin-bottom: 0
+  .video_wrap
+    width: 520px
+    height: 290px
+    border: 2px solid #e1e1e1
+    img
+      width: 100%
+      height: auto
+
+
+
+.s_working
+  padding-top: 50px
+  padding-bottom: 60px
+  background: url("../img/bg-marble-white.jpg")
+  .s_title
+    margin-bottom: 15px
+  .title_caption
+    margin-bottom: 15px
+
+.working_item
+  position: relative
+  float: left
+  width: 310px
+  height: 366px
+  line-height: 1.15
+  background: #fff
+  border: 1px solid #e1e1e1
+  border-right: none
+  &:after
+    content: ''
+    position: absolute
+    height: 65px
+    width: 43px
+    top: 140px
+    right: -35px
+    background: url("../img/arrow.png") no-repeat
+    z-index: 10
+  &:nth-child(4n)
+    border-right: 1px solid #e1e1e1
+    &:after
+      display: none
+  .working_caption
+    padding-top: 15px
+    height: 75px
+    overflow: hidden
+    font-family: "MuseoSansBold"
+    font-size: 25px
+    text-transform: uppercase
+    color: #06803c
+    text-align: center
+  .working_img
+    height: 186px
+    text-align: center
+    overflow: hidden
+  .working_text
+    padding: 40px 20px 20px
+    height: 105px
+    overflow: hidden
+    font-family: "MuseoSansLight"
+    font-size: 17px
+
+
+
+.s_ask
+  background: url("../img/bg-line-4.png") repeat-x bottom, url("../img/bg-marble-white.jpg")
+  .s_title
+    margin-bottom: 15px
+  .title_caption
+    margin-bottom: 45px
+  .container
+    padding-top: 75px
+    padding-bottom: 38px
+    background: url("../img/bg_woman.png") no-repeat left bottom 24px
+
+.ask_form
+  margin: 0 auto
+  width: 404px
+  height: 435px
+  font-size: 22px
+
+  .forms
+    width: 100%
+    label
+      width: 100%
+    input, textarea
+      width: 100%
+      padding: 9px 10px 7px
+      border: 1px solid #06803c
+    input
+      margin-bottom: 17px
+      border-top-color: transparent
+      border-left-color: transparent
+      border-right-color: transparent
+    textarea
+      margin-top: 6px
+      margin-bottom: 6px
+
+    .form_text
+      font-size: 13px
+      line-height: 1.2
+
+.button-wrap
+  text-align: right
+.submit-btn
+  display: inline-block
+  width: 202px
+  height: 58px
+  color: white
+  font-size: 20px
+  line-height: 54px
+  background: #06803c
+  border-radius: 10em
+  border: none
+
+
+
+.footer
+  padding-bottom: 65px
+  font-size: 17px
+  background: #06803c
+  background: url("../img/bg-marble-green.jpg") no-repeat center
+  -webkit-background-size: cover
+  background-size: cover
+  color: #fff
+
+.f_socials
+  float: left
+  width: 235px
+  margin-right: 145px
+  .copyright
+    padding-top: 23px
+    margin-bottom: 15px
+  .soc_wrap
+    font-size: 0
+    .soc_item
+      font-size: 17px
+      display: inline-block
+      vertical-align: middle
+      margin-right: 8px
+.f_contacts
+  padding-top: 15px
+  float: left
+  width: 235px
+  margin-right: 110px
+  .address
+    padding-top: 8px
+    padding-left: 20px
+    margin-bottom: 8px
+    background: url("../img/map_marker.png") no-repeat
+  .f_phones
+    font-family: "MuseoSansBold"
+    font-size: 29px
+    color: #000
+
+    span
+      display: block
+.f_nav
+  float: left
+  width: 520px
+  .navigation
+    padding-top: 19px
+    margin-right: 0
+    margin-bottom: 5px
+  .nav_list li
+    text-decoration: none
+    color: #fff
+    a
+      position: relative
+      font-size: 25px
+      padding: 0 10px
+      color: #fff
+      &.active
+        color: #fff
+      &:after
+        content: '|'
+        position: absolute
+        top: 0
+        right: -3px
+    &:first-child
+      a
+        padding-left: 0
+    &:last-child
+      a
+        padding-right: 0
+        &:after
+          display: none
+
+  .f_nav_text
+    margin-bottom: 20px
+    font-family: "MuseoSansItalic"
+  .design
+    color: #000
