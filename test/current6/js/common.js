@@ -89,23 +89,6 @@ $(function() {
         prevArrow:'<a class="slick-prev"></a>'
     });
 
-    /*//Аякс отправка форм
-    $(".forms").submit(function() {
-        $.ajax({
-            type: "POST",
-            url: "mail.php",
-            data: $(this).serialize()
-        }).done(function() {
-            alert("Спасибо за заявку!");
-            setTimeout(function() {
-                // $.magnificPopup.close();
-                $(".forms").trigger("reset");
-            }, 1000);
-        });
-        return false;
-    });*/
-
-
 });
 
 $(document).ready(function() {
@@ -118,13 +101,53 @@ $(document).ready(function() {
             url: "mail.php", //Change
             data: th.serialize()
         }).done(function() {
-            alert("Thank you!");
             setTimeout(function() {
                 // Done Functions
+                $.magnificPopup.close();
                 th.trigger("reset");
             }, 1000);
         });
         return false;
     });
+
+    $('.form_btn').magnificPopup({type:'inline'});
+
+    $('.form_btn').click(function (e) {
+        e.preventDefault();
+    })
+
+    var clock;
+
+    $(document).ready(function() {
+        var clock1, clock2;
+
+        clock1 = $('.countdown_1').FlipClock({
+            clockFace: 'DailyCounter',
+            autoStart: false,
+            callbacks: {
+                stop: function() {
+                    $('.message').html('The clock has stopped!')
+                }
+            }
+        });
+        clock1.setTime(220880);
+        clock1.setCountdown(true);
+        clock1.start();
+
+        clock2 = $('.countdown_2').FlipClock({
+            clockFace: 'DailyCounter',
+            autoStart: false,
+            callbacks: {
+                stop: function() {
+                    $('.message').html('The clock has stopped!')
+                }
+            }
+        });
+        clock2.setTime(220880);
+        clock2.setCountdown(true);
+        clock2.start();
+
+    });
+
 
 });
