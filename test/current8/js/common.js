@@ -36,6 +36,7 @@
 
 })(jQuery);
 
+/*
 // initMap() - функция инициализации карты
 function initMap() {
     // Координаты центра на карте. Широта: 56.2928515, Долгота: 43.7866641
@@ -63,6 +64,7 @@ function initMap() {
 
 // Ждем полной загрузки страницы, после этого запускаем initMap()
 google.maps.event.addDomListener(window, "load", initMap);
+*/
 
 
 
