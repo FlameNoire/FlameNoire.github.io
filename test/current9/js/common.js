@@ -50,7 +50,7 @@
 
     var clock1, clock2;
 
-    var date = new Date(2017, 4, 25, 9, 17),
+    var date = new Date(2017, 4, 1, 2, 49),
         now = new Date(),
         time = (date - now) / 1000;
 
