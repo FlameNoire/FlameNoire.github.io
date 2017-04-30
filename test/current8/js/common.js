@@ -2,20 +2,20 @@
  * Created by Жека on 27.07.2016.
  */
 (function($) {
+    
+     $('.reviews_carousel').slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true,
+        adaptiveHeight: true,
+        speed: 600
+    });
 
     $('.call-order_btn').on('click', function(){
         $('.popup_form').fadeIn(300);
     });
     $('.close_popup_btn').on('click', function(){
         $('.popup_form').fadeOut(300);
-    });
-
-    $('.reviews_carousel').slick({
-        dots: true,
-        infinite: true,
-        variableWidth: true,
-        adaptiveHeight: true,
-        speed: 600
     });
     
     $('.more-btn').on('click', function(event){
