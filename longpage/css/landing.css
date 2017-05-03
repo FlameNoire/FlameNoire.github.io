@@ -150,7 +150,7 @@ h2.title {
     display: block;
     margin: 0;
     height: 32px;
-    background: url("../imgs/logo-1ps-104.png") 0 6px no-repeat;
+    background: url("../imgs/jsb.jpg") no-repeat left center;
     position: absolute;
     left: 25px;
     top: 21px;
@@ -236,7 +236,7 @@ h2.title {
 .sticky-header .logo-left .logo {
     left: -125px;
     top: 8px;
-    width: 104px
+    width: 126px
 }
 .sticky-header .logo-left .logo span {
     display: none
