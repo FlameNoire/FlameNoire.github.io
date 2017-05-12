@@ -1,0 +1,1162 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+    background-color: #373737;
+}
+
+.clear {
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.inner-top {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+    min-width: 320px;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    font: 14px "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+#container a {
+    cursor: pointer;
+}
+
+#container img {
+    vertical-align: bottom;
+}
+
+#header {
+    min-height: 76px;
+    background-color: #fff;
+}
+
+#header .right {
+    padding-top: 30px;
+}
+
+#header a.logo {
+    display: block;
+    float: left;
+    width: 108px;
+    height: 76px;
+    margin-left: -8px;
+    background: url(../img/logo.png) no-repeat;
+}
+
+#header a.trigger {
+    display: none;
+    float: right;
+    width: 48px;
+    height: 48px;
+    margin: 16px 12px 0 0;
+    background: url(../img/bt-trigger.png) no-repeat;
+}
+
+#menuMain {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#menuMain ul li {
+    display: inline-block;
+    padding-right: 22px;
+}
+
+#menuMain ul li:last-child {
+    padding-right: 0;
+}
+
+#menuMain ul li a {
+    text-decoration: none;
+    color: #8d8d8d;
+}
+/*///////////////////////////////////*/
+
+.first {
+    min-height: 490px;
+    background: url(../img/bg1.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.first p.caption {
+    padding-top: 8px;
+    font-size: 37px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    color: #fff;
+}
+
+.first p.caption span {
+    border-bottom: 1px solid #fff;
+    white-space: nowrap;
+}
+
+.second {
+    position: relative;
+    background-color: #444545;
+    text-align: right;
+}
+
+.second .top {
+    position: absolute;
+    width: 100%;
+    height: 78px;
+    top: -78px;
+    background: url("../img/bg-angle9.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 5;
+}
+
+.second .bottom {
+    background: url(../img/bg-second-bottom.jpg) center bottom no-repeat;
+}
+
+.second .inner {
+    position: relative;
+    top: -40px;
+    padding: 0px 0 50px;
+    z-index: 10;
+}
+
+.second p.question {
+    position: absolute;
+    left: -150px;
+    top: 50%;
+    height: 328px;
+    margin-top: -164px;
+    padding: 52px 140px 0 0;
+    box-sizing: border-box;
+    background: url(../img/bg-question.png) right center no-repeat;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #515151;
+}
+
+.second p.caption {
+    position: absolute;
+    right: -100px;
+    top: -112px;
+    font-size: 85px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #444;
+    -webkit-transform: rotate(-3.5deg);
+    -moz-transform: rotate(-3.5deg);
+    -ms-transform: rotate(-3.5deg);
+    -o-transform: rotate(-3.5deg);
+}
+
+.second .element {
+    display: inline-block;
+    width: 550px;
+    margin: 0 -32px 8px 0;
+    padding: 0 32px 8px 0;
+    background: url(../img/bg-second-element.png) right center no-repeat;
+    font-size: 15px;
+    line-height: 1.2em;
+}
+
+.second .element p.title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.second .element p.title span {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.third {
+    position: relative;
+    background: #515151 url(../img/bg-third.jpg) center bottom no-repeat;
+    text-align: center;
+    z-index: 15;
+}
+
+.third .inner {
+    top: -30px;
+    padding-bottom: 6px;
+}
+
+.third p.caption {
+    position: absolute;
+    left: -260px;
+    top: 96px;
+    font-size: 93px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #444;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+}
+
+.third .element {
+    display: inline-block;
+    width: 190px;
+    padding: 0 15px 20px;
+    vertical-align: top;
+    line-height: 1.2em;
+    opacity: .5;
+}
+
+.third .element.light {
+    opacity: 1;
+}
+
+.third .element p.title {
+    padding-bottom: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.third .element img {
+    margin-bottom: 12px;
+}
+
+.fourth {
+    min-height: 737px;
+    background: #ff6600 url(../img/bg-fourth.jpg) center top no-repeat;
+}
+
+.fourth .inner {
+    padding-top: 260px;
+}
+
+.fourth p.caption {
+    position: absolute;
+    left: -110px;
+    top: 168px;
+    font-size: 63px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ff6600;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+}
+
+.fourth .left {
+    width: 490px;
+}
+
+.fourth .element {
+    padding-bottom: 14px;
+    line-height: 1.2em;
+}
+
+.fourth .element p.title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.fourth .right {
+    width: 490px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.fourth .right p.title {
+    padding-bottom: 12px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.fourth .right .slider {
+    position: relative;
+}
+
+.fourth .right .slider .links {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.fourth .right .slider .links a {
+    display: block;
+    width: 21px;
+    height: 110px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.fourth .right .slider .links a.prev {
+    float: left;
+    background-image: url(../img/bt-slider-prev.png);
+}
+
+.fourth .right .slider .links a.next {
+    float: right;
+    background-image: url(../img/bt-slider-next.png);
+}
+
+.fourth .right .slider .swiper-container {
+    margin: 0 100px;
+}
+
+.fourth .right .slider .swiper-slide {
+    font-size: 18px;
+    line-height: 1.2em;
+}
+
+.fourth .right .slider .swiper-slide p.title {
+    padding-bottom: 0;
+    font-size: 24px;
+    line-height: 1.2em;
+}
+
+.fourth .right .slider .swiper-slide img {
+    padding-bottom: 12px;
+}
+
+.fifth {
+    background-color: #444;
+}
+
+.fifth .top {
+    background: url(../img/bg-fifth-top.jpg) center top no-repeat;
+}
+
+.fifth .bottom {
+    background: url(../img/bg-fifth-bottom.jpg) center bottom no-repeat;
+}
+
+.fifth .inner {
+    padding: 105px 0 100px;
+}
+
+.fifth .bulb {
+    position: absolute;
+    right: 60px;
+    top: 80px;
+    width: 265px;
+    height: 406px;
+    background: url(../img/bg-bulb.png) no-repeat;
+}
+
+.fifth p.caption {
+    position: absolute;
+    left: -110px;
+    top: 16px;
+    font-size: 62px;
+    font-weight: 700;
+    color: #444;
+    -webkit-transform: rotate(-3.75deg);
+    -moz-transform: rotate(-3.75deg);
+    -ms-transform: rotate(-3.75deg);
+    -o-transform: rotate(-3.75deg);
+}
+
+.fifth .element {
+    width: 540px;
+    margin-bottom: 10px;
+    padding: 0 0 6px 80px;
+    background: url(../img/bg-fifth-element.png) 36px center no-repeat;
+    font-size: 18px;
+}
+
+.fifth .element p.title {
+    font-size: 22px;
+}
+
+.sixth {
+    height: 402px;
+    background: url(../img/bg-sixth.jpg) center top no-repeat;
+}
+
+.sixth p.caption {
+    position: absolute;
+    right: -100px;
+    top: -84px;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #bfc2b9;
+    -webkit-transform: rotate(1.75deg);
+    -moz-transform: rotate(1.75deg);
+    -ms-transform: rotate(1.75deg);
+    -o-transform: rotate(1.75deg);
+}
+
+.sixth p.title {
+    padding-bottom: 26px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.sixth ul li {
+    margin-bottom: 18px;
+    font-size: 24px;
+}
+
+.sixth ul li span {
+    padding: 3px 12px 3px 20px;
+    background-color: #444;
+}
+
+.about {
+    min-height: 426px;
+    background: #444 url(../img/bg-about.jpg) center top no-repeat;
+}
+
+.about .inner {
+    padding-top: 90px;
+}
+
+.about p.caption {
+    position: absolute;
+    left: 28px;
+    top: -2px;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transform: rotate(-2.75deg);
+    -moz-transform: rotate(-2.75deg);
+    -ms-transform: rotate(-2.75deg);
+    -o-transform: rotate(-2.75deg);
+}
+
+.about .left {
+    padding: 30px 0 0 190px;
+}
+
+.about .left p {
+    padding-bottom: 16px;
+    font-size: 18px;
+}
+
+.about .left p span {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.about .right {
+    width: 510px;
+    padding-left: 120px;
+    background: url(../img/bg-about-right.png) left 6px no-repeat;
+}
+
+.about .right p {
+    padding-bottom: 16px;
+    font-size: 15px;
+    line-height: 1.2em;
+}
+
+.contact {
+    height: 327px;
+    background: url(../img/bg-contact.jpg) center top no-repeat;
+}
+
+.contact .inner {
+    padding-top: 55px;
+}
+
+.contact p.caption {
+    position: absolute;
+    right: -100px;
+    top: 48px;
+    height: 228px;
+    padding: 58px 0 0 110px;
+    box-sizing: border-box;
+    background: url(../img/bg-contact-caption.png) left center no-repeat;
+    font-size: 72px;
+    font-weight: bold;
+    color: #fffefe;
+}
+
+.contact form {
+    width: 600px;
+    padding-left: 70px;
+}
+
+.contact form input.txt {
+    width: 48%;
+    margin-bottom: 20px;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    background-color: #373737;
+    font: 24px "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #686868;
+}
+
+.contact form input.invalid {
+    border-color: red;
+}
+
+.contact form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #373737;
+    font: 24px "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #686868;
+    resize: none;
+}
+
+.contact form input.btn {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #ff9000;
+    font: 24px "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+}
+
+#footer {
+    font-size: 14px;
+    text-align: center;
+    color: #515151;
+}
+
+#footer .inner {
+    padding: 10px 0;
+}
+
+/* ----- Hover effects are enabled only for Desktop version ----- */
+@media screen and (min-width: 1024px) {
+
+    #menuMain ul li a:hover {
+        color: #f60;
+        text-decoration: underline;
+        transition: color .1s ease;
+    }
+
+    .fourth .right .slider .links a:hover {
+        opacity: .75;
+    }
+
+    .contact form input.btn:hover {
+        background-color: #ffba61;
+    }
+
+}
+
+@media screen and (max-width: 1224px) {
+
+    #header .left {
+        float: none;
+    }
+
+    #header .right {
+        float: none;
+        padding: 0;
+    }
+
+    #header a.trigger {
+        display: block;
+    }
+
+    #menuMain {
+        padding: 0;
+        border-bottom: none;
+        font-size: 16px;
+    }
+
+    #menuMain ul {
+        display: none;
+    }
+
+    #menuMain ul li {
+        display: block;
+        padding: 0;
+        border-top: 1px solid #eee;
+    }
+
+    #menuMain ul li a {
+        display: block;
+        padding: 8px 0;
+        text-align: center;
+    }
+
+    .second p.question {
+        left: 10px;
+        padding-top: 110px;
+        font-size: 70px;
+    }
+
+    .second p.caption {
+        right: 10px;
+        top: -115px;
+    }
+
+    .second .element {
+        margin-right: 0;
+    }
+
+    .third .inner {
+        top: -50px;
+    }
+
+    .third p.caption {
+        position: static;
+        padding-bottom: 12px;
+        color: #fff;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    .fourth p.caption {
+        left: 0;
+        top: 176px;
+    }
+
+    .fifth p.caption {
+        left: 0;
+        top: 8px;
+        -webkit-transform: rotate(-3.5deg);
+        -moz-transform: rotate(-3.5deg);
+        -ms-transform: rotate(-3.5deg);
+        -o-transform: rotate(-3.5deg);
+    }
+
+    .sixth p.caption {
+        right: 0;
+        top: -88px;
+    }
+
+    .contact p.caption {
+        right: 0;
+        padding-top: 72px;
+        font-size: 56px;
+    }
+
+    .contact form {
+        padding-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    #header .left {
+        padding-left: 4px;
+    }
+
+    #header .right {
+        padding-right: 12px;
+    }
+
+    #header a.logo {
+        margin-left: 0;
+    }
+
+    .first p.caption {
+        padding-left: 12px;
+    }
+
+    .fourth p.caption {
+        left: 20px;
+        top: 178px;
+        -webkit-transform: rotate(4.3deg);
+        -moz-transform: rotate(4.3deg);
+        -ms-transform: rotate(4.3deg);
+        -o-transform: rotate(4.3deg);
+    }
+
+    .fourth .inner {
+        padding-top: 280px;
+    }
+
+    .fourth .left {
+        float: none;
+        width: auto;
+        padding: 0 20px;
+    }
+
+    .fourth .right {
+        float: none;
+        width: auto;
+        padding: 12px 0 22px;
+        background: #ff6600;
+    }
+
+    .fourth .right .slider .links {
+        padding: 0 40px;
+    }
+
+    .fifth .top {
+        background-image: none;
+    }
+
+    .fifth .inner {
+        padding-top: 16px;
+    }
+
+    .fifth .bulb {
+        right: 20px;
+    }
+
+    .fifth p.caption {
+        position: static;
+        padding: 0 0 16px 20px;
+        color: #fff;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    .fifth .element {
+        padding-left: 64px;
+        background-position: 20px center;
+    }
+
+    .sixth p.caption {
+        right: 20px;
+    }
+
+    .sixth p.title {
+        padding-left: 20px;
+    }
+
+    .sixth ul {
+        padding-left: 20px;
+    }
+
+    .about p.caption {
+        left: 20px;
+    }
+
+    .about .left {
+        padding: 50px 0 0 20px;
+    }
+
+    .about .right {
+        padding-right: 20px;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    .contact .inner {
+        padding-top: 20px;
+    }
+
+    .contact p.caption {
+        position: static;
+        height: auto;
+        padding: 0 0 10px;
+        background: none;
+        font-size: 50px;
+    }
+
+    .contact form {
+        width: auto;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (max-width: 924px) {
+
+    #menuMain {
+        font-size: 14px;
+    }
+
+    .first {
+        min-height: 250px;
+        text-align: center;
+    }
+
+    .first .inner {
+        display: table;
+        width: 100%;
+    }
+
+    .first p.caption {
+        display: table-cell;
+        height: 140px;
+        padding-top: 0;
+        vertical-align: middle;
+    }
+
+    .second .top {
+        background-image: none;
+    }
+
+    .second .inner {
+        top: auto;
+        padding: 10px 0 70px;
+    }
+
+    .second p.question {
+        display: none;
+    }
+
+    .second p.caption {
+        position: static;
+        padding: 0 32px 6px 0;
+        font-size: 56px;
+        color: #fff;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    .second .element {
+        width: auto;
+        margin: 0 12px 8px;
+    }
+
+    .third {
+        background-image: none;
+    }
+
+    .third .inner {
+        padding-bottom: 0;
+    }
+
+    .third p.caption {
+        font-size: 56px;
+    }
+
+    .fourth {
+        background-image: none;
+    }
+
+    .fourth .inner {
+        padding-top: 16px;
+    }
+
+    .fourth p.caption {
+        position: static;
+        padding: 0 0 16px 20px;
+        color: #fff;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    .fifth .inner {
+        padding-bottom: 55px;
+    }
+
+    .sixth p.caption {
+        position: static;
+        padding-left: 20px;
+        font-size: 50px;
+        font-weight: 800;
+        color: #444;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    .sixth p.title {
+        font-size: 38px;
+    }
+
+    .about p.caption {
+        top: -4px;
+    }
+
+    .about .left {
+        float: none;
+        padding: 0 0 0 20px;
+    }
+
+    .about .left p {
+        display: inline-block;
+        padding-right: 40px;
+        vertical-align: top;
+    }
+
+    .about .right {
+        float: none;
+        width: auto;
+        padding: 0 20px 20px;
+        background: none;
+    }
+
+}
+
+@media screen and (max-width: 724px) {
+
+    #header .left {
+        float: none;
+    }
+
+    #header .right {
+        float: none;
+        padding: 0;
+    }
+
+    #header a.trigger {
+        display: block;
+    }
+
+    #menuMain {
+        padding: 0;
+        border-bottom: none;
+        font-size: 16px;
+    }
+
+    #menuMain ul {
+        display: none;
+    }
+
+    #menuMain ul li {
+        display: block;
+        padding: 0;
+        border-top: 1px solid #eee;
+    }
+
+    #menuMain ul li a {
+        display: block;
+        padding: 8px 0;
+        text-align: center;
+    }
+
+    .first p.caption {
+        font-size: 30px;
+    }
+
+    .second {
+        text-align: center;
+    }
+
+    .second p.caption {
+        padding-right: 0;
+    }
+
+    .second .element {
+        margin: 0 0 8px;
+        padding: 0 20px 12px;
+        background-image: none;
+    }
+
+    .second .element p.title {
+        font-size: 20px;
+    }
+
+    .third .inner {
+        top: -30px;
+    }
+
+    .fourth {
+        text-align: center;
+    }
+
+    .fourth p.caption {
+        padding-left: 0;
+    }
+
+    .fourth .element p.title {
+        padding-bottom: 6px;
+        line-height: 1.2em;
+    }
+
+    .fourth .right p.title {
+        padding-bottom: 26px;
+        font-size: 40px;
+    }
+
+    .fifth {
+        text-align: center;
+    }
+
+    .fifth .bulb {
+        display: none;
+    }
+
+    .fifth p.caption {
+        padding-left: 0;
+        font-size: 50px;
+    }
+
+    .fifth .element {
+        width: auto;
+        padding: 0 20px 6px;
+        background-image: none;
+        font-size: 14px;
+    }
+
+    .fifth .element p.title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .sixth {
+        text-align: center;
+    }
+
+    .sixth p.caption {
+        padding-left: 0;
+    }
+
+    .sixth p.title {
+        padding-left: 0;
+        padding-bottom: 12px;
+        font-size: 32px;
+    }
+
+    .sixth ul {
+        padding-left: 0;
+    }
+
+    .sixth ul li span {
+        display: inline-block;
+        padding: 3px 20px;
+    }
+
+    .about .inner {
+        padding-top: 78px;
+    }
+
+    .about p.caption {
+        top: -10px;
+    }
+
+    .about .left p {
+        font-size: 16px;
+    }
+
+    .about .right p {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 524px) {
+
+    .fourth p.caption {
+        font-size: 40px;
+    }
+
+    .fourth .right p.title {
+        font-size: 30px;
+    }
+
+    .fourth .right .slider .links {
+        bottom: 10px;
+        padding: 0 6px;
+    }
+
+    .fourth .right .slider .swiper-container {
+        margin: 0 40px;
+    }
+
+    .fourth .right .slider .swiper-slide {
+        font-size: 14px;
+    }
+
+    .fourth .right .slider .swiper-slide p.title {
+        font-size: 18px;
+    }
+
+    .fifth p.caption {
+        font-size: 36px;
+    }
+
+    .sixth p.caption {
+        padding-bottom: 12px;
+        font-size: 40px;
+    }
+
+    .sixth p.title {
+        padding-bottom: 26px;
+        font-size: 28px;
+    }
+
+    .sixth ul li {
+        font-size: 20px;
+    }
+
+    .about .inner {
+        padding-top: 70px;
+    }
+
+    .about p.caption {
+        top: -6px;
+        font-size: 50px;
+    }
+
+    .contact p.caption {
+        font-size: 36px;
+    }
+
+    .contact form input.txt {
+        float: none;
+        width: 100%;
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+
+    .contact form textarea {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 424px) {
+
+    .sixth p.caption {
+        font-size: 30px;
+    }
+
+    .sixth p.title {
+        font-size: 22px;
+    }
+
+    .sixth ul li {
+        font-size: 18px;
+    }
+
+}
+	
+	
