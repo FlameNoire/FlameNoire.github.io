@@ -357,11 +357,12 @@ html, body {
       position: relative;
       float: left; }
     .ad_budgets .absolute_rhombus .work-item {
+      display: inline-block;
+      margin-left: -4px;
       width: 106px;
       height: 106px;
       overflow: hidden;
       position: relative;
-      float: left;
       background-color: #515151;
       -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
@@ -371,14 +372,14 @@ html, body {
       color: #fff; }
       .ad_budgets .absolute_rhombus .work-item:nth-child(2) {
         bottom: -82px;
-        margin-left: -23px;
+        margin-left: -27px;
         background-color: #FF6600; }
       .ad_budgets .absolute_rhombus .work-item:nth-child(3) {
-        margin-left: -22px;
+        margin-left: -27px;
         background-color: #444545; }
       .ad_budgets .absolute_rhombus .work-item:nth-child(4) {
-        margin-top: -82px;
-        margin-left: -189px;
+        top: -82px;
+        margin-left: -193px;
         background-color: transparent;
         border: 2px solid #FF6600;
         font-size: 12px;
@@ -407,6 +408,17 @@ html, body {
         -webkit-transform: rotate(-45deg);
             -ms-transform: rotate(-45deg);
                 transform: rotate(-45deg); }
+  @media screen and (min--moz-device-pixel-ratio: 0) {
+    .ad_budgets .absolute_rhombus .work-item {
+      display: block;
+      float: left; }
+      .ad_budgets .absolute_rhombus .work-item:nth-child(2) {
+        bottom: -82px;
+        margin-left: -23px; }
+      .ad_budgets .absolute_rhombus .work-item:nth-child(3) {
+        margin-left: -22px; }
+      .ad_budgets .absolute_rhombus .work-item:nth-child(4) {
+        margin-left: -189px; } }
   .ad_budgets .button {
     display: block;
     margin: 0 auto;
