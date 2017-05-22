@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "PT Sans Caption";
+  src: url("../fonts/PTSansCaption/PTSansCaptionRegular.eot");
+  src: url("../fonts/PTSansCaption/PTSansCaptionRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansCaption/PTSansCaptionRegular.woff") format("woff"), url("../fonts/PTSansCaption/PTSansCaptionRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans/PTSansRegular.eot");
+  src: url("../fonts/PTSans/PTSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSans/PTSansRegular.woff") format("woff"), url("../fonts/PTSans/PTSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans/PTSansBold.eot");
+  src: url("../fonts/PTSans/PTSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSans/PTSansBold.woff") format("woff"), url("../fonts/PTSans/PTSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/RobotoRegular.eot");
+  src: url("../fonts/Roboto/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/RobotoRegular.woff") format("woff"), url("../fonts/Roboto/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/roboto-black-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-black-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 900; }
