@@ -3,6 +3,15 @@
  */
 
 $(document).ready(function() {
+    var vW = $(window).width();
+
+    if (vW > 1900) {
+        $.scrollify({
+            section : "section",
+            // standardScrollElements: ".s_portfolio"
+        });
+    }
+
 
     $("#portfolio_grid").mixItUp();
 
