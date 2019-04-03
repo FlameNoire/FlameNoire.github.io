@@ -1,0 +1,2257 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-element="amp-iframe"
+          src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+  <title>Hello, AMPs</title>
+  <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta property="og:url" content="https://www.pic.kiev.ua">
+  <meta property="og:image" content="img/logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <style amp-custom>
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: url("fonts/SF Pro/SF-Pro-Display-Regular.otf");
+      src: local("SF Pro Display Regular"), url("fonts/SF Pro/SF-Pro-Display-Regular.otf") format("opentype");
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: url("fonts/SF Pro/SF-Pro-Display-Light.otf");
+      src: local("SF Pro Display Light"), url("fonts/SF Pro/SF-Pro-Display-Light.otf") format("opentype");
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: url("fonts/SF Pro/SF-Pro-Display-Thin.otf");
+      src: local("SF Pro Display Thin"), url("fonts/SF Pro/SF-Pro-Display-Thin.otf") format("opentype");
+      font-weight: 200;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: url("fonts/SF Pro/SF-Pro-Display-Ultralight.otf");
+      src: local("SF Pro Display Ultralight"), url("fonts/SF Pro/SF-Pro-Display-Ultralight.otf") format("opentype");
+      font-weight: 100;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: url("fonts/SF Pro/SF-Pro-Display-Medium.otf");
+      src: local("SF Pro Display Medium"), url("fonts/SF Pro/SF-Pro-Display-Medium.otf") format("opentype");
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: url("fonts/SF Pro/SF-Pro-Display-Semibold.otf");
+      src: local("SF Pro Display Semibold"), url("fonts/SF Pro/SF-Pro-Display-Semibold.otf") format("opentype");
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: url("fonts/SF Pro/SF-Pro-Display-Bold.otf");
+      src: local("SF Pro Display Bold"), url("fonts/SF Pro/SF-Pro-Display-Bold.otf") format("opentype");
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: url("fonts/SF Pro/SF-Pro-Display-Heavy.otf");
+      src: local("SF Pro Display Heavy"), url("fonts/SF Pro/SF-Pro-Display-Heavy.otf") format("opentype");
+      font-weight: 800;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: url("fonts/SF Pro/SF-Pro-Display-Black.otf");
+      src: local("SF Pro Display Black"), url("fonts/SF Pro/SF-Pro-Display-Black.otf") format("opentype");
+      font-weight: 900;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'AdelleCyrillic';
+      src: url("fonts/AdelleCyrillic/AdelleCyrillic-Bold.eot");
+      src: local("AdelleCyrillic-Bold"), url("fonts/AdelleCyrillic/AdelleCyrillic-Bold.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      position: relative;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'SF Pro Display', sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: 900;
+      color: #000;
+      background-color: #fff;
+    }
+
+    .wrapper {
+      position: relative;
+      overflow: hidden;
+      min-width: 320px;
+    }
+
+    .container {
+      margin: 0 auto;
+      width: 1198px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .s_title {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .s_title span {
+      position: relative;
+      display: inline-block;
+    }
+
+    .s_title span i {
+      display: block;
+      position: absolute;
+      top: -10px;
+      left: -6px;
+      z-index: 10;
+    }
+
+    .s_title .inner span {
+      z-index: 20;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      -webkit-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s;
+    }
+
+    a:hover, a:focus {
+      text-decoration: none;
+      color: inherit;
+      outline: none;
+    }
+
+    p {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    input {
+      outline: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .accent {
+      color: #d2623e;
+    }
+
+    .block_title {
+      font-weight: 600;
+    }
+
+    .line-through {
+      text-decoration: line-through;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+    }
+
+    .buttons {
+      position: relative;
+      display: inline-block;
+    }
+
+    .buttons:hover .before {
+      top: 0;
+    }
+
+    .buttons .before {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 100%;
+      height: 100%;
+      background-color: #8e1c15;
+      -webkit-border-radius: 10em;
+      border-radius: 10em;
+      z-index: 5;
+      -webkit-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s;
+    }
+
+    .buttons .inner {
+      position: relative;
+      display: block;
+      z-index: 10;
+      padding: 7px 10px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 25px;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: #c9352b;
+      -webkit-border-radius: 10em;
+      border-radius: 10em;
+      cursor: pointer;
+    }
+
+    .checkbox {
+      margin-top: 0;
+      margin-bottom: 15px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .checkbox input[type="checkbox"],
+    .checkbox input[type="radio"] {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .checkbox label {
+      padding: 0;
+      position: relative;
+      display: inline-block;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 20px;
+      width: 26px;
+      height: 28px;
+      vertical-align: top;
+      outline: none;
+      cursor: pointer;
+      background-color: #fff;
+    }
+
+    .checkbox label:after {
+      position: absolute;
+      display: none;
+      content: '';
+      top: 6px;
+      left: 5px;
+      width: 16px;
+      height: 16px;
+      background-color: #c9352b;
+      -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.65);
+      box-shadow: 0 0 9px rgba(0, 0, 0, 0.65);
+    }
+
+    .checkbox span {
+      display: inline-block;
+      color: #fff;
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      text-transform: uppercase;
+      vertical-align: top;
+    }
+
+    .checkbox input[type="checkbox"]:checked + label:after {
+      display: block;
+    }
+
+    .mob_header {
+      display: none;
+      padding-top: 11px;
+      padding-bottom: 5px;
+      background-color: #fff;
+    }
+
+    .mob_header .inner {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    .mob_header .inner img {
+      display: block;
+    }
+
+    .section_1 {
+      padding-top: 75px;
+      padding-bottom: 125px;
+      color: #fff;
+      background: url(img/bg-1.jpg) top center;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+
+    .section_1 .logo {
+      display: inline-block;
+      margin-bottom: 94px;
+    }
+
+    .section_1 .text-1 {
+      margin-bottom: 45px;
+      font-size: 20px;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+
+    .section_1 .text-2 {
+      margin-right: 20px;
+      font-weight: 700;
+      line-height: 40px;
+      font-size: 84px;
+    }
+
+    .section_1 .text-2 p {
+      margin-top: 5px;
+    }
+
+    .section_1 .text-2 span {
+      display: inline-block;
+    }
+
+    .section_1 .text-2 .text-3 {
+      display: block;
+      font-size: 25px;
+      margin-top: 15px;
+    }
+
+    .section_1 .credit {
+      margin-bottom: 60px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .section_1 .digit {
+      font-size: 135px;
+      font-weight: 700;
+      line-height: 132px;
+    }
+
+    .section_1 .text-4 {
+      margin-bottom: 72px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+
+    .section_1 .buttons {
+      width: 217px;
+    }
+
+    .section_1 .buttons.mob {
+      display: none;
+    }
+
+    .section_2 {
+      padding-top: 95px;
+      padding-bottom: 30px;
+      background-color: #fff;
+    }
+
+    .section_2 .s_title {
+      margin-bottom: 95px;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 30px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .debts {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+    }
+
+    .debts_item {
+      margin-bottom: 68px;
+      position: relative;
+      width: 50%;
+      background-color: #251309;
+    }
+
+    .debts_item:nth-child(2n -1) {
+      margin-right: 100px;
+    }
+
+    .debts_item:hover .after {
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+
+    .debts_item img {
+      display: block;
+      width: 100%;
+      opacity: .3;
+    }
+
+    .debts_item .after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 20;
+      border: 1px solid #949494;
+      -webkit-transform: translate(10px, 10px);
+      -ms-transform: translate(10px, 10px);
+      transform: translate(10px, 10px);
+      -webkit-transition: -webkit-transform .2s;
+      transition: -webkit-transform .2s;
+      -o-transition: transform .2s;
+      transition: transform .2s;
+      transition: transform .2s, -webkit-transform .2s;
+    }
+
+    .debts_item .text {
+      padding: 57px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+
+    .section_3 {
+      color: #fff;
+      padding-top: 117px;
+      padding-bottom: 100px;
+      background: url(img/bg-2.jpg) top center;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+
+    .section_3 .s_title {
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: 700;
+      margin-bottom: 35px;
+    }
+
+    .section_3 .wrap {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    .section_3 .col {
+      width: 50%;
+      max-width: 70%;
+    }
+
+    .section_3 .text-1 {
+      margin-bottom: 70px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 25px;
+      line-height: 30px;
+      font-weight: 300;
+    }
+
+    .section_3 .howitwork li {
+      margin-bottom: 115px;
+      position: relative;
+    }
+
+    .section_3 .howitwork li:last-child {
+      margin-bottom: 0;
+    }
+
+    .section_3 .howitwork .text {
+      position: relative;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 500;
+      text-transform: uppercase;
+      z-index: 20;
+    }
+
+    .section_3 .howitwork .num {
+      position: absolute;
+      top: -35px;
+      left: -20px;
+      opacity: 0.5;
+      color: #c9352b;
+      font-family: AdelleCyrillic, sans-serif;
+      font-size: 160px;
+      line-height: 1;
+      font-weight: 700;
+      z-index: 10;
+    }
+
+    .contact_form {
+      margin-left: auto;
+      padding: 55px 40px 65px;
+      width: 465px;
+      height: 531px;
+      background-color: rgba(69, 57, 49, 0.95);
+      -webkit-border-radius: 25px;
+      border-radius: 25px;
+      -webkit-box-shadow: -9.2px 6px 73px rgba(0, 0, 0, 0.65);
+      box-shadow: -9.2px 6px 73px rgba(0, 0, 0, 0.65);
+    }
+
+    .contact_form .title {
+      margin-bottom: 55px;
+      color: #aea097;
+      font-family: Roboto, sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .contact_form .form_input {
+      padding: 5px 27px;
+      width: 100%;
+      height: 44px;
+      color: #433830;
+      border: none;
+      background-color: #fff;
+    }
+
+    .contact_form .form_input::-webkit-input-placeholder {
+      color: #433830;
+    }
+
+    .contact_form .form_input::-moz-placeholder {
+      color: #433830;
+    }
+
+    .contact_form .form_input:-ms-input-placeholder {
+      color: #433830;
+    }
+
+    .contact_form .form_input::-ms-input-placeholder {
+      color: #433830;
+    }
+
+    .contact_form .form_input::placeholder {
+      color: #433830;
+    }
+
+    .contact_form label {
+      display: block;
+      width: 100%;
+      margin-bottom: 38px;
+    }
+
+    .contact_form .checkbox label {
+      display: inline-block;
+      margin-bottom: 0;
+      width: 26px;
+    }
+
+    .contact_form .buttons {
+      position: relative;
+      display: block;
+      margin-top: 60px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+      width: 137px;
+      border: none;
+      background: none;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 25px;
+    }
+
+    .contact_form .buttons input {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: none;
+      font-size: 0;
+      background: transparent;
+      z-index: 0;
+      cursor: pointer;
+    }
+
+    .contact_form .buttons .inner {
+      cursor: default;
+    }
+
+    .contact_form .check {
+      padding-bottom: 30px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    .section_4 {
+      padding-top: 125px;
+      padding-bottom: 70px;
+    }
+
+    .section_4 .wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    .section_4 .wrap .left {
+      padding-top: 10px;
+      width: 360px;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+    }
+
+    .section_4 .wrap .right {
+      width: 100%;
+      padding-left: 50px;
+    }
+
+    .section_4 .s_title {
+      margin-bottom: 90px;
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: 700;
+    }
+
+    .section_4 .image_box {
+      position: relative;
+      width: 321px;
+      max-width: 100%;
+      background-color: #190d04;
+    }
+
+    .section_4 .image_box:hover .after {
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+
+    .section_4 .image_box img {
+      width: 100%;
+      display: block;
+      opacity: .3;
+    }
+
+    .section_4 .image_box .after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 20;
+      border: 1px solid #949494;
+      -webkit-transform: translate(15px, -15px);
+      -ms-transform: translate(15px, -15px);
+      transform: translate(15px, -15px);
+      -webkit-transition: -webkit-transform .2s;
+      transition: -webkit-transform .2s;
+      -o-transition: transform .2s;
+      transition: transform .2s;
+      transition: transform .2s, -webkit-transform .2s;
+    }
+
+    .section_4 .image_box .before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -83px;
+      margin-left: -91px;
+      width: 100%;
+      height: 100%;
+      z-index: 20;
+    }
+
+    .section_4 .image_box .before img {
+      width: auto;
+      opacity: 1;
+    }
+
+    .advantages {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    .advantages .item {
+      position: relative;
+      width: 33.3333%;
+      padding-left: 37px;
+      margin-bottom: 92px;
+    }
+
+    .advantages .item:nth-child(3), .advantages .item:nth-child(6) {
+      width: 190px;
+    }
+
+    .advantages .item:nth-child(7) {
+      width: 205px;
+    }
+
+    .advantages .item .num {
+      position: absolute;
+      top: 50%;
+      margin-top: -50px;
+      left: 0;
+      opacity: 0.2;
+      color: #242424;
+      font-family: AdelleCyrillic, sans-serif;
+      font-size: 130px;
+      font-weight: 700;
+      line-height: 100px;
+    }
+
+    .advantages .item .text {
+      font-family: Roboto, sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .advantages .item .text .red {
+      color: #d14a46;
+      font-size: 20px;
+    }
+
+    .advantages .text-1 {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 30px;
+      margin-bottom: 92px;
+    }
+
+    .advantages .buttons {
+      width: 187px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 25px;
+      text-transform: uppercase;
+      margin-bottom: 92px;
+    }
+
+    .section_5 {
+      padding-top: 85px;
+      padding-bottom: 109px;
+      background-color: #2a241f;
+      color: #fff;
+    }
+
+    .section_5 .s_title {
+      margin-bottom: 35px;
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .section_5 .text-1 {
+      margin-bottom: 80px;
+      font-family: Roboto, sans-serif;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .section_5 .text-1 .red {
+      color: #c9352b;
+    }
+
+    .section_5 .details_btn {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 187px;
+    }
+
+    .about_us {
+      padding-bottom: 65px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    .about_us .item {
+      margin-bottom: 30px;
+      font-family: Roboto, sans-serif;
+      text-align: center;
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: 400;
+      max-width: 25%;
+    }
+
+    .about_us .item .title {
+      margin-bottom: 16px;
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    .about_us .item .icon {
+      margin-bottom: 20px;
+      height: 60px;
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+
+    .section_6 {
+      padding-top: 119px;
+      padding-bottom: 100px;
+      background-color: #e8e8e8;
+    }
+
+    .section_6 .s_title {
+      margin-bottom: 107px;
+      font-size: 44px;
+      line-height: 40px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .faqs_item {
+      position: relative;
+      margin-top: -2px;
+      color: #24201c;
+      font-size: 25px;
+      line-height: 22px;
+      font-weight: 700;
+      -webkit-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s;
+    }
+
+    .faqs_item:last-child .inner .line {
+      display: none;
+    }
+
+    .faqs_item:hover {
+      background-color: #fff;
+    }
+
+    .faqs_item:hover .inner .line {
+      background-color: #fff;
+    }
+
+    .faqs_item .inner {
+      position: relative;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+    }
+
+    .faqs_item .inner:hover {
+      color: #d14a46;
+    }
+
+    .faqs_item .inner:hover .icon {
+      background: url("img/newspaper-2.png");
+    }
+
+    .faqs_item .inner:focus, .faqs_item .inner:active {
+      background: transparent;
+    }
+
+    .faqs_item .inner .line {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #cccccc;
+      -webkit-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s;
+    }
+
+    .faqs_item .icon {
+      margin-right: 30px;
+      width: 28px;
+      height: 28px;
+      background: url("img/newspaper.png");
+    }
+
+    .section_7 {
+      padding-top: 55px;
+      padding-bottom: 45px;
+      background-color: #1f130a;
+      color: #fff;
+    }
+
+    .section_7 .inner {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    .section_7 .logo {
+      margin-right: 50px;
+    }
+
+    .section_7 .text-1 {
+      font-family: Roboto, sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    .section_7 address {
+      margin-bottom: 10px;
+    }
+
+    .section_7 .tels {
+      font-family: Roboto, sans-serif;
+      font-size: 25px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    .section_7 .tels a {
+      display: block;
+    }
+
+    .socials {
+      width: 220px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+    }
+
+    .socials .soc_item {
+      margin-bottom: 10px;
+      margin-left: 35px;
+      width: 36px;
+      height: 36px;
+      background-color: #fff;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+
+    .socials .soc_item:hover {
+      background-color: #e8e8e8;
+    }
+
+    #map {
+      height: 375px;
+      width: 100%;
+    }
+
+    .main_footer {
+      font-family: Roboto, sans-serif;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .main_footer .inner {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    .main_footer .inner .left {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    .main_footer .text-1 {
+      color: #969696;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 500;
+      margin-right: 22px;
+    }
+
+    .main_footer .text-2 {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+
+    .main_footer .text-2 a:hover {
+      opacity: .7;
+    }
+
+    .main_footer .copyright {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 16px;
+    }
+
+    .main_footer .copyright a {
+      text-decoration: underline;
+    }
+
+    .main_footer .copyright a:hover {
+      text-decoration: none;
+    }
+
+    @media only screen and (min-width: 1450px) {
+      .section_1 .container, .section_7 .container, .main_footer .container {
+        width: 1450px;
+      }
+    }
+
+    @media only screen and (max-width: 1449px) {
+      .container {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .section_1 .container, .section_7 .container, .main_footer .container {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 1199px) {
+      .section_7 .logo {
+        margin-right: 20px;
+      }
+      .socials {
+        width: 155px;
+      }
+      .socials .soc_item {
+        margin-left: 20px;
+      }
+      .socials .soc_item:nth-child(1), .socials .soc_item:nth-child(4) {
+        margin-left: 0;
+      }
+      .about_us {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .about_us .item {
+        width: 33.3333%;
+        max-width: 33.3333%;
+      }
+      .section_3 .col {
+        padding-left: 10px;
+      }
+      .contact_form {
+        padding: 40px 30px 55px;
+        width: 400px;
+        height: auto;
+      }
+      .section_7 {
+        padding-bottom: 15px;
+      }
+      .section_7 .inner {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .section_7 .logo {
+        margin-bottom: 30px;
+        margin-right: 40px;
+      }
+      .section_7 .tels {
+        margin-right: 40px;
+        margin-bottom: 30px;
+      }
+      .section_7 .tels a {
+        white-space: nowrap;
+      }
+      .section_7 .address {
+        margin-right: 40px;
+        margin-bottom: 30px;
+      }
+      .socials {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media only screen and (max-width: 991px) {
+      .about_us .item {
+        width: 50%;
+        max-width: 100%;
+      }
+      .s_title span i {
+        top: -5px;
+      }
+      .section_2 .s_title {
+        line-height: 40px;
+      }
+      .section_3 .s_title,
+      .section_4 .s_title,
+      .section_5 .s_title {
+        line-height: 50px;
+      }
+      .section_6 .s_title {
+        font-size: 40px;
+        line-height: 50px;
+        text-align: left;
+      }
+      .section_3 .wrap {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+      .section_3 .col {
+        width: 100%;
+        max-width: 100%;
+      }
+      .contact_form {
+        margin-top: 100px;
+        padding: 40px 30px 55px;
+        width: 100%;
+        height: auto;
+      }
+      .section_4 .wrap .left {
+        display: none;
+      }
+      .section_4 .wrap .right {
+        padding-left: 10px;
+      }
+      .main_footer .inner .left {
+        margin-right: 40px;
+      }
+      .debts {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+      .debts_item {
+        width: 539px;
+        height: auto;
+        max-width: 100%;
+        margin-right: 0;
+      }
+      .debts_item:nth-child(2n -1) {
+        margin-right: 0;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      .mob_header {
+        display: block;
+      }
+      .container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .s_title span i {
+        display: none;
+      }
+      .section_1 {
+        padding-top: 0;
+        padding-bottom: 40px;
+        background: url(img/bg-1-mob.jpg) top center;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+      .section_1 .logo {
+        display: none;
+      }
+      .section_1 .text-1 {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 12px 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: 50px;
+        background-color: #2a241f;
+      }
+      .section_1 .text-2 {
+        font-size: 36px;
+        line-height: 17px;
+      }
+      .section_1 .text-2 .text-3 {
+        font-size: 20px;
+        margin-top: 7px;
+      }
+      .section_1 .digit {
+        position: absolute;
+        left: 155px;
+        top: -24px;
+        font-size: 58px;
+        line-height: 57px;
+      }
+      .section_1 .credit {
+        position: relative;
+        margin-bottom: 25px;
+      }
+      .section_1 .text-4 {
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 20px;
+        max-width: 150px;
+        margin-bottom: 27px;
+      }
+      .section_1 .buttons {
+        display: none;
+      }
+      .section_1 .buttons.mob {
+        display: inline-block;
+        width: 137px;
+      }
+      .section_2 .s_title {
+        color: #301f12;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 20px;
+        text-align: left;
+      }
+      .section_3 .s_title {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 20px;
+        text-transform: uppercase;
+      }
+      .section_4 .s_title {
+        color: #301f12;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 20px;
+        text-align: left;
+        text-transform: uppercase;
+      }
+      .section_5 .s_title {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 20px;
+        text-transform: uppercase;
+        text-align: left;
+      }
+      .section_6 .s_title {
+        font-size: 18px;
+        line-height: 21px;
+      }
+      .section_2 {
+        padding-top: 50px;
+      }
+      .section_2 .s_title {
+        margin-bottom: 45px;
+      }
+      .debts_item {
+        margin-bottom: 20px;
+        width: 100%;
+        background-color: #2a241f;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+      }
+      .debts_item amp-img {
+        display: none;
+      }
+      .debts_item img {
+        display: none;
+      }
+      .debts_item .after {
+        display: none;
+      }
+      .debts_item .text {
+        padding: 25px 29px 24px;
+        position: relative;
+        display: block;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+      }
+      .debts_item .text br {
+        display: none;
+      }
+      .section_3 {
+        padding-top: 60px;
+        padding-bottom: 0;
+        background: #2a241f;
+      }
+      .section_3 .container {
+        padding: 0;
+      }
+      .section_3 .s_title {
+        margin-bottom: 30px;
+      }
+      .section_3 .col {
+        padding-left: 0;
+      }
+      .section_3 .col.left {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .section_3 .text-1 {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 21px;
+        margin-bottom: 45px;
+      }
+      .section_3 .howitwork .text {
+        font-size: 20px;
+        line-height: 21px;
+        font-weight: 500;
+      }
+      .section_3 .howitwork .num {
+        display: none;
+      }
+      .section_3 .howitwork li {
+        padding-left: 10px;
+        border-left: 2px solid #c9352b;
+        margin-bottom: 40px;
+      }
+      .section_3 .howitwork li br {
+        display: none;
+      }
+      .contact_form {
+        margin-top: 55px;
+        padding: 47px 20px 55px;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+      .contact_form .checkbox {
+        margin-bottom: 20px;
+        margin-right: 30px;
+      }
+      .contact_form .checkbox:last-child {
+        margin-right: 0;
+      }
+      .contact_form .title {
+        margin-bottom: 45px;
+        color: #fdfdfd;
+        font-size: 18px;
+        font-weight: 800;
+        text-align: left;
+      }
+      .contact_form label {
+        margin-bottom: 30px;
+      }
+      .contact_form .check {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+      }
+      .contact_form .buttons {
+        margin-top: 50px;
+        margin-left: 0;
+      }
+      .section_4 {
+        padding-top: 48px;
+        padding-bottom: 55px;
+      }
+      .section_4 .s_title {
+        margin-bottom: 43px;
+      }
+      .section_4 .col.right {
+        padding-left: 0;
+      }
+      .advantages {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+      }
+      .advantages .item {
+        position: relative;
+        margin-bottom: 33px;
+        width: 100%;
+        padding-left: 10px;
+      }
+      .advantages .item:before {
+        position: absolute;
+        display: block;
+        content: '';
+        left: 0;
+        top: 4px;
+        width: 2px;
+        height: -webkit-calc(100% - 8px);
+        height: calc(100% - 8px);
+        background: #c9352b;
+      }
+      .advantages .item .text {
+        font-size: 20px;
+        line-height: 24px;
+      }
+      .advantages .item .text br {
+        display: none;
+      }
+      .advantages .item .num {
+        display: none;
+      }
+      .advantages .text-1 {
+        margin-bottom: 28px;
+      }
+      .advantages .buttons {
+        margin-bottom: 0;
+      }
+      .section_5 {
+        padding-top: 55px;
+        padding-bottom: 65px;
+      }
+      .section_5 .s_title {
+        margin-bottom: 40px;
+      }
+      .section_5 .text-1 {
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 100;
+        text-align: left;
+      }
+      .section_5 .text-1 p {
+        margin-bottom: 23px;
+      }
+      .about_us {
+        padding-bottom: 25px;
+      }
+      .about_us .item {
+        margin-bottom: 25px;
+        width: 100%;
+        text-align: left;
+        font-weight: 300;
+        line-height: 20px;
+      }
+      .about_us .item .icon {
+        display: none;
+      }
+      .about_us .item .title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .section_5 .details_btn {
+        margin-left: 0;
+      }
+      .section_6 {
+        padding-top: 48px;
+        padding-bottom: 30px;
+      }
+      .section_6 .s_title {
+        margin-bottom: 25px;
+      }
+      .faqs_item {
+        color: #24201c;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700;
+      }
+      .faqs_item .inner {
+        padding-top: 21px;
+        padding-bottom: 21px;
+      }
+      .faqs_item .icon {
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin-right: 20px;
+      }
+      .section_7 {
+        background-color: #2a241f;
+      }
+      .section_7 .logo {
+        display: none;
+      }
+      .section_7 .inner {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+      }
+      .socials {
+        width: 187px;
+      }
+      .socials .soc_item {
+        margin-left: 38px;
+      }
+      .socials .soc_item:nth-child(1), .socials .soc_item:nth-child(4) {
+        margin-left: 0;
+      }
+      .main_footer {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        background-color: #2a241f;
+      }
+      .main_footer .inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+      }
+      .main_footer .inner .left {
+        display: block;
+      }
+      .main_footer .text-1 {
+        margin-bottom: 25px;
+      }
+      .main_footer .text-2 {
+        margin-bottom: 40px;
+      }
+    }
+
+    @media only screen and (max-width: 575px) {
+      .section_7 {
+        padding-top: 45px;
+        padding-bottom: 40px;
+      }
+      .section_7 .inner {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+      }
+      .section_7 .inner .tels {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+        margin-bottom: 40px;
+      }
+      .section_7 .inner .tels a {
+        margin-bottom: 10px;
+      }
+      .section_7 .inner .address {
+        margin-bottom: 50px;
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+      }
+      .section_7 .inner .address a {
+        color: #c9352b;
+      }
+      .section_7 .inner .address a:hover {
+        color: #fff;
+      }
+      .section_7 .inner .socials {
+        -webkit-box-ordinal-group: 4;
+        -webkit-order: 3;
+        -ms-flex-order: 3;
+        order: 3;
+        width: 187px;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .section_5 .text-1 .red {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="mob_header">
+      <div class="container">
+        <div class="inner">
+          <div class="logo"><amp-img src="img/logo-3.png" alt=" " width="150" height="26"></amp-img></div>
+          <a href="tel:+38 (095) 150 0501" class="contact"><amp-img src="img/phone.png" alt=" " width="17" height="18"></amp-img></a>
+        </div>
+      </div>
+    </header>
+    <section class="section_1">
+      <div class="container">
+        <a href="#" class="logo"><amp-img src="img/logo.png" alt=" " width="254" height="46"></amp-img></a>
+
+        <p class="text-1">Юридическая компания “ПИК”</p>
+
+        <div class="credit">
+          <div class="text-2">
+            <p><span>списать</span> <span class="text-3">Кредитной задолженности</span></p>
+          </div>
+          <div class="digit">95%</div>
+        </div>
+
+        <p class="text-4">Закрой свой кредит за разумные деньги</p>
+
+        <a href="#" class="buttons"><span class="inner">Узнать подробнее</span><span class="before"></span></a>
+        <a href="#" class="buttons mob"><span class="inner">Узнать</span><span class="before"></span></a>
+      </div>
+    </section>
+
+    <section class="section_2">
+      <div class="container">
+        <h2 class="s_title">
+          <span class="inner">
+            <i><amp-img src="img/strip.png" alt=" " width="30" height="44"></amp-img></i>
+            <span>Какие долги можно списать?</span>
+          </span>
+        </h2>
+        <div class="debts">
+          <div class="debts_item">
+            <div class="after"></div>
+            <amp-img src="img/img-1.jpg" alt=" " width="539" height="276" layout="responsive"></amp-img>
+            <div class="text">
+              <p>Ипотечные долги <br> коммерчеких банков</p>
+            </div>
+          </div>
+          <div class="debts_item">
+            <div class="after"></div>
+            <amp-img src="img/img-2.jpg" alt=" " width="539" height="276" layout="responsive"></amp-img>
+            <div class="text">
+              <p>залоговые кредиты <br> банков в ликвидации</p>
+            </div>
+          </div>
+        </div>
+        <div class="debts">
+          <div class="debts_item">
+            <div class="after"></div>
+            <amp-img src="img/img-3.jpg" alt=" " width="539" height="276" layout="responsive"></amp-img>
+            <div class="text">
+              <p>просроченные <br> микрокредиты, займы</p>
+            </div>
+          </div>
+          <div class="debts_item">
+            <div class="after"></div>
+            <amp-img src="img/img-4.jpg" alt=" " width="539" height="276" layout="responsive"></amp-img>
+            <div class="text">
+              <p>долги факторинговым <br> компаниям</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_3">
+      <div class="container">
+        <div class="wrap">
+          <div class="col left">
+            <h2 class="s_title">
+              <span class="inner">
+                <i><amp-img src="img/strip-2.png" alt=" " width="37" height="54"></amp-img></i>
+                <span>Как это работает?</span>
+              </span>
+            </h2>
+
+            <p class="text-1">Это работает только если у вас есть желание и ДЕНЬГИ</p>
+
+            <ul class="howitwork">
+              <li>
+                <span class="num">1</span>
+                <span class="text">Мы просто выкупаем <br> ваш долг у кредитора</span>
+              </li>
+              <li>
+                <span class="num">2</span>
+                <span class="text">Если денег нет или их мало, <br> вам нужен АДВОКАТ</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col right">
+            <div class="contact_form">
+              <form action="https://sitename.com" target="_top">
+                <p class="title">Сделай выбор</p>
+
+                <div class="check">
+                  <div class="checkbox">
+                    <input id="check-1" type="checkbox">
+                    <label for="check-1"></label>
+                    <span>Выкуп кредита</span>
+                  </div>
+                  <div class="checkbox">
+                    <input id="check-2" type="checkbox">
+                    <label for="check-2"></label>
+                    <span>Адвокат</span>
+                  </div>
+                </div>
+
+                <label>
+                  <input class="form_input" type="text" placeholder="Имя*">
+                </label>
+                <label>
+                  <input class="form_input" type="tel" placeholder="Тел:.*">
+                </label>
+
+                <div class="buttons">
+                  <input type="submit">
+                  <span class="before"></span>
+                  <span class="inner">УЗНАТЬ</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_4">
+      <div class="container">
+        <div class="wrap">
+          <div class="col left">
+            <div class="image_box">
+              <div class="before"><amp-img src="img/triangle.png" alt=" " width="183" height="166"></amp-img></div>
+              <div class="after"></div>
+              <amp-img src="img/img-5.jpg" alt=" " width="321" height="509"></amp-img>
+            </div>
+          </div>
+          <div class="col right">
+            <h2 class="s_title">
+              <span class="inner">
+                <i><amp-img src="img/strip-2.png" alt=" " width="37" height="54"></amp-img></i>
+                <span>Что вы получите?</span>
+              </span>
+            </h2>
+
+            <div class="advantages">
+              <div class="item">
+                <div class="num">1</div>
+                <div class="text">Кредит будет <br> закрыт <span class="red">навсегда</span></div>
+              </div>
+              <div class="item">
+                <div class="num">2</div>
+                <div class="text">не будет судов</div>
+              </div>
+              <div class="item">
+                <div class="num">3</div>
+                <div class="text">не будет <br> Коллекторов</div>
+              </div>
+              <div class="item">
+                <div class="num">4</div>
+                <div class="text">не будет звонков</div>
+              </div>
+              <div class="item">
+                <div class="num">5</div>
+                <div class="text">не будет арестов</div>
+              </div>
+              <div class="item">
+                <div class="num">6</div>
+                <div class="text">Ваше имущество <br> станет вашим</div>
+              </div>
+              <div class="item">
+                <div class="num">7</div>
+                <div class="text">не будет проблем!</div>
+              </div>
+              <div class="text-1">Хотите начать <br> жить Нормально?</div>
+
+              <a href="https://www.pic.kiev.ua" class="buttons">
+                <span class="before"></span>
+                <span class="inner">НАчать</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_5">
+      <div class="container">
+        <h2 class="s_title">
+          <span class="inner">
+            <i><amp-img src="img/strip-2.png" alt=" " width="37" height="54"></amp-img></i>
+            <span>Кто мы такие?</span>
+          </span>
+        </h2>
+        <div class="text-1">
+          <p>Мы юридическая компания "ПИК"</p>
+          <p>занимаемся долгами <span class="red">более 10 лет</span></p>
+        </div>
+
+        <div class="about_us">
+          <div class="item">
+            <div class="icon"><amp-img src="img/lawyer.png" alt=" " width="53" height="47"></amp-img></div>
+            <p class="title">Наш профиль:</p>
+            <p>Юридические услуги <br> в кредитно-финансовой сфере</p>
+          </div>
+          <div class="item">
+            <div class="icon"><amp-img src="img/dart-board-and-arrow.png" alt=" " width="53" height="53"></amp-img></div>
+            <p class="title">наша цель:</p>
+            <p>Результат, соответствующий <br> ожиданиям  клиента</p>
+          </div>
+          <div class="item">
+            <div class="icon"><amp-img src="img/point-of-interest.png" alt=" " width="50" height="51"></amp-img></div>
+            <p class="title">наша миссия:</p>
+            <p>Найти компромисс между <br> должником и кредитором</p>
+          </div>
+          <div class="item">
+            <div class="icon"><amp-img src="img/rate-star-button.png" alt=" " width="46" height="46"></amp-img></div>
+            <p class="title">Ценности:</p>
+            <p>Доверие, Индивидуальный <br> подход, Компетентность</p>
+          </div>
+        </div>
+
+        <a href="https://www.pic.kiev.ua" class="buttons details_btn"><span class="inner">подробнее</span><span class="before"></span></a>
+      </div>
+    </section>
+
+    <section class="section_6">
+      <div class="container">
+        <h2 class="s_title">
+          <span class="inner">
+            <i><amp-img src="img/strip-2.png" alt=" " width="37" height="54"></amp-img></i>
+            <span>То о чем говорят, можно узнать Здесь</span>
+          </span>
+        </h2>
+      </div>
+      <div class="faqs">
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/portfolio/vyikup-dolga-u-banka" class="inner">
+              <div class="icon"></div>
+              <div class="text">Выкуп кредита у банка</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/portfolio/problemnyiy-kredit" class="inner">
+              <div class="icon"></div>
+              <div class="text">Проблемный кредит</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/portfolio/auktsion" class="inner">
+              <div class="icon"></div>
+              <div class="text">Реализайция залогов на СЕТАМ</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/portfolio/chto-delat-esli-mnogo-mikrozaymov" class="inner">
+              <div class="icon"></div>
+              <div class="text">Что деелать если много микрозаймов</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/portfolio/gollandskij-auktsion-v-podrobnostyah" class="inner">
+              <div class="icon"></div>
+              <div class="text">Голландский аукцион</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/portfolio/kak-napisat-zayavlenie-v-politsiyu" class="inner">
+              <div class="icon"></div>
+              <div class="text">Заявление в полицию на коллекторов</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/arestyi" class="inner">
+              <div class="icon"></div>
+              <div class="text">Аресты</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/register-of-debtors" class="inner">
+              <div class="icon"></div>
+              <div class="text">Рееестр должников</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/reestr_of_border" class="inner">
+              <div class="icon"></div>
+              <div class="text">Запрет на выезд за границу</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/antikollektor" class="inner">
+              <div class="icon"></div>
+              <div class="text">Защита должника от кредитора</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/portfolio/bolshoy-dolg-po-mikrozaymu-chto-delat" class="inner">
+              <div class="icon"></div>
+              <div class="text">Что делать, если большой долг по микрозайму</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/portfolio/zakonna-li-prodazha-dolgovyih-obyazatelstv" class="inner">
+              <div class="icon"></div>
+              <div class="text">Если кредит продали коллекторам</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/nashi-publikatsii-avtomobil" class="inner">
+              <div class="icon"></div>
+              <div class="text">Как закрыть автокредит</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/bank-works" class="inner">
+              <div class="icon"></div>
+              <div class="text">Кредит в коммерческом банке</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/portfolio/avtomobil-arestovan-ispolnitelyami-chto-delat" class="inner">
+              <div class="icon"></div>
+              <div class="text">Автомобиль арестован</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/portfolio/reestry-reshenij-zapretov-i-arestov-ukrainy" class="inner">
+              <div class="icon"></div>
+              <div class="text">Реестры обременений</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/portfolio/kredit-kupila-finkompaniya" class="inner">
+              <div class="icon"></div>
+              <div class="text">Кредит купили коллектора</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_item">
+          <div class="container">
+            <a href="https://www.pic.kiev.ua/portfolio/vyiselenie-po-kreditu" class="inner">
+              <div class="icon"></div>
+              <div class="text">Выселение по кредиту</div>
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_7">
+      <div class="container">
+        <div class="inner">
+          <div class="logo"><amp-img src="img/logo-2.png" alt=" " width="331" height="74"></amp-img></div>
+          <div class="address">
+            <address class="text-1">г.Киев. пер. Ковальский 19</address>
+            <a href="mailto:fickiev@gmail.com" class="text-1">fickiev@gmail.com</a>
+          </div>
+          <div class="tels">
+            <a href="tel:+38 (095) 150 0501">+38 (095) 150 0501</a>
+            <a href="tel:+38 (097) 050 0501">+38 (097) 050 0501</a>
+          </div>
+          <div class="socials">
+            <a href="#" class="soc_item"><amp-img src="img/facebook-logo.png" alt=" " width="12" height="22"></amp-img></a>
+            <a href="#" class="soc_item"><amp-img src="img/twitter.png" alt=" " width="22" height="22"></amp-img></a>
+            <a href="#" class="soc_item"><amp-img src="img/google-plus.png" alt=" " width="29" height="22"></amp-img></a>
+            <a href="#" class="soc_item"><amp-img src="img/telegram-logo.png" alt=" " width="20" height="19"></amp-img></a>
+            <a href="#" class="soc_item"><amp-img src="img/viber.png" alt=" " width="20" height="22"></amp-img></a>
+            <a href="#" class="soc_item"><amp-img src="img/whatsapp.png" alt=" " width="21" height="22"></amp-img></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section_8">
+      <amp-iframe width="auto" height="375"
+                  sandbox="allow-scripts allow-same-origin"
+                  frameborder="0"
+                  layout="fixed-height"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCHjbI1MVf6ZxrFw2POoqtQlHnEzqgTmtQ&q=50.447390,30.448865">
+        <amp-img
+                src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyCHjbI1MVf6ZxrFw2POoqtQlHnEzqgTmtQ&center=50.447390,30.448865&zoom=12&size=1920x375"
+                width="1920"
+                height="375"
+                layout="responsive"
+                placeholder
+        />
+      </amp-iframe>
+    </div>
+
+    <div class="main_footer">
+      <div class="container">
+        <div class="inner">
+          <div class="left">
+            <div class="text-1">* Ваши данные никогда не будут переданы 3-м лицам</div>
+            <div class="text-2"><a href="#">Политика конфиденциальности</a></div>
+          </div>
+          <div class="copyright">&copy; 2019  Все права защищены. Разработано <a href="#">Papaya</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
