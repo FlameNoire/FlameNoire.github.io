@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="ru-en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Yacht Club</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!--<meta property="og:image" content="img/logo.png">-->
+  <!--<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">-->
+  <!--<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">-->
+  <!--<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">-->
+  <!--<link rel="manifest" href="img/favicon/site.webmanifest">-->
+  <!--<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">-->
+  <!--<meta name="msapplication-TileColor" content="#da532c">-->
+  <!--<meta name="theme-color" content="#ffffff">-->
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/datepicker.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANEMjdhQhi6QHPO4Zf2ScmebhkjOeqKtY&callback=initMap"></script>
+
+
+</head>
+
+<body>
+
+<div id="scroll_wrapper" class="wrapper page_direction">
+
+  <div class="parallax_scene_1">
+    <div class="inner" style="background: url('img/bg-parallax-img-4.png') repeat-y"></div>
+  </div>
+
+  <div id="login_form" class="custom_form login_form">
+    <div class="abs_img img_1"><img src="img/icon-5.png" alt=" "></div>
+    <div class="abs_img img_2"><img src="img/icon-6.png" alt=" "></div>
+    <div class="abs_img img_3"><img src="img/icon-7.png" alt=" "></div>
+    <div class="form_body">
+      <div class="title">Авторизация</div>
+      <input type="email" class="form-control" placeholder="Email">
+      <input type="password" class="form-control" placeholder="Пароль">
+      <div class="forget_pass text"><a href="#">Восстановить пароль</a></div>
+      <a href="#" class="submit_btn">Вход</a>
+      <div class="text">Еще нет аккаунта? <a href="#" class="btn_sign-in">Зарегистрироваться.</a><br> или войдите через соц. сети</div>
+      <div class="socials">
+        <a href="#"><img src="img/facebook2.png" alt=" "></a>
+        <a href="#"><img src="img/instagram2.png" alt=" "></a>
+        <a href="#"><img src="img/twitter2.png" alt=" "></a>
+      </div>
+    </div>
+  </div>
+  <div id="reg_form" class="custom_form reg_form">
+    <div class="abs_img img_1"><img src="img/icon-5.png" alt=" "></div>
+    <div class="abs_img img_2"><img src="img/icon-6.png" alt=" "></div>
+    <div class="abs_img img_3"><img src="img/icon-7.png" alt=" "></div>
+    <div class="form_body">
+      <div class="title">Registration</div>
+      <input type="text" class="form-control" placeholder="Name">
+      <input type="email" class="form-control" placeholder="Email">
+      <input type="password" class="form-control" placeholder="Пароль">
+      <a href="#" class="submit_btn">Sign in</a>
+      <div class="text">или войдите через соц. сети</div>
+      <div class="socials">
+        <a href="#"><img src="img/facebook2.png" alt=" "></a>
+        <a href="#"><img src="img/instagram2.png" alt=" "></a>
+        <a href="#"><img src="img/twitter2.png" alt=" "></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main_header">
+    <div class="bg_img"></div>
+    <div class="container">
+      <div class="inner">
+        <a href="index.html" class="site_logo"><img src="img/logo-1.png" alt=" "></a>
+
+        <nav class="navbar">
+
+          <div class="navbar-header">
+            <a href="index.html" class="site_logo"><img src="img/logo-1.png" alt=" "></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top_nav_collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar" style="background-color: #ffffff;"></span>
+              <span class="icon-bar" style="background-color: #ffffff;"></span>
+              <span class="icon-bar" style="background-color: #ffffff;"></span>
+            </button>
+
+            <div class="main_header_top_buttons">
+              <a href="#" class="buttons_1 btn_enter">Log in</a>
+              <div class="lang_block">
+                <a href="#" class="buttons_1 btn_lang">
+                  Eng <img src="img/arr-1-bottom.png" alt=" ">
+                </a>
+                <ul class="lang_list">
+                  <li><a href="#">Eng</a></li>
+                  <li><a href="#">Ru</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse" id="top_nav_collapse">
+            <ul class="nav navbar-nav top_navigation">
+              <li><a href="certificates.html">1Y Сертификат</a></li>
+              <li><a class="active" href="#">Направления</a></li>
+              <li><a href="index.html">1Y Club</a></li>
+              <li><a href="faqs.html">FAQ</a></li>
+              <li><a href="contact_us.html">Контакты</a></li>
+            </ul>
+          </div>
+
+        </nav>
+
+        <div class="main_header_top_buttons">
+          <a href="#" class="buttons_1 btn_enter">Log in</a>
+          <div class="lang_block">
+            <a href="#" class="buttons_1 btn_lang">
+              Eng <img src="img/arr-1-bottom.png" alt=" ">
+            </a>
+            <ul class="lang_list">
+              <li><a href="#">Eng</a></li>
+              <li><a href="#">Ru</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="s_top">
+    <div id="bg_video"></div>
+    <div class="bg_image"></div>
+    <div class="s_top_content wow fadeInDown">
+      <h2 class="s_title">Хорватия</h2>
+      <div class="caption">Jun - Aug 2019</div>
+    </div>
+  </div>
+
+  <div class="page_direction_wrap">
+
+    <div class="place_description">
+      <div class="container">
+        <div class="inner  wow fadeIn">
+          <p>Нейдущих глупостей, каждый дворянин, с лакеями. Предводитель не даст бала губернского предводителя. Заставившие большинство дворян изменить суждение о его жена желающая. Называют madame и уважителен madame и. Держит себя за все было вместе. Выбран двенадцатью шарами рассказал, как выписаны были лакеи. Двадцать человек был совершенно новый человек был совершенно. Ему кучу ни к чему. Свои права на стороне нынешнего успеха и знатность; прекрасное помещение. Губернский предводитель и потому все обязанности того положения дворянина.</p>
+          <p>Нейдущих глупостей, каждый дворянин, с лакеями. Предводитель не даст бала губернского предводителя. Заставившие большинство дворян изменить суждение о его жена желающая. Называют madame и уважителен madame и. Держит себя за все было вместе. Выбран двенадцатью шарами рассказал, как выписаны были лакеи. Двадцать человек был совершенно новый человек был совершенно. Ему кучу ни к чему. Свои права на стороне нынешнего успеха и знатность; прекрасное помещение. Губернский предводитель и потому все обязанности того положения дворянина.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="lifehacks">
+      <div class="container">
+        <h2 class="s_title wow fadeInDown">Лайфхаки</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="lifehacks_item wow fadeInLeft">
+              <div class="waves_1"><img src="img/waves-1.png" alt=" "></div>
+              <div class="inner">
+                <div class="num">1</div>
+                <div class="text">
+                  Нейдущих глупостей, каждый дворянин, с лакеями. Предводитель не даст бала губернского предводителя.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="lifehacks_item wow fadeInDown">
+              <div class="waves_1"><img src="img/waves-1.png" alt=" "></div>
+              <div class="inner">
+                <div class="num">2</div>
+                <div class="text">
+                  Заставившие большинство дворян изменить суждение о его жена желающая.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="lifehacks_item wow fadeInRight">
+              <div class="waves_1"><img src="img/waves-1.png" alt=" "></div>
+              <div class="inner">
+                <div class="num">3</div>
+                <div class="text">
+                  Предводитель не даст бала губернского предводителя. Заставившие большинство дворян изменить суждение о его жена желающая.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery wow fadeIn">
+      <div class="parallax_scene_2" style="background: url('img/bg-parallax-img-3.png') repeat-y top center"></div>
+      <div class="container">
+        <h2 class="s_title">Emotions</h2>
+        <div class="caption">Блок с фотками из путешествий</div>
+      </div>
+      <div id="yc_gallery1" class="yc_gallery">
+        <div class="slide">
+          <div class="inner">
+            <div class="slide_line top">
+              <img src="img/photo-23.jpg" alt=" ">
+              <img src="img/photo-24.jpg" alt=" ">
+              <img src="img/photo-26.jpg" alt=" ">
+              <img src="img/photo-23.jpg" alt=" ">
+              <img src="img/photo-24.jpg" alt=" ">
+              <img src="img/photo-26.jpg" alt=" ">
+              <img src="img/photo-23.jpg" alt=" ">
+              <img src="img/photo-24.jpg" alt=" ">
+              <img src="img/photo-26.jpg" alt=" ">
+              <img src="img/photo-23.jpg" alt=" ">
+              <img src="img/photo-24.jpg" alt=" ">
+              <img src="img/photo-26.jpg" alt=" ">
+            </div>
+            <div class="slide_line bottom">
+              <img src="img/photo-26.jpg" alt=" ">
+              <img src="img/photo-27.jpg" alt=" ">
+              <img src="img/photo-28.jpg" alt=" ">
+              <img src="img/photo-26.jpg" alt=" ">
+              <img src="img/photo-27.jpg" alt=" ">
+              <img src="img/photo-28.jpg" alt=" ">
+              <img src="img/photo-23.jpg" alt=" ">
+              <img src="img/photo-24.jpg" alt=" ">
+              <img src="img/photo-26.jpg" alt=" ">
+              <img src="img/photo-23.jpg" alt=" ">
+              <img src="img/photo-24.jpg" alt=" ">
+              <img src="img/photo-26.jpg" alt=" ">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="yc_gallery2" class="yc_gallery owl-carousel">
+        <img src="img/photo-23.jpg" alt=" ">
+        <img src="img/photo-24.jpg" alt=" ">
+        <img src="img/photo-26.jpg" alt=" ">
+        <img src="img/photo-23.jpg" alt=" ">
+        <img src="img/photo-24.jpg" alt=" ">
+        <img src="img/photo-26.jpg" alt=" ">
+        <img src="img/photo-23.jpg" alt=" ">
+        <img src="img/photo-24.jpg" alt=" ">
+        <img src="img/photo-26.jpg" alt=" ">
+        <img src="img/photo-23.jpg" alt=" ">
+        <img src="img/photo-24.jpg" alt=" ">
+        <img src="img/photo-26.jpg" alt=" ">
+      </div>
+    </div>
+
+    <div class="choose_date">
+      <div class="container">
+        <h2 class="s_title">Выбор даты</h2>
+
+        <div class="choose_date_outer">
+          <div class="choose_date_top wow fadeIn">
+            <div class="waves_1"><img src="img/waves-10.png" alt=" "></div>
+            <div class="waves_2"><img src="img/waves-11.png" alt=" "></div>
+            <div class="row inner">
+              <div class="col-lg-4 col-lg-offset-1 col-md-5 col-sm-6">
+                <!--<div id="yc_datepicker" class="wow fadeInLeft"></div>-->
+                <div id="yc_datepicker_2" class="datepicker-here" data-range="true"
+                     data-multiple-dates-separator=" - " data-language='en'></div>
+              </div>
+              <div class="col-lg-6 col-lg-offset-1 col-md-5 col-sm-6">
+                <div class="left_block wow fadeInRight">
+                  <div class="item">
+                    <div class="title">Места</div>
+                    <div class="value">5 / 7</div>
+                  </div>
+                  <div class="item">
+                    <div class="title">Уже купили</div>
+                    <div class="buy_already">
+                      <ul>
+                        <li>
+                          <img src="img/photo-9.png" alt=" ">
+                          <a href="#">Виталий Степ</a>
+                        </li>
+                        <li>
+                          <img src="img/photo-9.png" alt=" ">
+                          <a href="#">Виталий Степ</a>
+                        </li>
+                        <li>
+                          <img src="img/photo-9.png" alt=" ">
+                          <a href="#">Виталий Степ</a>
+                        </li>
+                        <li>
+                          <img src="img/photo-9.png" alt=" ">
+                          <a href="#">Виталий Степ</a>
+                        </li>
+                        <li>
+                          <img src="img/photo-9.png" alt=" ">
+                          <a href="#">Виталий Степ</a>
+                        </li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="title">Цена</div>
+                    <div class="value">350 USD</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="what_include">
+            <div class="what_include_list list_1">
+              <div class="title wow fadeInRight">Включено в сертификат</div>
+              <ul class=" wow fadeInRight">
+                <li>2-person cabin on a standard yacht</li>
+                <li>Access to all The Yacht Week events</li>
+                <li>Mineral water</li>
+                <li>Towels & bed line</li>
+                <li>GPS & nautical charts</li>
+                <li>International DJs</li>
+                <li>Basics for breakfast & lunch</li>
+              </ul>
+              <ul class=" wow fadeInRight">
+                <li>Mineral water</li>
+                <li>Stereo speakers</li>
+                <li>Final cleaning of yacht</li>
+                <li>Dinghy & outboard engine</li>
+                <li>Yacht equipment</li>
+                <li>Tailored itinerary</li>
+                <li>Vis water taxis</li>
+              </ul>
+            </div>
+            <div class="divider"><img src="img/divider-1.png" alt=" "></div>
+            <div class="what_include_list list_2">
+              <div class="title wow fadeInRight">Доп. услуги:</div>
+              <ul class="wow fadeInRight">
+                <li>
+                  <div>Transfers to and from airport</div>
+                  <div class="price">50 <span>USD</span></div>
+                </li>
+                <li>
+                  <div>Yacht fuel, water, shore power</div>
+                  <div class="price">450 <span>USD</span></div>
+                </li>
+                <li>
+                  <div>Alcohol and eating out</div>
+                  <div class="price">50 <span>USD</span></div>
+                </li>
+                <li>
+                  <div>Water taxis</div>
+                  <div class="price">50 <span>USD</span></div>
+                </li>
+                <li>
+                  <div>Port fees</div>
+                  <div class="price">450 <span>USD</span></div>
+                </li>
+                <li>
+                  <div>Refundable yacht deposit</div>
+                  <div class="price">50 <span>USD</span></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trip_program">
+      <h2 class="s_title wow fadeInDown">Программа путешествия</h2>
+      <div class="map wow fadeIn">
+        <div class="bg_triangle bg_triangle_1"></div>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+
+                var centerLatLng = new google.maps.LatLng(41.272915, 15.575292);
+
+                var mapOptions = {
+                    center: centerLatLng,
+                    zoom: 7,
+                    scrollwheel: false
+                };
+
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+                var directionsService = new google.maps.DirectionsService;
+                var directionsDisplay = new google.maps.DirectionsRenderer({map: map});
+                directionsDisplay.setOptions({suppressMarkers: true});
+
+                directionsDisplay.setMap(map);
+
+                var waypts = [
+                    {location: {lat: 42.652068, lng: 18.094392}, stopover: true},
+                    {location: {lat: 42.353381, lng: 14.403050}, stopover: true},
+                    {location: {lat: 42.208152, lng: 14.594835}, stopover: true},
+                    {location: {lat: 42.001715, lng: 14.995433}, stopover: true},
+                    {location: {lat: 42.112940, lng: 15.486932}, stopover: true},
+                ];
+
+                for (var i = 0; i < waypts.length; i++) {
+                    var marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(waypts[i].location.lat, waypts[i].location.lng),
+                        map: map,
+                        icon: 'img/way-' + (i + 1) +'.png',
+                        title:""
+                    });
+                }
+
+                var request = {
+                    origin: new google.maps.LatLng(42.652068,18.094392), //точка старта
+                    destination: new google.maps.LatLng(42.112940,15.486932), //точка финиша
+                    waypoints: waypts,
+                    optimizeWaypoints: false,
+                    travelMode: google.maps.DirectionsTravelMode.DRIVING
+//                    travelMode: google.maps.DirectionsTravelMode.WALKING
+                };
+                directionsService.route(request, function(response, status){
+                    if (status == google.maps.DirectionsStatus.OK){
+                        directionsDisplay.setDirections(response);
+                    }
+                });
+
+                directionsDisplay.setMap(map);
+
+            }
+
+            google.maps.event.addDomListener(window, "load", initMap);
+
+        </script>
+      </div>
+      <div class="trip_waypoints">
+        <div class="container">
+          <div class="inner">
+            <div class="trip_waypoints_inner">
+              <div class="left">
+                <div class="trip_waypoint">
+                  <div class="point_num wow fadeInDown">
+                    <div class="line-1 wow fadeIn"></div>
+                    <div class="line-2"></div>
+                    <div class="inner wow fadeIn">2nd</div>
+                  </div>
+                  <div class="image wow fadeInLeft">
+                    <div class="inner"><img src="img/photo-10.png" alt=" "></div>
+                  </div>
+                  <div class="descr wow fadeIn">
+                    <div class="title">Название точки второго дня путешествия на яхте</div>
+                    <div class="details">
+                      <ul>
+                        <li><span>11:00</span> - отправление</li>
+                        <li><span>15:30</span> - какая-то точка</li>
+                        <li><span>16:30</span> - какая-то точка</li>
+                        <li><span>17:30</span> - какая-то точка</li>
+                        <li><span>19:30</span> - какая-то точка</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="trip_waypoint">
+                  <div class="point_num wow fadeInDown">
+                    <div class="line-1 wow fadeIn"></div>
+                    <div class="line-2"></div>
+                    <div class="inner wow fadeIn">4th</div>
+                  </div>
+                  <div class="image wow fadeInLeft">
+                    <div class="inner"><img src="img/photo-10.png" alt=" "></div>
+                  </div>
+                  <div class="descr wow fadeIn">
+                    <div class="title">Название точки второго дня путешествия на яхте</div>
+                    <div class="details">
+                      <ul>
+                        <li><span>11:00</span> - отправление</li>
+                        <li><span>15:30</span> - какая-то точка</li>
+                        <li><span>16:30</span> - какая-то точка</li>
+                        <li><span>17:30</span> - какая-то точка</li>
+                        <li><span>19:30</span> - какая-то точка</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="trip_waypoint">
+                  <div class="point_num wow fadeInDown">
+                    <div class="line-1 wow fadeIn"></div>
+                    <div class="line-2"></div>
+                    <div class="inner wow fadeIn">1st</div>
+                  </div>
+                  <div class="image wow fadeInRight">
+                    <div class="inner"><img src="img/photo-10.png" alt=" "></div>
+                  </div>
+                  <div class="descr wow fadeIn">
+                    <div class="title">Название точки 1-го дня</div>
+                    <div class="details">
+                      <ul>
+                        <li><span>11:00</span> - отправление</li>
+                        <li><span>15:30</span> - какая-то точка</li>
+                        <li><span>16:30</span> - какая-то точка</li>
+                        <li><span>17:30</span> - какая-то точка</li>
+                        <li><span>19:30</span> - какая-то точка</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="trip_waypoint">
+                  <div class="point_num wow fadeInDown">
+                    <div class="line-1 wow fadeIn"></div>
+                    <div class="line-2"></div>
+                    <div class="inner wow fadeIn">3nd</div>
+                  </div>
+                  <div class="image wow fadeInRight">
+                    <div class="inner"><img src="img/photo-10.png" alt=" "></div>
+                  </div>
+                  <div class="descr wow fadeIn">
+                    <div class="title">Название точки второго дня путешествия на яхте</div>
+                    <div class="details">
+                      <ul>
+                        <li><span>11:00</span> - отправление</li>
+                        <li><span>15:30</span> - какая-то точка</li>
+                        <li><span>16:30</span> - какая-то точка</li>
+                        <li><span>17:30</span> - какая-то точка</li>
+                        <li><span>19:30</span> - какая-то точка</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="trip_waypoint">
+                  <div class="point_num wow fadeInDown">
+                    <div class="line-1 wow fadeIn"></div>
+                    <div class="line-2"></div>
+                    <div class="inner wow fadeIn">5th</div>
+                  </div>
+                  <div class="image wow fadeInRight">
+                    <div class="inner"><img src="img/photo-10.png" alt=" "></div>
+                  </div>
+                  <div id="test" class="descr wow fadeIn">
+                    <div class="title">Название точки второго дня путешествия на яхте</div>
+                    <div class="details">
+                      <ul>
+                        <li><span>11:00</span> - отправление</li>
+                        <li><span>15:30</span> - какая-то точка</li>
+                        <li><span>16:30</span> - какая-то точка</li>
+                        <li><span>17:30</span> - какая-то точка</li>
+                        <li><span>19:30</span> - какая-то точка</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="choose_yacht">
+      <div class="bg_triangle bg_triangle_2"></div>
+      <div class="container">
+        <h2 class="s_title wow fadeInDown">Выберите яхту</h2>
+        <div class="caption wow fadeInDown">Какая-то вспомогательная фраза по выбору яхт</div>
+        <div class="choose_yacht_wrap row">
+          <div class="col-md-6">
+            <div class="yacht_item wow fadeInLeft">
+              <div class="yacht_image">
+                <div class="title">Sun Odyssey 439 LUNA</div>
+                <img src="img/yacht-1.png" alt=" ">
+                <a href="#" class="gallery_link"><img src="img/camera.png" alt=" "> 5 фото</a>
+              </div>
+              <a href="#" class="choose_link"><img src="img/checkround.png" alt=" "></a>
+              <div class="yacht_descr">
+                <div class="lists">
+                  <ul>
+                    <li>Base <span>- Bar, Montenegro</span></li>
+                    <li>Year of built <span>- 2013</span></li>
+                    <li>Lenght <span>- 13.34 m</span></li>
+                    <li>Beam <span>- 4.24 m</span></li>
+                    <li>Cabins <span>- 4 (3 double + 1 with bunk beds)</span></li>
+                    <li>Berths <span>- 8</span></li>
+                  </ul>
+                  <ul>
+                    <li>WC/Showers <span>- 2</span></li>
+                    <li>Engine <span>- Yanmar 54 HP</span></li>
+                    <li>Fuel capacity <span>- 200 l</span></li>
+                    <li>Water capacity <span>- 530 l</span></li>
+                    <li>Sails: <span>Roll</span></li>
+                    <li>Maximum crew members: <span>8</span></li>
+                  </ul>
+                </div>
+                <div class="more_block">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto asperiores blanditiis debitis dolorum earum eos facere fugiat hic iste, labore magni minus nobis, numquam odit officiis placeat quibusdam reiciendis repellendus reprehenderit repudiandae sed similique tempore totam, vel vitae voluptate! Aut non quisquam quod? Blanditiis consequuntur deserunt minima porro voluptas.
+                </div>
+                <a href="#" class="show_more show_more-open">Показать еще <img src="img/arr-double-bottom.png" alt=" "></a>
+                <a href="#" class="show_more show_more-close">Свернуть<img src="img/arr-double-top.png" alt=" "></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="yacht_item wow fadeInRight">
+              <div class="yacht_image">
+                <div class="title">Sun Odyssey 439 LUNA</div>
+                <img src="img/yacht-1.png" alt=" ">
+                <a href="#" class="gallery_link"><img src="img/camera.png" alt=" "> 5 фото</a>
+              </div>
+              <a href="#" class="choose_link"><img src="img/checkround.png" alt=" "></a>
+              <div class="yacht_descr">
+                <div class="lists">
+                  <ul>
+                    <li>Base <span>- Bar, Montenegro</span></li>
+                    <li>Year of built <span>- 2013</span></li>
+                    <li>Lenght <span>- 13.34 m</span></li>
+                    <li>Beam <span>- 4.24 m</span></li>
+                    <li>Cabins <span>- 4 (3 double + 1 with bunk beds)</span></li>
+                    <li>Berths <span>- 8</span></li>
+                  </ul>
+                  <ul>
+                    <li>WC/Showers <span>- 2</span></li>
+                    <li>Engine <span>- Yanmar 54 HP</span></li>
+                    <li>Fuel capacity <span>- 200 l</span></li>
+                    <li>Water capacity <span>- 530 l</span></li>
+                    <li>Sails: <span>Roll</span></li>
+                    <li>Maximum crew members: <span>8</span></li>
+                  </ul>
+                </div>
+                <div class="more_block">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto asperiores blanditiis debitis dolorum earum eos facere fugiat hic iste, labore magni minus nobis, numquam odit officiis placeat quibusdam reiciendis repellendus reprehenderit repudiandae sed similique tempore totam, vel vitae voluptate! Aut non quisquam quod? Blanditiis consequuntur deserunt minima porro voluptas.
+                </div>
+                <a href="#" class="show_more show_more-open">Показать еще <img src="img/arr-double-bottom.png" alt=" "></a>
+                <a href="#" class="show_more show_more-close">Свернуть<img src="img/arr-double-top.png" alt=" "></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="pay_btn">Перейти к оплате</a>
+      </div>
+    </div>
+
+    <div class="s_reviews">
+      <div class="container">
+        <h2 class="s_title wow fadeInDown">What people say</h2>
+        <div class="caption wow fadeInDown">Feedback from people who know how to have fun</div>
+
+        <div class="yc_slider3d">
+          <div id="yc_slider3d" class="yc_slider3d_container">
+            <div class="yc_slider3d_slide reviews_item_1">
+              <div class="image"><img src="img/photo-29.jpg" alt=" "></div>
+              <div class="descr">
+                <div class="place"><a href="directions.html">Греция</a></div>
+                <div class="reviewer">
+                  <div class="rating">
+                    <div class="rating_outer">
+                      <div class="rating_inner" style="width: 76%;"></div>
+                    </div>
+                  </div>
+                  <div class="name"><a href="cabinet_reviews.html">Виталий Степ</a></div>
+                </div>
+                <div class="review_title">Крутейший отдых, много эмоций  и еще больше шикарных фоток!</div>
+                <div class="review_text">For FINOBETON S.A., ensuring the quality of the final product is a top priority. For this reason, the company applies a quality assurance system according to the international standard ISO 9001:2015 and uses only CE-certified raw materials.</div>
+              </div>
+            </div>
+            <div class="yc_slider3d_slide reviews_item_1">
+              <div class="image"><img src="img/photo-29.jpg" alt=" "></div>
+              <div class="descr">
+                <div class="place"><a href="directions.html">Греция</a></div>
+                <div class="reviewer">
+                  <div class="rating">
+                    <div class="rating_outer">
+                      <div class="rating_inner" style="width: 76%;"></div>
+                    </div>
+                  </div>
+                  <div class="name"><a href="cabinet_reviews.html">Виталий Степ</a></div>
+                </div>
+                <div class="review_title">Крутейший отдых, много эмоций  и еще больше шикарных фоток!</div>
+                <div class="review_text">For FINOBETON S.A., ensuring the quality of the final product is a top priority. For this reason, the company applies a quality assurance system according to the international standard ISO 9001:2015 and uses only CE-certified raw materials.</div>
+              </div>
+            </div>
+            <div class="yc_slider3d_slide reviews_item_1">
+              <div class="image"><img src="img/photo-29.jpg" alt=" "></div>
+              <div class="descr">
+                <div class="place"><a href="directions.html">Греция</a></div>
+                <div class="reviewer">
+                  <div class="rating">
+                    <div class="rating_outer">
+                      <div class="rating_inner" style="width: 76%;"></div>
+                    </div>
+                  </div>
+                  <div class="name"><a href="cabinet_reviews.html">Виталий Степ</a></div>
+                </div>
+                <div class="review_title">Крутейший отдых, много эмоций  и еще больше шикарных фоток!</div>
+                <div class="review_text">For FINOBETON S.A., ensuring the quality of the final product is a top priority. For this reason, the company applies a quality assurance system according to the international standard ISO 9001:2015 and uses only CE-certified raw materials.</div>
+              </div>
+            </div>
+            <div class="yc_slider3d_slide reviews_item_1">
+              <div class="image"><img src="img/photo-29.jpg" alt=" "></div>
+              <div class="descr">
+                <div class="place"><a href="directions.html">Греция</a></div>
+                <div class="reviewer">
+                  <div class="rating">
+                    <div class="rating_outer">
+                      <div class="rating_inner" style="width: 76%;"></div>
+                    </div>
+                  </div>
+                  <div class="name"><a href="cabinet_reviews.html">Виталий Степ</a></div>
+                </div>
+                <div class="review_title">Крутейший отдых, много эмоций  и еще больше шикарных фоток!</div>
+                <div class="review_text">For FINOBETON S.A., ensuring the quality of the final product is a top priority. For this reason, the company applies a quality assurance system according to the international standard ISO 9001:2015 and uses only CE-certified raw materials.</div>
+              </div>
+            </div>
+            <div class="yc_slider3d_slide reviews_item_1">
+              <div class="image"><img src="img/photo-29.jpg" alt=" "></div>
+              <div class="descr">
+                <div class="place"><a href="directions.html">Греция</a></div>
+                <div class="reviewer">
+                  <div class="rating">
+                    <div class="rating_outer">
+                      <div class="rating_inner" style="width: 76%;"></div>
+                    </div>
+                  </div>
+                  <div class="name"><a href="cabinet_reviews.html">Виталий Степ</a></div>
+                </div>
+                <div class="review_title">Крутейший отдых, много эмоций  и еще больше шикарных фоток!</div>
+                <div class="review_text">For FINOBETON S.A., ensuring the quality of the final product is a top priority. For this reason, the company applies a quality assurance system according to the international standard ISO 9001:2015 and uses only CE-certified raw materials.</div>
+              </div>
+            </div>
+            <div class="yc_slider3d_slide reviews_item_1">
+              <div class="image"><img src="img/photo-29.jpg" alt=" "></div>
+              <div class="descr">
+                <div class="place"><a href="directions.html">Греция</a></div>
+                <div class="reviewer">
+                  <div class="rating">
+                    <div class="rating_outer">
+                      <div class="rating_inner" style="width: 76%;"></div>
+                    </div>
+                  </div>
+                  <div class="name"><a href="cabinet_reviews.html">Виталий Степ</a></div>
+                </div>
+                <div class="review_title">Крутейший отдых, много эмоций  и еще больше шикарных фоток!</div>
+                <div class="review_text">For FINOBETON S.A., ensuring the quality of the final product is a top priority. For this reason, the company applies a quality assurance system according to the international standard ISO 9001:2015 and uses only CE-certified raw materials.</div>
+              </div>
+            </div>
+          </div>
+          <div class="yc_slider3d_nav">
+            <button id="prev" class="prev"></button>
+            <button id="next" class="next"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="s_bottom">
+      <div class="bg_img"></div>
+      <div class="waves"><img src="img/waves-8.png" alt=" "></div>
+      <div class="container">
+        <div class="row inner">
+          <div class="col-md-5 wow fadeInLeft">
+            <div class="text">Самое время испытать новые эмоции</div>
+          </div>
+          <div class="col-md-6 col-md-offset-1 wow fadeInRight">
+            <a href="#" class="buttons_2">Action button</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="useful_links">
+      <div class="container">
+        <h2 class="s_title">Ссылки на полезные страницы</h2>
+        <div class="caption">Our sailing events are staged in 7 destinations around the world</div>
+        <div class="useful_links_list">
+          <div class="left wow fadeInLeft">
+            <a href="#" class="link"><img src="img/icon-2.png" alt=" ">Выбрать направление </a>
+            <a href="#" class="link"><img src="img/icon-3.png" alt=" ">Посмотреть яхты </a>
+          </div>
+          <div class="right wow fadeInRight">
+            <a href="#" class="link"><img src="img/icon-1.png" alt=" ">Календарь заплывов </a>
+            <a href="#" class="link"><img src="img/icon-4.png" alt=" ">Купить сертификат </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="insta_block wow zoomIn">
+      <h2 class="s_title">Блок инсты</h2>
+      <div class="caption">Делись. Обсуждай. Смотри на мир по другому с людьми, которые уже это делали.</div>
+      <div class="insta_imgs_wrap">
+        <div class="outer">
+          <div class="inner">
+            <a href="#" class="insta_link"><img src="img/photo-1.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-2.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-3.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-4.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-5.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-6.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-7.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-8.png" alt=" "></a>
+
+
+            <a href="#" class="insta_link"><img src="img/photo-8.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-7.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-6.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-5.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-4.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-3.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-2.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-1.png" alt=" "></a>
+
+            <a href="#" class="insta_link"><img src="img/photo-1.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-2.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-3.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-4.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-5.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-6.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-7.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-8.png" alt=" "></a>
+
+
+            <a href="#" class="insta_link"><img src="img/photo-8.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-7.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-6.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-5.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-4.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-3.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-2.png" alt=" "></a>
+            <a href="#" class="insta_link"><img src="img/photo-1.png" alt=" "></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="main_footer">
+    <div class="bg_img"></div>
+    <div class="container">
+      <div class="search">
+        <input type="email" class="form-control" placeholder="Enter your email to subscribe">
+        <a href="#" class="subscribe_link">Subscribe</a>
+      </div>
+      <div class="row">
+        <div class="footer_menu">
+          <div class="col-md-2">
+            <a href="#" class="logo"><img src="img/logo-2.png" alt=" "></a>
+          </div>
+          <div class="col-md-3">
+            <div class="menu_block">
+              <ul>
+                <li><a href="#">Направления</a></li>
+                <li><a href="#">Календарь</a></li>
+                <li><a href="#">Сертификаты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="menu_block">
+              <ul>
+                <li><a href="#">Члены клуба</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="contacts">
+              <div class="text">Свяжитесь с нами</div>
+              <a href="mailto:support@yachtclub.com" class="mail_link">support@yachtclub.com</a>
+              <div class="socials">
+                <a href="#" class=" "><img src="img/facebook.png" alt=" "></a>
+                <a href="#" class=" "><img src="img/instagram.png" alt=" "></a>
+                <a href="#" class=" "><img src="img/twitter.png" alt=" "></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© Все права защищены. Yacht Club 2019.</div>
+    </div>
+  </footer>
+
+</div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/current_device.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.6/TweenMax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/datepicker.min.js"></script>
+<script src="js/datepicker.en.js"></script>
+<script src="js/jquery.ripples-min.js"></script>
+<script src="js/jquery.paroller.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/waterweel.carousel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="js/wow.min.js"></script>
+<!--<script src="js/typeit.min.js"></script>-->
+<script src="js/common.js"></script>
+
+
+</body>
+</html>
