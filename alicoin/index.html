@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xwin</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:300,400,600,700,800|Teko:300,400,500,600,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body id="home_page" class="home_page">
+
+<div class="wrapper">
+
+  <div id="login_form" class="custom_form login_form">
+    <form>
+      <p class="form_title">Please Sign In</p>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Username">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Password">
+      </div>
+      <p class="text">2FA Code (Only if you enabled 2FA)</p>
+      <div class="form-group input_code">
+        <input type="text" class="form-control">
+      </div>
+      <a href="#" class="buttons submit_btn">sign in</a>
+      <div class="forget_pass">
+        <a href="#">Forget password?</a>
+      </div>
+      <div class="captcha"><img src="img/captcha.png" alt=" "></div>
+      <div class="sign_up">
+        Not a member yet? <a href="#" class="reg_modal_btn">Sign Up</a>
+      </div>
+    </form>
+  </div>
+  <div id="registration_form" class="custom_form reg_form">
+    <form>
+      <p class="form_title">Please Sign Up</p>
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Username">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="First Name">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Last Name">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Sponsor ">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Email ">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Confirm Emaill ">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password ">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Confirm Password ">
+          </div>
+        </div>
+      </div>
+      <div class="captcha"><img src="img/captcha.png" alt=" "></div>
+      <a href="#" class="buttons submit_btn">sign up</a>
+      <div class="agreement">
+        <div class="checkbox">
+          <input type="checkbox" id="check_1">
+          <label for="check_1"></label>
+          <span>I have read and agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></span>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="confirmEmail" class="custom_form confirm_email" style="display: none;">
+    <div class="form_logo"><img src="img/security-sign.png" alt=" "></div>
+    <div class="text">Before we can get started, we have to confirm your email address.Just click here...</div>
+    <div class="btns_wrap">
+      <a href="#" class="buttons">confirm your email</a>
+    </div>
+    <div class="socials">
+      <a href="#" class="soc soc-tw"><img src="img/twitter.png" alt=""></a>
+      <a href="#" class="soc soc-inst"><img src="img/instagram.png" alt=""></a>
+      <a href="#" class="soc soc-git"><img src="img/telegram.png" alt=""></a>
+    </div>
+  </div>
+
+  <header class="main_header">
+    <div class="container">
+      <div class="main_header_wrap">
+        <a href="index.html" class="site_logo hidden-xs">
+          <img src="img/logo.svg" alt="Alicoin">
+        </a>
+        <nav class="navbar navbar_1">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top_nav_collapse">
+              <img src="img/menubtn.svg" alt=" ">
+              <!--<span class="sr-only">Toggle navigation</span>-->
+              <!--<span class="icon-bar" style="background-color: #FFC20E;"></span>-->
+              <!--<span class="icon-bar" style="background-color: #FFC20E;"></span>-->
+              <!--<span class="icon-bar" style="background-color: #FFC20E;"></span>-->
+            </button>
+          </div>
+
+          <a href="index.html" class="site_logo visible-xs">
+            <img src="img/logo.svg" alt="Alicoin">
+          </a>
+
+          <div class="collapse navbar-collapse" id="top_nav_collapse">
+            <ul class="nav navbar-nav top_navigation">
+
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#introduction">About</a></li>
+              <li><a href="#ico">Ico</a></li>
+              <li><a href="#wallets">Wallets</a></li>
+              <li><a href="#landing">Landing</a></li>
+              <li><a href="#affiliate">Affiliate</a></li>
+              <li><a href="#roadmap">Roadmap</a></li>
+            </ul>
+          </div>
+
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="s_top">
+    <div class="bg_outer">
+      <img src="img/bg_logo.png" alt=" ">
+      <div class="bg_inner">
+      </div>
+    </div>
+    <div class="s_top_wrap">
+      <div class="custom_form s_top_form">
+        <div class="form_logo"><img src="img/logo-5.png" alt=" "></div>
+        <div class="btns_wrap">
+          <a href="#" class="buttons reg_modal_btn">Register now!</a>
+          <a href="#" class="buttons login_modal_btn">Login</a>
+          <a href="#" class="buttons">whitepaper</a>
+        </div>
+        <div class="socials">
+          <a href="#" class="soc soc-tw"><img src="img/ic-tw.svg" alt=""></a>
+          <a href="#" class="soc soc-inst"><img src="img/ic-inst.svg" alt=""></a>
+          <a href="#" class="soc soc-telegram"><img src="img/ic-telegram.svg" alt=""></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="introduction" class="s_introduction">
+    <div class="container">
+      <h2 class="s_title wow fadeInDown">
+        INTRODUCTION
+        <span class="accent">Home Block Coin Project </span>
+      </h2>
+      <p class="title_caption text wow fadeInDown"><span class="bold">AliCoin is a decentralized self regulated financial payment network</span> created for users that want to be independent from third parties like banks
+        <br> or the government. No middlemen or other institution are needed for processing transactions.
+      </p>
+
+      <div class="row">
+        <div class="col-sm-4 col-md-4">
+          <div class="introduction_item wow fadeInLeft">
+            <div class="item_img"><img src="img/icon-1.svg" alt=" "></div>
+            <div class="item_title">SPECIFICATION</div>
+            <div class="item_descr">
+              <ul>
+                <li>Name: HomeBlockCoin</li>
+                <li>Symbol: HBC</li>
+                <li>Total Supply: 28.000.000</li>
+                <li>ICO: 5.000.0000</li>
+                <li>Algorithm: X11</li>
+                <li>Type: PoW/PoS</li>
+                <li>Block size: 2MB</li>
+                <li>Tx Fee: 0.00001</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <div class="introduction_item wow fadeIn" style="animation-delay: 0.3s">
+            <div class="item_img"><img src="img/icon-2.svg" alt=" "></div>
+            <div class="item_title">MINING</div>
+            <div class="item_descr">
+              <ul>
+                <li>Pow block reward: 10 HBC</li>
+                <li>Total POW blocks: 262800</li>
+                <li>Block time: 5 minutes</li>
+                <li>Minimum Stake age: 5 days</li>
+                <li>Maximium stake age: 30 day</li>
+                <li>Coin base maturity : 50 blocks</li>
+                <li>Confirmation: 5 blocks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <div class="introduction_item wow fadeInRight">
+            <div class="item_img"><img src="img/icon-3.svg" alt=" "></div>
+            <div class="item_title">PROFIT</div>
+            <div class="item_descr">
+              <ul>
+                <li>1st semester: 60% (10% monthly)</li>
+                <li>2nd semester: 50% (8% monthly)</li>
+                <li>3rd semester: 40% (7% monthly)</li>
+                <li>4th semester: 30% (5% monthly)</li>
+                <li>5th semester: 20% (3% monthly)</li>
+                <li>6th semester: 10% (1.4% monthly)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_banner_1">
+    <div class="bg_outer wow"><img src="img/bg-1.jpg" alt=" "></div>
+    <div class="container wow fadeIn" style="animation-delay: 0.3s">
+      <div class="logo"><img src="img/logo-2.svg" alt=" "></div>
+      <h2 class="s_title">
+        <span class="accent">Investment of a Lifetime</span>
+      </h2>
+      <div class="title_caption">Developed to be mined from home</div>
+      <a href="#" class="buttons">whitepaper</a>
+    </div>
+  </section>
+
+  <section class="s_mining">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-5 wow fadeInLeft">
+          <h2 class="s_title">
+            MINING
+            <span class="accent">Proof of Work Defined </span>
+          </h2>
+          <div class="title_caption">X11 algorithm (PoW) </div>
+          <div class="s_mining_img visible-xs"><img src="img/img-1.png" alt=" "></div>
+          <div class="s_mining_list">
+            <ul>
+              <li>
+                <i><img src="img/icon-4.png" alt=""></i>
+                <p class="title">SECURITY</p>
+                <p>X11 algorithm uses eleven hashing functions from the Blake algorithm to the Keccak algorithm making it very secure which really is needed for coins that do so well for CPU’s
+                </p>
+              </li>
+              <li>
+                <i><img src="img/icon-5.png" alt=""></i>
+                <p class="title">EFFECTIVENESS</p>
+                <p>X11 Algorithm keeps miners temperature over 30% cooler, making your expensive machines less prone to overheating because don’t require as much processing power in order to mine the coins with this algorithm
+                </p>
+              </li>
+              <li>
+                <i><img src="img/icon-6.png" alt=""></i>
+                <p class="title">POWER COST </p>
+                <p>X11 provides significantly lower electricity costs at the end of the month mining HomeBlock Coin. This makes to be a favorite in places where electricity costs are expensive
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-7 wow fadeInRight">
+          <div class="s_mining_img hidden-xs"><img src="img/img-1.png" alt=" "></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_staking">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 wow fadeIn" style="animation-delay: 0.3s">
+          <div class="s_staking_img hidden-xs"><img src="img/img-2.png" alt=" "></div>
+        </div>
+        <div class="col-sm-6 col-md-6 wow fadeInRight">
+          <h2 class="s_title">
+            STAKING
+            <span class="accent">Proof of Work Defined </span>
+          </h2>
+          <p class="text"><span class="bold">Proof of Stake (PoS) concept states that a person can mine or validate block transactions according to how many HomeBlock coins he or she holds.</span> This means that the more HBC owned by a miner, the more mining power he or she has, which results with bigger profit.</p>
+
+          <div class="s_staking_img visible-xs"><img src="img/img-2.png" alt=" "></div>
+          <div class="s_staking_list">
+            <p class="title">Advantages: </p>
+            <ul>
+              <li>No electricity cost</li>
+              <li>No noise</li>
+              <li>Great ROI</li>
+              <li>Secured funds</li>
+              <li>Friendly interface</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_facts">
+    <div class="container">
+      <h2 class="s_title wow fadeInDown">
+        SOME FACTS
+        <span class="accent">Alicoin</span>
+      </h2>
+      <div class="title_caption wow fadeInDown"><span class="bold">AliCoin is platform where all transactions are permanently written,</span> unchangeable and hack resistant.
+        <br> Alicoin is build on that platform
+      </div>
+      <div class="s_facts_img wow"><img src="img/img-3.png" alt=" "></div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-3">
+          <div class="s_facts_item">
+            <div class="item_img wow flipInY" style="animation-delay: 0.3s;"><img src="img/icon-9.png" alt=" "></div>
+            <div class="item_title wow fadeIn" style="animation-delay: 0.2s;">10</div>
+            <div class="item_text wow fadeIn" style="animation-delay: 0.2s;">HBC Pow block reward</div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3">
+          <div class="s_facts_item">
+            <div class="item_img wow flipInY" style="animation-delay: 0.3s;"><img src="img/icon-9.png" alt=" "></div>
+            <div class="item_title wow fadeIn" style="animation-delay: 0.2s;">5</div>
+            <div class="item_text wow fadeIn" style="animation-delay: 0.2s;">Minutes Block time</div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3">
+          <div class="s_facts_item">
+            <div class="item_img wow flipInY" style="animation-delay: 0.3s;"><img src="img/icon-10.png" alt=" "></div>
+            <div class="item_title wow fadeIn" style="animation-delay: 0.2s;">7</div>
+            <div class="item_text wow fadeIn" style="animation-delay: 0.2s;">Days Minimum stake age</div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3">
+          <div class="s_facts_item">
+            <div class="item_img wow flipInY" style="animation-delay: 0.3s;"><img src="img/icon-11.png" alt=" "></div>
+            <div class="item_title wow fadeIn" style="animation-delay: 0.2s;">30</div>
+            <div class="item_text wow fadeIn" style="animation-delay: 0.2s;">Days Maximium stake age</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ico" class="s_join">
+    <div class="top_block">
+      <div class="bg_outer wow"><img src="img/bg-2.jpg" alt=" "></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="s_title wow fadeInRight">
+              JOIN
+              <span class="accent wow fadeInRight">ICO </span>
+            </h2>
+            <div class="title_caption wow fadeInRight">AliCoin coin Initial Coin Offering  HomeBlock coin Initial Coin</div>
+            <div class="text wow fadeInRight" style="animation-delay: 0.6s;">
+              <span class="bold">HomeBlock coin Initial Coin Offering (ICO) will last from the 4th <br> of November 2017 to the 23rd of November 2017.</span>
+              <br> Everyone can join and be a part of our story.
+            </div>
+
+            <div class="countdown_block wow fadeIn">
+              <p class="title">ICO ENDS IN </p>
+              <div class="countdown_wrap">
+                <img class="bg_img" src="img/counter.png" alt=" ">
+                <div id="ico_countdown_1" class="ico_countdown"></div>
+              </div>
+            </div>
+
+            <a href="#" class="buttons wow fadeIn">join ico</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom_block">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 wow fadeIn" style="animation-delay: 0.3s">
+            <div class="bottom_block_item">
+              <div class="item_img"><img src="img/icon-12.svg" alt=" "></div>
+              <div class="item_descr">
+                <div class="item_title">STAKING</div>
+                <div class="item_text">Staking is a process that rewards you by simply holding coins in previosly installed HomeBlockCoin wallet. The more coins you have, the more you earn. Watch your interest grow!
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 wow fadeIn" style="animation-delay: 0.6s">
+            <div class="bottom_block_item">
+              <div class="item_img"><img src="img/icon-13.svg" alt=" "></div>
+              <div class="item_descr">
+                <div class="item_title">LENDING</div>
+                <div class="item_text">This investment option allows you to profit from HBC trading bot and volatility software. Land your coins for daily reward.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 wow fadeIn" style="animation-delay: 0.9s">
+            <div class="bottom_block_item">
+              <div class="item_img"><img src="img/icon-14.svg" alt=" "></div>
+              <div class="item_descr">
+                <div class="item_title">AFFILIATE</div>
+                <div class="item_text">With HomeBlockCoin attractive "Refer and Affiliate" program you can earn additional coins just by refering people to sign up and invest in HomeBlockCoin.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="wallets" class="s_wallets">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+          <div class="s_wallets_img wow zoomIn" style="animation-delay: 0.4s"><img src="img/wallet-image.png" alt=" "></div>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <h2 class="s_title wow fadeInRight">
+            DOWNLOAD
+            <span class="accent wow fadeInRight">Wallets </span>
+          </h2>
+          <div class="title_caption wow fadeInRight" style="animation-delay: 0.4s">To be able to send, receive, stake and earn interest, you will have to install a wallet. <span class="bold">Please download HomeBlockCoin wallet that coresponds to your operating system.</span> Wallets will be available for download after December 1st.
+          </div>
+
+          <div class="coming_soon wow lightSpeedIn" style="animation-delay: 0.8s">Coming Soon </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="landing" class="s_landing">
+    <div class="container">
+      <h2 class="s_title wow fadeInDown">
+        alicoin
+        <span class="accent">Lending</span>
+      </h2>
+      <div class="title_caption wow fadeInDown"><span class="bold">You can invest Alicoin coin in our lending platform from your Dashboard.</span> This investment option allows you to profit from the AliCoin volatility software. This volatility software buys and sells HomeBlockCoins automatically. You will receive daily profit based on your investment. You will receive your capital back with the profits on the following chart on top. You can take out your capital from HomeBlockCoin lending platform or reinvest at any time.
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <div class="s_landing_item wow fadeIn" style="animation-delay: 0.3s">
+            <div class="item_header">
+              <div class="value">$ 100 - $ 1.000 </div>
+              <div class="title">Lending Amount</div>
+              <div class="decor"></div>
+            </div>
+            <div class="item_body">
+              <ul>
+                <li>
+                  <p class="list_title">Volatility Software Interest </p>
+                  (up to 48% per Month)
+                </li>
+                <li>
+                  <p class="list_title">Capital Back</p>
+                  After 239 Days
+                </li>
+              </ul>
+              <a href="#" class="buttons">invest</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <div class="s_landing_item wow fadeIn" style="animation-delay: 0.5s">
+            <div class="item_header">
+              <div class="value">$ 1.010 - $ 5.000</div>
+              <div class="title">Lending Amount</div>
+              <div class="decor"></div>
+            </div>
+            <div class="item_body">
+              <ul>
+                <li>
+                  <p class="list_title">Volatility Software Interest + 0.15% daily </p>
+                  (up to 48% per Month)
+                </li>
+                <li>
+                  <p class="list_title">Capital Back</p>
+                  After 179 Days
+                </li>
+              </ul>
+              <a href="#" class="buttons">invest</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <div class="s_landing_item wow fadeIn" style="animation-delay: 0.7s">
+            <div class="item_header">
+              <div class="value">$ 5.010 - $ 10.000</div>
+              <div class="title">Lending Amount</div>
+              <div class="decor"></div>
+            </div>
+            <div class="item_body">
+              <ul>
+                <li>
+                  <p class="list_title">Volatility Software Interest + 0.25% daily </p>
+                  (up to 48% per Month)
+                </li>
+                <li>
+                  <p class="list_title">Capital Back</p>
+                  After 120 Days
+                </li>
+              </ul>
+              <a href="#" class="buttons">invest</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <div class="s_landing_item wow fadeIn active" style="animation-delay: 0.9s">
+            <div class="item_header">
+              <div class="value">$ 10.010 - $ 100.000</div>
+              <div class="title">Lending Amount</div>
+              <div class="decor"></div>
+            </div>
+            <div class="item_body">
+              <ul>
+                <li>
+                  <p class="list_title">Volatility Software Interest + 0.30% daily </p>
+                  (up to 48% per Month)
+                </li>
+                <li>
+                  <p class="list_title">Capital Back</p>
+                  After 99 Days
+                </li>
+              </ul>
+              <a href="#" class="buttons">invest</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="affiliate" class="s_affiliate">
+    <div class="container">
+      <h2 class="s_title wow fadeInDown">
+        REFERRAL AND AFFILIATE PROGRAM
+        <span class="accent">Affiliate</span>
+      </h2>
+      <div class="title_caption wow fadeInDown"><span class="bold">With AliCoin's attractive Referral and Affiliate Program you can earn additional coins by telling other users about this opportunity and referring them to the HomeBlockCoin community.</span> We are offering a bonus program which enables you the possibility to earn more for every new user who signs up and joins to the HomeBlockCoin lending platform using your affiliate link. HomeBlockCoins affiliate program is designed with 7 lucrative levels to earn additional commissions by every registered partner. You will earn a commission every time a referral lends HomeBlockCoin on our platform through your affiliate link. With the matching bonus you earn a commission on every interest your partner gets (every day). The commission you earn is based on the level your partner signs
+      </div>
+      <div class="row s_affiliate_wrap">
+        <div class="col-sm-6 col-md-6">
+          <div class="s_affiliate_item wow fadeInRight">
+            <div class="item_img"><img src="img/icon-15.png" alt=" "></div>
+            <div class="item_text">We offer an amazing community and of course an affiliate program, where you can build up your team and build up a great future for yourself. One community - one family - one vision
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <div class="s_affiliate_item wow fadeInRight" style="animation-delay: 0.3s">
+            <div class="item_img"><img src="img/icon-16.png" alt=" "></div>
+            <div class="item_text">If you recommend a new cinema movie to your best friend you don't get anything for that, HomeBlockCoin changes that and offers you a bonus for recommendations!</div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <div class="s_affiliate_item wow fadeInRight">
+            <div class="item_img"><img src="img/icon-17.png" alt=" "></div>
+            <div class="item_text">Earn daily commission based on the level your partners sign up, that sounds amazing and the surprise is that HomeBlockCoin offers you this incredible option, don't miss it
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <div class="s_affiliate_item wow fadeInRight" style="animation-delay: 0.3s">
+            <div class="item_img"><img src="img/icon-18.png" alt=" "></div>
+            <div class="item_text">HomeBlockCoin is the coin for you, a coin for the people and a coin that has the power to change the world. HomeBlockCoin would like to welcome you on the journey, you won't regret it!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_payment">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+          <h2 class="s_title wow fadeInDown">
+            Payment
+            <span class="accent">Alicoin debit card </span>
+          </h2>
+          <div class="s_payment_img visible-xs"><img src="img/img-4.png" alt=" "></div>
+          <div class="text wow fadeInDown">
+            Earn daily commission based on the level your partners sign up, that sounds amazing and the surprise is that HomeBlockCoin offers you this incredible option, don't miss it. Earn daily commission based on the level your partners sign up, that sounds amazing and the surprise is that HomeBlockCoin offers you this incredible option, don't miss it.
+            <br>
+            <br>
+            Earn daily commission based on the level your partners sign up, that sounds amazing and the surprise is that HomeBlockCoin offers you this incredible option, don't miss it.
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <div class="s_payment_img wow zoomIn hidden-xs" style="animation-delay: 0.4s"><img src="img/img-4.png" alt=" "></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_alimarket">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="s_alimarket_img wow zoomIn hidden-xs" style="animation-delay: 0.5s">
+            <div class="cart-img"><img src="img/cart.png" alt=" "></div>
+            <img src="img/display.png" alt=" ">
+            <div class="shadow"><img src="img/shadow-2.png" alt=" "></div>
+          </div>
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+          <h2 class="s_title wow fadeInRight">
+            ALIMARKET
+            <span class="accent wow fadeInRight">Alicoin debit card </span>
+          </h2>
+          <div class="text wow fadeInRight" style="animation-delay: 0.3s">
+            To be able to send, receive, stake and earn interest, you will have to install a wallet. <span class="bold">Please download HomeBlockCoin wallet that coresponds to your operating system.</span> Wallets will be available for download after December 1st.
+            <br>
+            <br>
+            Proof of Stake (PoS) concept states that a person can mine or validate block transactions according to how many HomeBlock coins he or she holds. This means that the more HBC owned by a miner, the more mining power he or she has, which results with bigger profit.
+          </div>
+
+          <div class="s_alimarket_img visible-xs">
+            <div class="cart-img"><img src="img/cart.png" alt=" "></div>
+            <img src="img/display.png" alt=" ">
+            <div class="shadow"><img src="img/shadow-2.png" alt=" "></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_connection">
+    <div class="container">
+      <h2 class="s_title wow fadeInDown">
+        CONNECTION
+        <span class="accent">Mobile App</span>
+      </h2>
+      <div class="title_caption wow fadeInDown"><span class="bold">You can invest AliCoin coin in our lending platform from your Dashboard.</span> This investment option allows you to profit from the
+        <br> AliCoin volatility software. This volatility software buys and sells HomeBlockCoins automatically.
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-5">
+          <div class="s_connection_item wow fadeIn" style="animation-delay: 0.3s">
+            <div class="item_img">
+              <img src="img/iPhone.png" alt=" ">
+              <div class="shadow"><img src="img/shadow-3.png" alt=" "></div>
+            </div>
+            <div class="item_descr">
+              <div class="item_icon"><img src="img/apple-logo.png" alt=" "></div>
+              <div class="item_title">
+                iOS
+                <i><img src="img/download-icon.png" alt=" "></i>
+                <div class="coming_soon">Comming soon</div>
+              </div>
+              <div class="item_list">
+                <ul>
+                  <li>No electricity cost</li>
+                  <li>No noise</li>
+                  <li>Great ROI</li>
+                  <li>Secured funds</li>
+                  <li>Friendly interface</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-5 col-lg-offset-1">
+          <div class="s_connection_item wow fadeIn" style="animation-delay: 0.5s">
+            <div class="item_img">
+              <img src="img/Samsung.png" alt=" ">
+              <div class="shadow"><img src="img/shadow-4.png" alt=" "></div>
+            </div>
+            <div class="item_descr">
+              <div class="item_icon"><img src="img/android-logo.png" alt=" "></div>
+              <div class="item_title">
+                Android
+                <i><img src="img/download-icon.png" alt=" "></i>
+                <div class="coming_soon">Comming soon</div>
+              </div>
+              <div class="item_list">
+                <ul>
+                  <li>No electricity cost</li>
+                  <li>No noise</li>
+                  <li>Great ROI</li>
+                  <li>Secured funds</li>
+                  <li>Friendly interface</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_offer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+          <h2 class="s_title wow fadeInDown">
+            offer
+            <span class="accent">Bloger Partnership </span>
+          </h2>
+          <div class="title_caption wow fadeInDown">To be able to send, receive, stake and earn interest, you will have to install a wallet. <span class="bold">Please download HomeBlockCoin wallet that coresponds to your operating system.</span> Wallets will be available for download after December 1st.
+          </div>
+          <div class="s_offer_img visible-xs"><img src="img/img-5.png" alt=" "></div>
+
+          <a href="#" class="buttons wow fadeIn hidden-xs" style="animation-delay: 0.3s">email us</a>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <div class="s_offer_img wow jackInTheBox hidden-xs" style="animation-delay: 0.3s"><img src="img/img-5.png" alt=" "></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="s_roadmap">
+    <div class="container">
+      <h2 class="s_title wow fadeInDown">
+        DEVELOPMENT
+        <span class="accent">Roadmap</span>
+      </h2>
+      <div class="title_caption wow fadeInDown">Video</div>
+      <div class="row">
+        <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          <div id="video_wrap" class="video_wrap wow fadeIn" style="animation-delay: 0.3s">
+            <video id="video1">
+              <source src="video/NYC%20Night%204k%20Drone.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+            <script>
+                var myVideo = document.getElementById("video1");
+                myVideo.volume = 0.1;
+                myVideo.controls = true;
+
+            </script>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-3 col-lg-3">
+              <div class="s_roadmap_item wow fadeIn" style="animation-delay: 0.3s">
+                <div class="item_img wow flipInY" style="animation-delay: 1.1s"><img src="img/icon-19.png" alt=" "></div>
+                <div class="item_title">FORUM </div>
+                <div class="item_text">BITCOINTALK</div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+              <div class="s_roadmap_item wow fadeIn" style="animation-delay: 0.5s">
+                <div class="item_img wow flipInY" style="animation-delay: 1.1s"><img src="img/icon-20.png" alt=" "></div>
+                <div class="item_title">TELEGRAM</div>
+                <div class="item_text">SUPPORT</div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+              <div class="s_roadmap_item wow fadeIn" style="animation-delay: 0.7s">
+                <div class="item_img wow flipInY" style="animation-delay: 1.1s"><img src="img/icon-20.png" alt=" "></div>
+                <div class="item_title">TELEGRAM </div>
+                <div class="item_text">NEWS CHANNEL</div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+              <div class="s_roadmap_item wow fadeIn" style="animation-delay: 0.9s">
+                <div class="item_img wow flipInY" style="animation-delay: 1.1s"><img src="img/icon-21.png" alt=" "></div>
+                <div class="item_title">E-MAIL </div>
+                <div class="item_text">SUPPORT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_investment">
+    <div class="container">
+      <h2 class="s_title wow fadeInDown">
+        INVESTMENT
+        <span class="accent">Consideration</span>
+      </h2>
+      <div class="text wow fadeInDown">
+        The Investment is always risky, so you should read for all details and register directly on the website of HomeBlockCoin by yourself. Please do not
+        <br> believe in other people or ask someone else to invest for you to prevent muggers to deceive and impersonate HomeBlockCoin. All investors are
+        <br> requiered to register directly on HomeBlockCoin website and invest by their money only. HomeBlockCoin do not have a policy to be invested in
+        <br> other channels, apart from HomeBlockCoin website.
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+
+<footer class="main_footer">
+  <div class="container">
+    <div class="copyright">
+      <div class="f_logo"><img src="img/logo-3.svg" alt=" "></div>© Copyright Xwin 2017 · All rights reserved.
+    </div>
+
+    <div class="f_block_right">
+      <div class="socials">
+        <a href="#" class="soc soc-tw"><img src="img/ic-tw.svg" alt=""></a>
+        <a href="#" class="soc soc-inst"><img src="img/ic-inst.svg" alt=""></a>
+        <a href="#" class="soc soc-git"><img src="img/ic-telegram.svg" alt=""></a>
+      </div>
+      <a href="#" class="f_link visible-xs" style="color:#ffd140;">Roadmap</a>
+      <a href="#" class="f_link visible-xs" style="color:#ffd140;">Whitepaper</a>
+      <a href="#" class="f_link">Privacy Policy</a>
+      <a href="#" class="f_link">Terms and Conditions</a>
+    </div>
+  </div>
+</footer>
+
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv/es5-shim.min.js"></script>
+<script src="js/html5shiv/html5shiv.min.js"></script>
+<script src="js/html5shiv/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="js/jquery-2.0.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/jquery.malihu.PageScroll2id.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

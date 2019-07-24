@@ -1,0 +1,13 @@
+$accent-color: #ffd140;
+$main-color: #231f20;
+$bg-color: #292929;
+$bg-acc: #f7f7f7;
+$border-color: #666666;
+$text-color: #ffffff;
+$title_color: #2b3c4f;
+$select_color: #9d9d9d;
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
