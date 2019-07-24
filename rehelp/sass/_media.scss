@@ -1,0 +1,378 @@
+@import "../libs/bourbon/app/assets/stylesheets/bourbon";
+@import "params";
+
+@media (min-width: 768px) {
+  .main_header .container {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  //.s_charts .container {
+  //  padding-left: 100px;
+  //  padding-right: 100px;
+  //}
+}
+@media (min-width: 1200px) {
+  .wrapper .container {
+    padding: 0;
+    width: 1230px;
+  }
+  .main_footer .container {
+    padding: 0;
+    width: 1230px;
+  }
+  .navbar {
+    border: none;
+    min-height: 40px;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    &:after {
+      position: absolute;
+      display: block;
+      content: '';
+      top: -33px;
+      left: 50%;
+      margin-left: -11px;
+      width: 23px;
+      height: 22px;
+      opacity: 0;
+      transition: all .3s;
+      background: url("../img/link-decor.png") no-repeat center;
+    }
+  }
+  .nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: $accent-color;
+    box-shadow: 0 10px 21px rgba(0, 0, 0, 0.21);
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 1366px) {
+
+}
+
+@media (min-width: 1600px) {
+
+}
+
+@media (min-width: 1920px) {
+  .s_top {
+    background: #fff url("../img/bg-1-hq.jpg") no-repeat center top;
+    background-size: cover;
+  }
+  .s_solutions {
+    background-image: url("../img/bg-2-hq.jpg");
+  }
+  .s_solutions .bg_mask {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 2560px) {
+
+}
+@media (min-width: 3840px) {
+
+}
+@media (min-width: 1440px) {
+
+}
+@media (max-width: 1920px) {
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (max-width: 1365px) {
+
+}
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {
+  .main_header {
+    padding-top: 0;
+    background-color: #fff;
+  }
+  .s_top {
+    padding-top: 150px;
+  }
+  .s_why_us .auctions_descr_img {
+    padding-left: 0;
+  }
+  .why_us_items {
+    padding-left: 0;
+    padding-right: 35px;
+  }
+  .s_discount_rates .image {
+    max-width: 500px;
+  }
+  .s_how_start {
+    .steps_wrap {
+      .decor {
+        left: 0;
+      }
+    }
+    .steps_item {
+      width: 22%;
+      .step_num {
+        left: 35px;
+      }
+    }
+  }
+
+  .roadmap_wrap .roadmap_items:nth-child(2n-1) .item_img:after {
+    top: -5px;
+  }
+  .roadmap_wrap .roadmap_items:nth-child(2n) .item_img:after {
+    top: 22px;
+  }
+
+  .s_charts .s_title {
+    margin-right: -100px;
+  }
+
+  .main_footer .title:before,
+  .main_footer .title:after {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+  .s_top .co_title {
+    font-size: 9.5rem;
+  }
+  .s_about {
+    padding-top: 60px;
+  }
+  .s_why_us {
+    padding-top: 0px;
+  }
+  .s_about .about_video {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .s_functionality {
+    .wrap {
+      flex-direction: column;
+    }
+    .block_left {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .block_right {
+      width: 100%;
+    }
+  }
+  .s_discount_rates {
+    margin-top: 40px;
+    .wrap {
+      flex-direction: column;
+      justify-content: flex-start;
+      .s_title {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .s_charts .pie_charts {
+    display: block;
+    margin-top: 70px;
+  }
+  .s_charts .s_title {
+    margin-right: 0;
+  }
+
+  .s_how_start {
+    .steps_wrap {
+      .decor {
+        display: none;
+      }
+    }
+    .steps_item {
+      width: 25%;
+      .step_num {
+        left: 20px;
+      }
+      .item_text {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .s_charts .s_title {
+    margin-right: 0;
+  }
+  .pie_chart_wrap {
+    margin-right: -200px;
+  }
+
+  .faqs_list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main_footer .wrap {
+    align-items: flex-start;
+  }
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+  html {
+    font-size: 8px;
+  }
+
+  .s_top .co_title {
+    font-size: 12.5rem;
+    margin-bottom: 40px;
+  }
+  .s_why_us {
+    .why_us_ctn {
+      .row {
+        border-bottom: none;
+        padding-bottom: 15px;
+        margin-bottom: 0;
+      }
+    }
+    .auctions_descr_img {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .auctions_descr_text {
+      width: 100%;
+    }
+  }
+
+  .s_solutions .s_title {
+    font-size: 6rem;
+    line-height: 5.7rem;
+  }
+  .s_discount_rates .wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .s_how_start {
+    .steps_wrap {
+      flex-wrap: wrap;
+    }
+    .steps_item {
+      width: 50%;
+      .step_num {
+        top: -4px;
+        left: 50%;
+        margin-left: -67px;
+      }
+      .item_text {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .roadmap_wrap {
+    max-width: 80%;
+    .roadmap_items {
+      padding-left: 30px;
+    }
+    .item_text {
+      padding-right: 0;
+    }
+  }
+  .roadmap_wrap .roadmap_items:nth-child(2n-1) .item_img:after {
+    display: none;
+  }
+  .roadmap_wrap .roadmap_items:nth-child(2n) .item_img:after {
+    display: none;
+  }
+  .s_roadmap .slider_arrows .roadmap-next {
+    right: 30px;
+  }
+
+  .pie_chart_wrap {
+    margin-right: -100px;
+  }
+
+  .main_footer .title {
+    font-size: 6rem;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+  //#pie_chart_div:before {
+  //  bottom: 60px;
+  //}
+  .s_about .about_video {
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    &:before {
+      display: none;
+    }
+  }
+  .s_top .buttons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto !important;
+  }
+
+  .pie_chart_wrap {
+    margin-right: 0;
+  }
+
+  .main_footer .wrap {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .s_about .buttons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto !important;
+  }
+  .s_solutions .buttons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto !important;
+  }
+  .s_functionality .block_right .ico_details {
+    margin-right: -15px;
+  }
+
+  .s_how_start {
+    .s_title {
+      font-size: 6rem;
+    }
+    .steps_item {
+      .step_num {
+        top: 7px;
+        left: 50%;
+        margin-left: -51px;
+      }
+      .item_img {
+        margin-bottom: 0;
+        img {
+          transform: scale(0.7);
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 700px) and (orientation: landscape) {
+
+}
+@media (max-height: 720px) and (orientation: portrait) {
+
+}

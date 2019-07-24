@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xwin</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/amcharts/amcharts.js"></script>
+  <script src="js/amcharts/pie.js"></script>
+  <script src="js/amcharts/plugins/export/export.min.js"></script>
+  <link rel="stylesheet" href="js/amcharts/plugins/export/export.css" type="text/css" media="all" />
+  <script src="js/amcharts/themes/light.js"></script>
+
+  <!-- Pie chart code -->
+  <script>
+      var chart1 = AmCharts.makeChart( "pie_chart_1", {
+          "type": "pie",
+          "theme": "light",
+          "minRadius": 50,
+          "dataProvider": [ {
+              "category": "Ethereum",
+              "litres": 450
+          }, {
+              "category": "Copy of smthing",
+              "litres": 350
+          }, {
+              "category": "Sunshine",
+              "litres": 65
+          }, {
+              "category": "One more name",
+              "litres": 75
+          }, {
+              "category": "Another",
+              "litres": 60
+          } ],
+          "valueField": "litres",
+          "titleField": "category",
+          "labelRadius": 20,
+          "labelText": '[[title]]',
+          "balloon":{
+              "fixedPosition":true,
+              "enabled": false  // if true show value of pie slice on hover event
+          },
+          "export": {
+              "enabled": true
+          }
+      } );
+      var chart2 = AmCharts.makeChart( "pie_chart_2", {
+          "type": "pie",
+          "theme": "light",
+          "minRadius": 50,
+          "dataProvider": [ {
+              "category": "Ethereum",
+              "litres": 450
+          }, {
+              "category": "Copy of smthing",
+              "litres": 350
+          }, {
+              "category": "Sunshine",
+              "litres": 65
+          }, {
+              "category": "One more name",
+              "litres": 75
+          }, {
+              "category": "Another",
+              "litres": 60
+          } ],
+          "valueField": "litres",
+          "titleField": "category",
+          "labelRadius": 20,
+          "labelText": '[[title]]',
+          "balloon":{
+              "fixedPosition":true,
+              "enabled": false  // if true show value of pie slice on hover event
+          },
+          "export": {
+              "enabled": true
+          }
+      } );
+  </script>
+
+</head>
+<body id="home_page">
+
+<div class="wrapper">
+
+  <header class="main_header">
+    <div class="container">
+        <nav class="navbar">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top_nav_collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar" style="background-color: #062335;"></span>
+              <span class="icon-bar" style="background-color: #062335;"></span>
+              <span class="icon-bar" style="background-color: #062335;"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="top_nav_collapse">
+            <ul class="nav navbar-nav top_navigation">
+
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Why us</a></li>
+              <li><a href="#">Issues and solutions</a></li>
+              <li><a href="#">Token functionality</a></li>
+              <li><a href="#">Roadmap</a></li>
+              <li><a href="#">token emission plan</a></li>
+              <li><a href="#">how to start</a></li>
+              <li><a href="#">Faq</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">white paper</a></li>
+            </ul>
+          </div>
+
+        </nav>
+
+      </div>
+  </header>
+
+  <section class="s_top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <h1 class="co_title">ReHelp</h1>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="ico_info_card">
+            <div class="ico_header">
+              <p class="title"><span>ICO</span> Ends in</p>
+              <div class="ico_countdown"></div>
+            </div>
+            <div class="ico_stat">
+              <p class="title">Live Funding</p>
+              <div class="ico_stat-usd"><span>$</span> 116234455.65665</div>
+              <div class="progress">
+                <div class="progress-inner" style="width: 28%"></div>
+              </div>
+              <div class="clearfix">
+                <div class="ico_stat-cl left">116234455.65665 <span>CL</span></div>
+                <div class="ico_stat-cl right">30000000000 <span>CL</span></div>
+              </div>
+            </div>
+            <div class="links clearfix">
+              <a href="#" class="links-whitepaper"><img src="img/ic-downloads.png" alt=" ">White Paper</a>
+              <a href="#" class="links-fb"><img src="img/ic-fb-2.png" alt=" "></a>
+              <a href="#" class="links-tw"><img src="img/ic-tw-2.png" alt=" "></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <a href="#" class="buttons">Invest now</a>
+        <a href="#" class="buttons">Register</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="title_caption">Who we are</p>
+          <h2 class="s_title">Story about us</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-7">
+          <div class="about_video wow fadeInLeft">
+            <div class="video_container"></div>
+            <div class="video_mask">
+              <a href="#" class="play_btn">
+                <img src="img/icon-play.png" alt=" ">
+                <p>Video about us</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-5">
+          <div class="about_ctn wow fadeInRight">
+            <p>ReHelp is a tokenized through ReHelp tokens real estate marketplace/labor fair. Essentially, the owners of real estate (residential or commercial) place adds for laborers needed, filling out a small questionnaire and describing in free form the desired result. The service providers (specialists in construction, repair, and maintenance) reply. The entire exchange is stored on a public blockchain, which ensures its transparency, reliability, and security. In order for our users to be able to optimize the financial side of their interaction, we propose to use (besides the usual pricing instruments - demand/supply, the market value of services, etc.) the auction model.</p>
+            <div class="btns_wrap">
+              <a href="#" class="buttons">Invest now</a>
+              <a href="#" class="buttons">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_why_us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="title_caption">Our advantages</p>
+          <h2 class="s_title">Why us</h2>
+        </div>
+      </div>
+      <div class="why_us_ctn">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="why_us_items wow fadeInRight">
+              <div class="item_icon"><img src="img/ic-1.png" alt=" "></div>
+              <div class="item_descr">
+                <p class="title">security</p>
+                <p>All the transactions are signified merely by a transaction record on the blockchain. By design, blockchains are inherently resistant to modification of the data. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="why_us_items wow fadeInRight">
+              <div class="item_icon"><img src="img/ic-2.png" alt=" "></div>
+              <div class="item_descr">
+                <p class="title">Fair price</p>
+                <p>It has been proven mathematically that auctions are a socially acceptable and econ omnically effective pricing model, which can not be said about the classic market economy's principle of management by an "invisible hand". </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="why_us_items wow fadeInRight">
+              <div class="item_icon"><img src="img/ic-3.png" alt=" "></div>
+              <div class="item_descr">
+                <p class="title">Certification </p>
+                <p>Help team has set itself onto the task of creating a unified system of user certification of the quality services in real estate. The listing of certified service providers will also be stored in the ReHelp blockchain. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="why_us_items wow fadeInLeft">
+              <div class="item_icon"><img src="img/ic-4.png" alt=" "></div>
+              <div class="item_descr">
+                <p class="title">review system</p>
+                <p>feedback is recorded in the blockchain immediately after confirmation of the transaction for payment of services. This function is programmed with the implementation of a smart contract, which ensures that the author of the review has indeed been a client of the reviewed specialist.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="why_us_items wow fadeInLeft">
+              <div class="item_icon"><img src="img/ic-5.png" alt=" "></div>
+              <div class="item_descr">
+                <p class="title">Smart Contract</p>
+                <p>You no longer risk the down payment - a smart contract automatically charges you the amount prescribed in its terms, but the service provider will receive the funds only upon completion of work within the specified time, otherwise, you get your money back. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="why_us_items wow fadeInLeft">
+              <div class="item_icon"><img src="img/ic-6.png" alt=" "></div>
+              <div class="item_descr">
+                <p class="title">Auction system</p>
+                <p>The auction model allows a seller to receive, and a buyer to pay a purchase price that is as close to the true value of an object as possible in reference to both seller and buyer financial expectations. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="auctions_descr clearfix">
+        <div class="auctions_descr_img wow fadeInRight">
+          <div class="image"><img src="img/img-2.jpg" alt=" "></div>
+        </div>
+        <div class="auctions_descr_text wow fadeInRightBig">
+          <p><span class="accent">The Vickrey auction</span> (participants independently pr ce the lot but the winner is not the highest bidder but the second highest)</p>
+          <p><span class="accent">Auctioning of coupons</span> (offers up for sale a certain amount of, or a particular kind of goods and services. This kind of a limited time offer will mostly benefit).</p>
+          <p><span class="accent">PRA, Price Review Auction</span> (for the sale of the coupon for his services. If, however, the priority is making money, he can use the for offering up his services).</p>
+          <p><span class="accent">Penny auction</span> (assumes zero initial value of the lot and a certain period of bidding. Each bet made me and that the lot price increases by some small amount ("penny"), and the auction period increases by a certain time interval ("time - plus"). The cost of the bid is much higher than the "penny" and often the seller's profit is determined by the amount earned from the bets made by the participants, while the final price of the lot is much lower than its market value. The winner is determined by the last bet made within a certain time interval)</p>
+          <p>Employing the auction method on our platform, the customer can thereby be sure that the system will automatically select only those who meet the criteria specified in the application (professional experience, certifications, reviews, rating) for participating in the auction. The service provider with the second least expensive price gets the contract.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_solutions">
+    <div class="container">
+      <h2 class="s_title wow fadeInUp">ISSUES & <br> SOLUTIONS</h2>
+      <div class="text wow fadeInUp">
+        <p>Difficulties of finding a good, reliable handymen for fixing things around the house. Everyone faces this nuisance, regardless of where we live, what we do for a living or how wealthy are we. Whether it's a leaking faucet or the lawn needs mowing, or the house needs a paint job, what do you do? </p>
+        <br>
+        <p>So, to ease your burden of finding a decent "floor guy" or a "drywall guy" or any other kind of "guy" to make the repairs on your property a breeze, we've created ReHelp (real estate help) - an online platform that provides access to a database of home service and repair specialists, making it easy and safe to pay for these services using digital tokens. </p>
+      </div>
+      <div class="btns_wrap wow fadeInUp">
+        <a href="#" class="buttons">Invest now</a>
+        <a href="#" class="buttons">Register</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_functionality">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="title_caption">ICO Details</p>
+          <h2 class="s_title">Token Functionality</h2>
+        </div>
+      </div>
+      <div class="wrap">
+          <div class="block_left wow fadeInLeft">
+            <p>ReHelp tokens, like any other cryptocurrency, can be used as a means of payment on other platforms or as an investment. ReHelp tokens are created on the Ethereum platform and are based on the Ethereum protocol.</p>
+            <br>
+            <p class="title">ReHelp tokens will be used across the ReHelp platform and will not be limited by the  latform in the future. ReHelp coins will be used:</p>
+            <ul>
+              <li>as a currency for ordering delivering the sales commission to the owners of the rights on digital property;
+                <br>
+              for services rendered in ReHelp platform;</li>
+              <li>to promote your services on our platform;</li>
+              <li>to obtain a certificate of the quality;</li>
+              <li>to exchange your ReHelp tokens for another cryptocurrency or fiat currency via exchanges.</li>
+            </ul>
+            <br>
+            <p class="title">ReHelp users avoid from:</p>
+            <ul>
+              <li>lirisk the down payment</li>
+              <li>bothering about the contractor&#39;s expenses</li>
+              <li>unscrupulous employers (thanks to escrow funds prescribed a smart contract)</li>
+              <li>drawing the lawyers (thanks to the smart contract software template)</li>
+            </ul>
+          </div>
+          <div class="block_right wow fadeInRight">
+            <div class="ico_details">
+              <p class="title">ICO Details</p>
+              <ul>
+                <li>Symbol: <span>REH</span></li>
+                <li>Technology: <span>Ethereum</span></li>
+                <li>Total token supply: <span>100   million</span></li>
+                <li>Price: 1 REH = <span>0.0100 ETH</span></li>
+                <li>Software tools: smart <span>contract</span></li>
+                <li>Accepted Fiat Currencies: <span>EUR, USD</span></li>
+                <li>Accepted Cryptocurrencies: <span>BTC, BCH, ETH, NEM</span></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_roadmap">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="title_caption">Our way to success</p>
+          <h2 class="s_title">ROADMAP</h2>
+        </div>
+      </div>
+      <div class="roadmap_wrap">
+
+        <div class="roadmap_items">
+          <div class="item_img"><img src="img/ic-11.png" alt=" "></div>
+          <div class="item_date">1.01.2018 - <br> 1.03.2018</div>
+          <div class="item_text">ICO</div>
+        </div>
+        <div class="roadmap_items">
+          <div class="item_img"><img src="img/ic-11.png" alt=" "></div>
+          <div class="item_date">2.03.2018 - <br> 31.03.2018</div>
+          <div class="item_text">Расширение команды разработчиков, аналитиков и маркетологов</div>
+        </div>
+        <div class="roadmap_items">
+          <div class="item_img"><img src="img/ic-11.png" alt=" "></div>
+          <div class="item_date">1.04.2018 - <br> 31.05.2018</div>
+          <div class="item_text">Разработка цифрового токена стандарта ERC20</div>
+        </div>
+        <div class="roadmap_items">
+          <div class="item_img"><img src="img/ic-11.png" alt=" "></div>
+          <div class="item_date">1.04.2018 - <br> 31.05.2018</div>
+          <div class="item_text">Разработка и начало внедрение маркетинговой стратегии</div>
+        </div>
+        <div class="roadmap_items">
+          <div class="item_img"><img src="img/ic-11.png" alt=" "></div>
+          <div class="item_date">1.04.2018 - <br> 31.07.2018</div>
+          <div class="item_text">Проведение исследования желаемого уровня качества сервисов</div>
+        </div>
+
+        <div class="roadmap_items">
+          <div class="item_img"><img src="img/ic-11.png" alt=" "></div>
+          <div class="item_date">1.01.2018 - <br> 1.03.2018</div>
+          <div class="item_text">ICO</div>
+        </div>
+        <div class="roadmap_items">
+          <div class="item_img"><img src="img/ic-11.png" alt=" "></div>
+          <div class="item_date">2.03.2018 - <br> 31.03.2018</div>
+          <div class="item_text">Расширение команды разработчиков, аналитиков и маркетологов</div>
+        </div>
+        <div class="roadmap_items">
+          <div class="item_img"><img src="img/ic-11.png" alt=" "></div>
+          <div class="item_date">1.04.2018 - <br> 31.05.2018</div>
+          <div class="item_text">Разработка цифрового токена стандарта ERC20</div>
+        </div>
+        <div class="roadmap_items">
+          <div class="item_img"><img src="img/ic-11.png" alt=" "></div>
+          <div class="item_date">1.04.2018 - <br> 31.05.2018</div>
+          <div class="item_text">Разработка и начало внедрение маркетинговой стратегии</div>
+        </div>
+        <div class="roadmap_items">
+          <div class="item_img"><img src="img/ic-11.png" alt=" "></div>
+          <div class="item_date">1.04.2018 - <br> 31.07.2018</div>
+          <div class="item_text">Проведение исследования желаемого уровня качества сервисов</div>
+        </div>
+
+        <div class="roadmap_items">
+          <div class="item_img"><img src="img/ic-11.png" alt=" "></div>
+          <div class="item_date">1.01.2018 - <br> 1.03.2018</div>
+          <div class="item_text">ICO</div>
+        </div>
+        <div class="roadmap_items">
+          <div class="item_img"><img src="img/ic-11.png" alt=" "></div>
+          <div class="item_date">2.03.2018 - <br> 31.03.2018</div>
+          <div class="item_text">Расширение команды разработчиков, аналитиков и маркетологов</div>
+        </div>
+        <div class="roadmap_items">
+          <div class="item_img"><img src="img/ic-11.png" alt=" "></div>
+          <div class="item_date">1.04.2018 - <br> 31.05.2018</div>
+          <div class="item_text">Разработка цифрового токена стандарта ERC20</div>
+        </div>
+        <div class="roadmap_items">
+          <div class="item_img"><img src="img/ic-11.png" alt=" "></div>
+          <div class="item_date">1.04.2018 - <br> 31.05.2018</div>
+          <div class="item_text">Разработка и начало внедрение маркетинговой стратегии</div>
+        </div>
+        <div class="roadmap_items">
+          <div class="item_img"><img src="img/ic-11.png" alt=" "></div>
+          <div class="item_date">1.04.2018 - <br> 31.07.2018</div>
+          <div class="item_text">Проведение исследования желаемого уровня качества сервисов</div>
+        </div>
+      </div>
+      <div class="slider_arrows">
+        <a href="#" class="roadmap-prev"><img src="img/arr-left-1.png" alt=" "></a>
+        <a href="#" class="roadmap-next"><img src="img/arr-right-1.png" alt=" "></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_plan">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="title_caption">Don’t know what to write here</p>
+          <h2 class="s_title">Token Emission Plan</h2>
+          <div class="text-center">
+            <p>The total emission of ReHelp tokens is 100 million REH. </p>
+            <p>The amount of pre - sale: <span class="accent">from 3,000,000 to 10,000,000 REH.</span> During the ICO: <span class="accent">1 REH = 0.0100 ETH </span></p>
+            <p>22.6% off - in total, 1.5 million REH will be sold to the first enthusiasts for less than two - thirds of their nominal value</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_discount_rates">
+    <div class="container">
+      <div class="wrap">
+        <h2 class="s_title wow fadeInLeftBig">The discount rates at the time of the pre - sale </h2>
+        <div class="image wow fadeInLeft"><img src="img/rates.png" alt=" "></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_charts">
+    <div class="container">
+      <p>Pre - sale: <span class="accent">from 3,000,000 to 10,000,000 REH.</span> The ICO is considered successful when it reaches a minimum sales volume of 3,000,000 REH, which is sufficient for the initial launch of the platform. When the minimu m sales volume is reached, the ICO will either end on a date advertised or its completion will be determined by the sale of the maximum volume of tokens 10,000,000 REH. </p>
+      <div class="pie_charts wow zoomIn">
+        <h2 class="s_title">Fonds <br> distribution</h2>
+        <div id="pie_chart_1" class="pie_chart_wrap"></div>
+      </div>
+      <p>Pre - sale: <span class="accent">from 3,000,000 to 10,000,000 REH.</span> The ICO is considered successful when it reaches a minimum sales volume of 3,000,000 REH, which is sufficient for the initial launch of the platform. When the minimu m sales volume is reached, the ICO will either end on a date advertised or its completion will be determined by the sale of the maximum volume of tokens 10,000,000 REH. </p>
+      <div class="pie_charts wow zoomIn">
+        <h2 class="s_title">Token <br> distribution</h2>
+        <div id="pie_chart_2" class="pie_chart_wrap"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_how_start">
+    <div class="container">
+      <h2 class="s_title">How To Start</h2>
+      <div class="steps_wrap">
+        <div class="decor">&gt;</div>
+        <div class="steps_item wow fadeInRight">
+          <span class="step_num">1</span>
+          <div class="item_img"><img src="img/ic-7.png" alt=" "></div>
+          <p class="item_text">open a wallet on Ethereum in order to purchase ReHelp tokens.</p>
+        </div>
+        <div class="steps_item wow fadeInRight">
+          <span class="step_num">2</span>
+          <div class="item_img"><img src="img/ic-8.png" alt=" "></div>
+          <p class="item_text">register on our platform.</p>
+        </div>
+        <div class="steps_item wow fadeInRight">
+          <span class="step_num">3</span>
+          <div class="item_img"><img src="img/ic-9.png" alt=" "></div>
+          <p class="item_text">send /receive applications for the required services, select specialists, organize auctions</p>
+        </div>
+        <div class="steps_item wow fadeInRight">
+          <span class="step_num">4</span>
+          <div class="item_img"><img src="img/ic-10.png" alt=" "></div>
+          <p class="item_text">pay for services rendered in ReHelp tokens. Leave feedback*.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s_faqs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="title_caption">All what you want to know</p>
+          <h2 class="s_title">Frequently Asked Questions</h2>
+
+          <div class="faqs_list">
+            <ul>
+              <li class="wow fadeInUp">
+                <a class="question" href="#">Is there a bonus system for early investors?</a>
+                <div class="answer">
+                  <p>For convenience, the platform is equipped to price services in differ ent currencies. It monitors the REH exchange rates against BTC, ETH, NEM, USD, and EUR. </p>
+                </div>
+              </li>
+              <li class="wow fadeInUp">
+                <a class="question" href="#">How many coins are there?</a>
+                <div class="answer">
+                  <p>For convenience, the platform is equipped to price services in differ ent currencies. It monitors the REH exchange rates against BTC, ETH, NEM, USD, and EUR. </p>
+                </div>
+              </li>
+              <li class="wow fadeInUp">
+                <a class="question" href="#">How does the Token controlled?</a>
+                <div class="answer">
+                  <p>For convenience, the platform is equipped to price services in differ ent currencies. It monitors the REH exchange rates against BTC, ETH, NEM, USD, and EUR. </p>
+                </div>
+              </li>
+              <li class="wow fadeInUp">
+                <a class="question" href="#">What payment methods do you accept?</a>
+                <div class="answer">
+                  <p>For convenience, the platform is equipped to price services in differ ent currencies. It monitors the REH exchange rates against BTC, ETH, NEM, USD, and EUR. </p>
+                </div>
+              </li>
+              <li class="wow fadeInUp">
+                <a class="question" href="#">Is there a bonus system for early investors?</a>
+                <div class="answer">
+                  <p>For convenience, the platform is equipped to price services in differ ent currencies. It monitors the REH exchange rates against BTC, ETH, NEM, USD, and EUR. </p>
+                </div>
+              </li>
+              <li class="wow fadeInUp">
+                <a class="question" href="#">How many coins are there?</a>
+                <div class="answer">
+                  <p>For convenience, the platform is equipped to price services in differ ent currencies. It monitors the REH exchange rates against BTC, ETH, NEM, USD, and EUR. </p>
+                </div>
+              </li>
+              <li class="wow fadeInUp">
+                <a class="question" href="#">How does the Token controlled?</a>
+                <div class="answer">
+                  <p>For convenience, the platform is equipped to price services in differ ent currencies. It monitors the REH exchange rates against BTC, ETH, NEM, USD, and EUR. </p>
+                </div>
+              </li>
+              <li class="wow fadeInUp">
+                <a class="question" href="#">What payment methods do you accept?</a>
+                <div class="answer">
+                  <p>For convenience, the platform is equipped to price services in differ ent currencies. It monitors the REH exchange rates against BTC, ETH, NEM, USD, and EUR. </p>
+                </div>
+              </li>
+              <li class="wow fadeInUp">
+                <a class="question" href="#">Is there a bonus system for early investors?</a>
+                <div class="answer">
+                  <p>For convenience, the platform is equipped to price services in differ ent currencies. It monitors the REH exchange rates against BTC, ETH, NEM, USD, and EUR. </p>
+                </div>
+              </li>
+              <li class="wow fadeInUp">
+                <a class="question" href="#">How many coins are there?</a>
+                <div class="answer">
+                  <p>For convenience, the platform is equipped to price services in differ ent currencies. It monitors the REH exchange rates against BTC, ETH, NEM, USD, and EUR. </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="main_footer">
+  <div class="container">
+    <div class="wrap">
+      <div class="title">Contact Us</div>
+      <div class="contact_us">
+        <a href="#" class="buttons">Invest now</a>
+        <a href="#" class="buttons">Register</a>
+        <div class="socials">
+          <a href="#" class="soc soc-fb"><img src="img/ic-fb.png" alt="facebook"></a>
+          <a href="#" class="soc soc-tw"><img src="img/ic-tw.png" alt="twitter"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv/es5-shim.min.js"></script>
+<script src="js/html5shiv/html5shiv.min.js"></script>
+<script src="js/html5shiv/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="js/jquery-2.0.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.equalheights.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
