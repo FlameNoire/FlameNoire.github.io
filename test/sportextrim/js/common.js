@@ -7,6 +7,8 @@
         infinite: true
     });
 
+    new WOW().init();
+
     var $slider2 = $('.shops_slider');
     $slider2.slick({
         dots: false,
@@ -31,7 +33,7 @@
     menuLink.click(function () {
         button.toggleClass("active");
         menu.toggleClass("active");
-    })
+    });
 
     $('.authorization_form .close_btn').click(function (e) {
         e.preventDefault();

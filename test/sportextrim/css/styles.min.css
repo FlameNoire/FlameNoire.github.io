@@ -1032,6 +1032,31 @@ button.mfp-close {
           align-items: center;
 }
 
+.advantages_item:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.advantages_item:nth-child(2) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.advantages_item:nth-child(3) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+.advantages_item:nth-child(4) {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.advantages_item:nth-child(5) {
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+
 .advantages_item .icon {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
