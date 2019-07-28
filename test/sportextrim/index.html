@@ -7,86 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Oswald:200,300,400,500,600,700|Ubuntu:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/jquery-ui.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/styles.min.css">
-
-
 </head>
-<body data-spy="scroll" data-target="#scrollSpy" data-offset="15" class="mobile">
-
-
-<div id="login_form" class="custom_form login_form">
-  <form>
-    <p class="form_title">Please Sign In</p>
-    <div class="form_body">
-      <div class="form-group">
-        <input type="email" class="form-control" placeholder="E-mail">
-      </div>
-      <div class="form-group">
-        <input type="password" class="form-control" placeholder="Password">
-      </div>
-      <div class="forget_pass">
-        <a href="#">Forget password?</a>
-      </div>
-      <a href="#" class="buttons submit_btn">Sign in</a>
-      <div class="sign_up">
-        <a href="#" class="btn_sign-up">Sign Up</a>
-      </div>
-    </div>
-    <div class="socials_sign-in">
-      <a href="#" class="fb"><i class="fab fa-facebook-f"></i>Login with Facebook</a>
-      <a href="#" class="tw"><i class="fab fa-twitter"></i>Login with Twitter</a>
-    </div>
-  </form>
-</div>
-<div id="registration_form" class="custom_form reg_form">
-  <form>
-    <p class="form_title">Please Sign Up</p>
-    <div class="form_body">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="First Name">
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Last Name">
-      </div>
-      <div class="form-group">
-        <input type="email" class="form-control" placeholder="E-mail">
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Phone Number">
-      </div>
-      <div class="form-group">
-        <input type="password" class="form-control" placeholder="Password">
-      </div>
-      <div class="form-group">
-        <input type="password" class="form-control" placeholder="Repeat Password">
-      </div>
-      <div class="agreement">
-        <div class="checkbox">
-          <input type="checkbox" id="check_1">
-          <label for="check_1"></label>
-          <span>I'm aware of <a href="#">this service's rules</a></span>
-        </div>
-      </div>
-      <a href="#" class="buttons submit_btn">Sign up</a>
-    </div>
-  </form>
-</div>
-<div id="email_form" class="custom_form email_form">
-  <form>
-    <div class="form_body">
-      <div class="image"><img src="img/ic-envelope.png" alt=" "></div>
-      <div class="title">Thank you!</div>
-      <div class="text">You have successfully subscribed <br> to the newsletter!</div>
-    </div>
-  </form>
-</div>
+<body>
 
 <div class="wrapper">
   <header class="main_header">
@@ -96,14 +22,18 @@
 
         <nav class="navbar">
 
-          <div class="navbar-header">
+          <div class="navbar-header hidden-lg hidden-md">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top_nav_collapse">
-              <!--<span class="sr-only">Toggle navigation</span>-->
-              <!--<span class="icon-bar" style="background-color: #042839;"></span>-->
-              <!--<span class="icon-bar" style="background-color: #042839;"></span>-->
-              <!--<span class="icon-bar" style="background-color: #042839;"></span>-->
-              <img src="img/ic-menu.png" alt=" ">
+              <img src="img/menu_burger-2.png" alt=" ">
             </button>
+            <a href="#" class="logo"><img src="img/logo-2.png" alt="logo"></a>
+            <a href="tel:88003010619" class="back_call">
+              <i><img src="img/call-1.png" alt="call"></i>
+            </a>
+            <a href="#" class="cart">
+              <img src="img/cart-1.png" alt="cart">
+              <span class="cart_items_num">21</span>
+            </a>
           </div>
           
           <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
@@ -117,6 +47,7 @@
           </a>
 
           <div class="collapse navbar-collapse" id="top_nav_collapse">
+            <button class="menu_close"><img src="img/close-2.png" alt=" "></button>
             <ul class="top_navigation">
               <li>
                 <a href="#">Услуги</a>
@@ -144,7 +75,10 @@
 
           </div>
 
-          <a href="#" class="cart"><img src="img/cart.png" alt="cart"><span class="cart_items_num">21</span></a>
+          <a href="#" class="cart">
+            <img src="img/cart.png" alt="cart">
+            <span class="cart_items_num">21</span>
+          </a>
 
         </nav>
 
@@ -154,7 +88,7 @@
       <div class="container">
         <div class="main_header_bottom_inner">
           <button class="catalog_menu_btn">
-            <img src="img/menu_burger.png" alt=" "><span>КАТАЛОГ</span>
+            <img src="img/menu_burger-1.png" alt=" "><span>КАТАЛОГ</span>
           </button>
           <div class="form-group top_search">
             <input type="text" class="form-control" placeholder="Купить..">
@@ -199,7 +133,7 @@
   </header>
 
   <section class="s_top">
-    <div class="s_top_slider">
+    <div class="s_top_slider wow fadeIn">
       <div class="s_top_slide">
         <div class="container">
           <div class="slide_content">
@@ -214,56 +148,22 @@
         <div class="slide_image"><img src="img/img-1.jpg" alt=" "></div>
       </div>
       <div class="s_top_slide">
-        <div class="container">
-          <div class="slide_content">
-            <p class="title_1">Автомобильные <br> прицепы</p>
-            <ul class="list_1">
-              <li>МЗСА</li>
-              <li>ССТ</li>
-              <li>РУСИЧ</li>
-            </ul>
-          </div>
+        <div class="slide_image">
+          <img class="img1" src="img/img-9.jpg" alt=" ">
+          <img class="img2" src="img/img-9a.jpg" alt=" ">
         </div>
-        <div class="slide_image"><img src="img/img-1.jpg" alt=" "></div>
       </div>
       <div class="s_top_slide">
-        <div class="container">
-          <div class="slide_content">
-            <p class="title_1">Автомобильные <br> прицепы</p>
-            <ul class="list_1">
-              <li>МЗСА</li>
-              <li>ССТ</li>
-              <li>РУСИЧ</li>
-            </ul>
-          </div>
+        <div class="slide_image">
+          <img class="img1" src="img/img-10.jpg" alt=" ">
+          <img class="img2" src="img/img-10a.jpg" alt=" ">
         </div>
-        <div class="slide_image"><img src="img/img-1.jpg" alt=" "></div>
       </div>
       <div class="s_top_slide">
-        <div class="container">
-          <div class="slide_content">
-            <p class="title_1">Автомобильные <br> прицепы</p>
-            <ul class="list_1">
-              <li>МЗСА</li>
-              <li>ССТ</li>
-              <li>РУСИЧ</li>
-            </ul>
-          </div>
+        <div class="slide_image">
+          <img class="img1" src="img/img-11.jpg" alt=" ">
+          <img class="img2" src="img/img-11a.jpg" alt=" ">
         </div>
-        <div class="slide_image"><img src="img/img-1.jpg" alt=" "></div>
-      </div>
-      <div class="s_top_slide">
-        <div class="container">
-          <div class="slide_content">
-            <p class="title_1">Автомобильные <br> прицепы</p>
-            <ul class="list_1">
-              <li>МЗСА</li>
-              <li>ССТ</li>
-              <li>РУСИЧ</li>
-            </ul>
-          </div>
-        </div>
-        <div class="slide_image"><img src="img/img-1.jpg" alt=" "></div>
       </div>
     </div>
   </section>
@@ -271,20 +171,20 @@
   <section class="advantages">
     <div class="container">
       <div class="advantages_inner">
-        <div class="advantages_item wow fadeInRight">
+        <div class="advantages_item">
           <i class="icon"><img src="img/delivery_car.png" alt=" "></i>
           <div class="text">
             Доставка по <br> России <span class="accent">от 3 дней</span>
           </div>
         </div>
-        <div class="advantages_item wow fadeInRight">
+        <div class="advantages_item">
           <i class="icon"><img src="img/boat.png" alt=" "></i>
           <div class="text">
             Лодка + Мотор = <br>
             <span class="accent"> скидка 5%</span>
           </div>
         </div>
-        <div class="advantages_item wow fadeInRight">
+        <div class="advantages_item">
           <i class="icon"><img src="img/credit.png" alt=" "></i>
           <div class="text">
             <span class="accent">Рассрочка 0 % </span>
@@ -292,14 +192,14 @@
             до 6 месяцев
           </div>
         </div>
-        <div class="advantages_item wow fadeInRight">
+        <div class="advantages_item">
           <i class="icon"><img src="img/shield.png" alt=" "></i>
           <div class="text">
             Гарантия <br>
             <span class="accent">до 5 лет</span>
           </div>
         </div>
-        <div class="advantages_item wow fadeInRight">
+        <div class="advantages_item">
           <i class="icon"><img src="img/men_shield.png" alt=" "></i>
           <div class="text">
             Официальный <br> дилер
@@ -406,7 +306,7 @@
             <p class="product_title">Мотор TOHATSU M5 BD S</p>
             <div class="product_image"><img src="img/motor-1.jpg" alt=" "></div>
             <div class="product_price">61 900 руб</div>
-            <button class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></button>
+            <div class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></div>
           </a>
         </div>
         <div class="product">
@@ -414,7 +314,7 @@
             <p class="product_title">Погружной лодочный мотор HONDA BF 2.3</p>
             <div class="product_image"><img src="img/motor-2.jpg" alt=" "></div>
             <div class="product_price">48 900 руб</div>
-            <button class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></button>
+            <div class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></div>
           </a>
         </div>
         <div class="product">
@@ -422,7 +322,7 @@
             <p class="product_title">Мотоцикл YAMAHA YBR 125</p>
             <div class="product_image"><img src="img/yamaha.jpg" alt=" "></div>
             <div class="product_price">149 000 РУБ</div>
-            <button class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></button>
+            <div class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></div>
           </a>
         </div>
         <div class="product">
@@ -430,7 +330,7 @@
             <p class="product_title">Детский квадроцикл BALTMOTORS 700EFI</p>
             <div class="product_image"><img src="img/quadrocicle.jpg" alt=" "></div>
             <div class="product_price">61 900 руб</div>
-            <button class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></button>
+            <div class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></div>
           </a>
         </div>
         <div class="product">
@@ -438,7 +338,7 @@
             <p class="product_title">Мотор TOHATSU M5 BD S</p>
             <div class="product_image"><img src="img/motor-1.jpg" alt=" "></div>
             <div class="product_price">61 900 руб</div>
-            <button class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></button>
+            <div class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></div>
           </a>
         </div>
         <div class="product">
@@ -446,7 +346,7 @@
             <p class="product_title">Погружной лодочный мотор HONDA BF 2.3</p>
             <div class="product_image"><img src="img/motor-2.jpg" alt=" "></div>
             <div class="product_price">48 900 руб</div>
-            <button class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></button>
+            <div class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></div>
           </a>
         </div>
         <div class="product">
@@ -454,7 +354,7 @@
             <p class="product_title">Мотоцикл YAMAHA YBR 125</p>
             <div class="product_image"><img src="img/yamaha.jpg" alt=" "></div>
             <div class="product_price">149 000 РУБ</div>
-            <button class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></button>
+            <div class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></div>
           </a>
         </div>
         <div class="product">
@@ -462,7 +362,7 @@
             <p class="product_title">Детский квадроцикл BALTMOTORS 700EFI</p>
             <div class="product_image"><img src="img/quadrocicle.jpg" alt=" "></div>
             <div class="product_price">61 900 руб</div>
-            <button class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></button>
+            <div class="buy">купить <i><img src="img/arrow-1-right.png" alt=" "></i></div>
           </a>
         </div>
       </div>
@@ -661,19 +561,10 @@
   </div>
 </footer>
 
-<!--[if lt IE 9]>
-<script src="js/html5shiv/es5-shim.min.js"></script>
-<script src="js/html5shiv/html5shiv.min.js"></script>
-<script src="js/html5shiv/respond.min.js"></script>
-<![endif]-->
-
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/hoverIntent.js"></script>
 <script src="js/slick.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/common.js"></script>
 </body>
 

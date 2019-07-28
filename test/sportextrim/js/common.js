@@ -8,6 +8,10 @@
     });
 
     new WOW().init();
+    
+    $('.menu_close').click(function () {
+        $('#top_nav_collapse').collapse('hide');
+    });
 
     var $slider2 = $('.shops_slider');
     $slider2.slick({
