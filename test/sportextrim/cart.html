@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Спорт экстрим</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Oswald:200,300,400,500,600,700|Ubuntu:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+  <header class="main_header">
+
+    <div class="main_header_top">
+      <div class="container">
+
+        <nav class="navbar">
+
+          <div class="navbar-header hidden-lg hidden-md">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top_nav_collapse">
+              <img src="img/menu_burger-2.png" alt=" ">
+            </button>
+            <a href="#" class="logo"><img src="img/logo-2.png" alt="logo"></a>
+            <a href="tel:88003010619" class="back_call">
+              <i><img src="img/call-1.png" alt="call"></i>
+            </a>
+            <a href="#" class="cart">
+              <img src="img/cart-1.png" alt="cart">
+              <span class="cart_items_num">21</span>
+            </a>
+          </div>
+
+          <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+
+          <a href="tel:88003010619" class="back_call">
+            <i><img src="img/call.png" alt="call"></i>
+            <div class="text">
+              <div class="number">8 800 301 06 19</div>
+              <span>Обратный звонок</span>
+            </div>
+          </a>
+
+          <div class="collapse navbar-collapse" id="top_nav_collapse">
+            <button class="menu_close"><img src="img/close-2.png" alt=" "></button>
+            <ul class="top_navigation">
+              <li>
+                <a href="#">Услуги</a>
+              </li>
+              <li>
+                <a href="#">Акции</a>
+              </li>
+              <li>
+                <a href="#">Оплата и доставка</a>
+              </li>
+              <li>
+                <a href="#">Гарантия</a>
+              </li>
+              <li>
+                <a href="#">Галерея</a>
+              </li>
+              <li>
+                <a href="#">Статьи</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+
+
+          </div>
+
+          <a href="#" class="cart">
+            <img src="img/cart.png" alt="cart">
+            <span class="cart_items_num">21</span>
+          </a>
+
+        </nav>
+
+      </div>
+    </div>
+    <div class="main_header_bottom">
+      <div class="container">
+        <div class="main_header_bottom_inner">
+          <button class="catalog_menu_btn">
+            <img src="img/menu_burger-1.png" alt=" "><span>КАТАЛОГ</span>
+          </button>
+          <div class="form-group top_search">
+            <input type="text" class="form-control" placeholder="Купить..">
+            <button type="submit" class="buttons search_btn"></button>
+          </div>
+        </div>
+      </div>
+      <div class="catalog_menu">
+        <div class="container">
+          <div class="catalog_menu_inner">
+            <ul>
+              <li><a href="#">Катера</a></li>
+              <li><a href="#">Лодки</a></li>
+              <li><a href="#">Аксесcуары</a></li>
+              <li><a href="#">Лодочные моторы</a></li>
+              <li><a href="#">Гидроциклы</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Мотоциклы</a></li>
+              <li><a href="#">Питбайки</a></li>
+              <li><a href="#">Скутеры</a></li>
+              <li><a href="#">Трехколесный скутер</a></li>
+              <li><a href="#">Квадроциклы</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Снегоходы</a></li>
+              <li><a href="#">Вездеходы-амфибии</a></li>
+              <li><a href="#">Снегоуборщики</a></li>
+              <li><a href="#">Мотобуксировщики</a></li>
+              <li><a href="#">Бензогенераторы</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Мотовелосипеды</a></li>
+              <li><a href="#">Прицепы для квадроциклов</a></li>
+              <li><a href="#">Прицепы для автомобилей</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="cart_page custom_form">
+    <div class="container">
+      <h2 class="page_title">Корзина</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="cart_left">
+            <p class="title">Состав заказа</p>
+            <div class="product_item">
+              <button class="delete"><img src="img/delete.png" alt=" "></button>
+              <div class="product_thumb">
+                <div class="image"><img src="img/motocicle.jpg" alt=" "></div>
+                <div class="name">Мотоцикл YAMAHA YBR 125</div>
+              </div>
+              <div class="product_price">
+                <div class="cost">
+                  <p class="text">Стоимость</p>
+                  <p class="val" data-cost="149000"><span>149 000</span> РУБ</p>
+                </div>
+                <div class="amount">
+                  <p class="text">Количество</p>
+                  <div class="amount_spinner">
+                    <label for="spinner1" class="sr-only"></label>
+                    <input id="spinner1" name="value" value="1">
+                  </div>
+                </div>
+                <div class="total">
+                  <p class="text">Сумма</p>
+                  <p class="val"><span>149 000</span> РУБ</p>
+                </div>
+              </div>
+            </div>
+            <div class="product_item">
+              <button class="delete"><img src="img/delete.png" alt=" "></button>
+              <div class="product_thumb">
+                <div class="image"><img src="img/img-32.jpg" alt=" "></div>
+                <div class="name">Алюминиевая лодка XtremeCraft 320</div>
+              </div>
+              <div class="product_price">
+                <div class="cost">
+                  <p class="text">Стоимость</p>
+                  <p class="val" data-cost="149000"><span>149 000</span> РУБ</p>
+                </div>
+                <div class="amount">
+                  <p class="text">Количество</p>
+                  <div class="amount_spinner">
+                    <label for="spinner2" class="sr-only"></label>
+                    <input id="spinner2" name="value" value="1">
+                  </div>
+                </div>
+                <div class="total">
+                  <p class="text">Сумма</p>
+                  <p class="val"><span>149 000</span> РУБ</p>
+                </div>
+              </div>
+            </div>
+            <div class="summary">
+              <a href="#" class="back_btn"><i><img src="img/arrow-3-left.png" alt=" "></i>продолжить покупки</a>
+              <div class="end_summ">
+                <p>Итого:</p>
+                <div class="val">279 000 РУБ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="cart_right">
+            <p class="title">ВАШИ ДАННЫЕ</p>
+            <div class="input_group">
+              <label for="username">ФИО<span>*</span></label>
+              <input type="text" id="username" placeholder="Введите ваше имя" required>
+              <label for="user_email">Ваш E-mail<span>*</span></label>
+              <input type="text" id="user_email" placeholder="Введите ваш e-mail" required>
+              <label for="user_phone">Ваш номер телефона<span>*</span></label>
+              <input type="text" id="user_phone" placeholder="Введите ваш телефон" required>
+            </div>
+            <p class="title">Оплата</p>
+            <div class="input_group">
+              <div class="radio">
+                <input type="radio" id="payment_1" name="payment">
+                <label for="payment_1"></label>
+                <span>Самовывоз</span>
+              </div>
+              <div class="radio">
+                <input type="radio" id="payment_2" name="payment">
+                <label for="payment_2"></label>
+                <span>По городу Тверь</span>
+              </div>
+            </div>
+            <p class="title">Доставка</p>
+            <div class="input_group">
+              <div class="radio">
+                <input type="radio" id="delivery_1" name="delivery">
+                <label for="delivery_1"></label>
+                <span>Самовывоз</span>
+              </div>
+              <div class="radio">
+                <input type="radio" id="delivery_2" name="delivery">
+                <label for="delivery_2"></label>
+                <span>По городу Тверь</span>
+              </div>
+              <div class="radio">
+                <input type="radio" id="delivery_3" name="delivery">
+                <label for="delivery_3"></label>
+                <span>Транспортной компанией</span>
+              </div>
+
+              <div class="delivery_address">
+                <div class="delivery_address_item v1">
+                  <div class="input_title">Выберите магазин для самовывоза</div>
+                  <label for="deliveryShop" class="sr-only"></label>
+                  <select name="delivery_shop" id="deliveryShop">
+                    <option selected="selected">Спорт Экстрим Октябрьский проспект, 72</option>
+                    <option>Спорт Экстрим ул. Вокзальная, 24</option>
+                    <option>Спорт Экстрим Октябрьский проспект, 72</option>
+                  </select>
+                </div>
+                <div class="delivery_address_item v1">
+                  <p class="input_title">Введите адрес доставки</p>
+                  <label for="city" class="sr-only"></label>
+                  <input type="text" id="city" placeholder="Введите название города" required>
+                  <label for="address" class="sr-only"></label>
+                  <input type="text" id="address" placeholder="Введите название улицы, номер дома, номер квартиры" required>
+                </div>
+              </div>
+              <div class="order_comment">
+                <p class="input_title">Комментарий к заказу</p>
+                <label for="order_comment" class="sr-only"></label>
+                <textarea id="order_comment" placeholder="Введите ваш комментарий"></textarea>
+              </div>
+            </div>
+            <div class="payment_block">
+              <div class="cost">
+                <p>Сумма к оплате:</p><span>279 000 РУБ</span>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="paymentConditions">
+                <label for="paymentConditions"></label>
+                <span>Соглашаюсь с уcловиями <a href="#">договора оферты</a></span>
+              </div>
+              <button class="submit_btn">сделать заказ<i><img src="img/arrow-2-right.png" alt=" "></i></button>
+              <div class="note">
+                Обращаем ваше внимание, что окончательная стоимость заказа, а также количество услуг, будут подтверждены после обработки заказа сотрудником компании
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="main_footer">
+  <div class="main_footer_top">
+    <div class="container">
+      <div class="footer_menu">
+        <div class="menu_block">
+          <p class="title">Водная техника</p>
+          <ul>
+            <li><a href="products_list.html">Катера из алюминия</a></li>
+            <li><a href="products_list.html">Катера из пластика</a></li>
+            <li><a href="#">Лодки из ПВХ</a></li>
+            <li><a href="#">Лодки из алюминия</a></li>
+            <li><a href="#">Лодки из пластика</a></li>
+            <li><a href="#">Лодочные моторы</a></li>
+            <li><a href="#">Гидроциклы</a></li>
+          </ul>
+        </div>
+        <div class="menu_block">
+          <p class="title">Мототехника</p>
+          <ul>
+            <li><a href="#">Мотоциклы</a></li>
+            <li><a href="#">Питбайки</a></li>
+            <li><a href="#">Скутеры</a></li>
+            <li><a href="#">Трехколесный скутер</a></li>
+            <li><a href="#">Квадроциклы</a></li>
+            <li><a href="#">Снегоходы</a></li>
+            <li><a href="#">Мотобуксировщики</a></li>
+            <li><a href="#">Вездеходы-амфибии</a></li>
+          </ul>
+        </div>
+        <div class="menu_block">
+          <p class="title">Прицепы</p>
+          <ul>
+            <li><a href="#">Прицепы для автомобилей</a></li>
+            <li><a href="#">Прицепы для квадроциклов</a></li>
+          </ul>
+        </div>
+        <div class="menu_block">
+          <p class="title">Прочая техника</p>
+          <ul>
+            <li><a href="#">Снегоуборщики</a></li>
+            <li><a href="#">Мотовелосипеды</a></li>
+            <li><a href="#">Бензогенераторы</a></li>
+            <li><a href="#">Аксесcуары</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_contacts">
+        <div class="phones_wrap">
+          <a href="tel:89201784182" class="phones">
+            <i><img src="img/wheel.png" alt=" "></i>
+            <div>
+              <div class="text">Записаться на ТО</div>
+              <div class="phone_num">8 920 178 41 82</div>
+            </div>
+          </a>
+          <a href="tel:4822656503" class="phones">
+            <i><img src="img/delivery_car-2.png" alt=" "></i>
+            <div>
+              <div class="text">Заказать доставку</div>
+              <div class="phone_num">4822 65 65 03</div>
+            </div>
+          </a>
+          <a href="tel:89201784182" class="phones">
+            <i><img src="img/hand.png" alt=" "></i>
+            <div>
+              <div class="text">Установка и подключение</div>
+              <div class="phone_num">8 920 178 41 82</div>
+            </div>
+          </a>
+        </div>
+        <a href="index.html" class="logo_2"><img src="img/logo-2.png" alt=" "></a>
+        <div class="address">
+          <p class="bold">ООО «Спорт Экстрим» </p>
+          <p>г. Тверь, <br> Октябрьский пр., 72 </p>
+          <a href="#" class="map_link">Карта проезда</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main_footer_bottom">
+    <div class="container">
+      <div class="inner">
+        <div class="copyright">
+          <p class="title">Компания “Аква Моторс” &copy; 2014</p>
+          <p>Все права защищены. <br>
+            Использование материалов запрещено.</p>
+        </div>
+        <div class="socials">
+          <p class="title">Мы в социальных сетях</p>
+          <ul>
+            <li><a href="#"><img src="img/yandex_zen.png" alt=" "></a></li>
+            <li><a href="#"><img src="img/fb.png" alt=" "></a></li>
+            <li><a href="#"><img src="img/vk.png" alt=" "></a></li>
+          </ul>
+        </div>
+        <a href="index.html" class="logo_3">
+          <i><img src="img/logo-3.png" alt=" "></i>
+          <p>Разработка сайта <br> и его продвижение </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>
