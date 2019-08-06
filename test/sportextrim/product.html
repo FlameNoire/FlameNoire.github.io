@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Oswald:200,300,400,500,600,700|Ubuntu:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery-ui.min.css">
@@ -156,12 +155,24 @@
           <div class="slider_item"><img src="img/img-30.jpg" alt=" "></div>
         </div>
         <div class="product_photos_big">
-          <div class="slider_item"><img src="img/img-31.jpg" alt=" "></div>
-          <div class="slider_item"><img src="img/img-31.jpg" alt=" "></div>
-          <div class="slider_item"><img src="img/img-31.jpg" alt=" "></div>
-          <div class="slider_item"><img src="img/img-31.jpg" alt=" "></div>
-          <div class="slider_item"><img src="img/img-31.jpg" alt=" "></div>
-          <div class="slider_item"><img src="img/img-31.jpg" alt=" "></div>
+          <div class="slider_item">
+            <a class="img_popup_link" href="img/img-31-fullsize.jpg"><img src="img/img-31.jpg" alt=" "></a>
+            </div>
+          <div class="slider_item">
+            <a class="img_popup_link" href="img/img-31-fullsize.jpg"><img src="img/img-31.jpg" alt=" "></a>
+            </div>
+          <div class="slider_item">
+            <a class="img_popup_link" href="img/img-31-fullsize.jpg"><img src="img/img-31.jpg" alt=" "></a>
+            </div>
+          <div class="slider_item">
+            <a class="img_popup_link" href="img/img-31-fullsize.jpg"><img src="img/img-31.jpg" alt=" "></a>
+            </div>
+          <div class="slider_item">
+            <a class="img_popup_link" href="img/img-31-fullsize.jpg"><img src="img/img-31.jpg" alt=" "></a>
+            </div>
+          <div class="slider_item">
+            <a class="img_popup_link" href="img/img-31-fullsize.jpg"><img src="img/img-31.jpg" alt=" "></a>
+            </div>
         </div>
         <div class="price_block">
           <div>
@@ -171,15 +182,12 @@
           </div>
           <div class="share">
             <p>Поделиться <img src="img/ic-link.jpg" alt=" "></p>
-            <ul class="socials">
-              <li><a href="#"><img src="img/vk2.png" alt=" "></a></li>
-              <li><a href="#"><img src="img/fb2.png" alt=" "></a></li>
-              <li><a href="#"><img src="img/ok.png" alt=" "></a></li>
-              <li><a href="#"><img src="img/smile.png" alt=" "></a></li>
-              <li><a href="#"><img src="img/viber.png" alt=" "></a></li>
-              <li><a href="#"><img src="img/watsup.png" alt=" "></a></li>
-              <li><a href="#"><img src="img/telegram.png" alt=" "></a></li>
-            </ul>
+            <div class="socials">
+              <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+              <script src="https://yastatic.net/share2/share.js"></script>
+              <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,viber,whatsapp,telegram"></div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -206,7 +214,7 @@
           <div class="col-md-6 col-sm-6">
             <div class="product_spec">
               <p class="title">ХАРАКТЕРИСТИКИ</p>
-              <br>
+              <!--
               <ul class="product_spec_list">
                 <li>
                   <span class="name">Тип</span>
@@ -242,6 +250,133 @@
                   <span class="value">3,2</span>
                 </li>
               </ul>
+              -->
+              <div class="product_spec_tb">
+                <table style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
+                  <tbody>
+                  <tr>
+                    <td valign="top" width="50%">
+                      <p>Тип</p>
+                    </td>
+                    <td valign="top" width="50%">
+                      <p>&nbsp;Моторно-гребная лодка</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" width="50%">
+                      <p>Тип управления</p>
+                    </td>
+                    <td valign="top" width="50%">
+                      <p>&nbsp;Румпельное</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" width="50%">
+                      <p>Масса лодки (без мотора), кг</p>
+                    </td>
+                    <td valign="top" width="50%">
+                      <p>&nbsp;55</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" width="50%">
+                      <p>Материал копуса</p>
+                    </td>
+                    <td valign="top" width="50%">
+                      <p>&nbsp;Импортный 5083 (аналог Амг-5)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" width="50%">
+                      <p>Пассажировместимость, чел</p>
+                    </td>
+                    <td valign="top" width="50%">
+                      <p>&nbsp;2</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" width="50%">
+                      <p>Допустимая мощность мотора, л.с</p>
+                    </td>
+                    <td valign="top" width="50%">
+                      <p>&nbsp;5 - 10</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" width="50%">
+                      <p>Грузоподъемность, кг</p>
+                    </td>
+                    <td valign="top" width="50%">
+                      <p>&nbsp;200</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" width="50%">
+                      <p>Длина габаритная, м</p>
+                    </td>
+                    <td valign="top" width="50%">
+                      <p>&nbsp;3,2</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" width="50%">
+                      <p>Ширина габаритная, м</p>
+                    </td>
+                    <td valign="top" width="50%">
+                      <p>&nbsp;1,2</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" width="50%">
+                      <p>Толщина борта, мм</p>
+                    </td>
+                    <td valign="top" width="50%">
+                      <p>&nbsp;1,5</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" width="50%">
+                      <p>Толщина днища, мм</p>
+                    </td>
+                    <td valign="top" width="50%">
+                      <p>&nbsp;2</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" width="50%">
+                      <p>Килеватость на миделе, гр</p>
+                    </td>
+                    <td valign="top" width="50%">
+                      <p>&nbsp;10</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" width="50%">
+                      <p>Килеватость на транце, гр</p>
+                    </td>
+                    <td valign="top" width="50%">
+                      <p>&nbsp;7</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" width="50%">
+                      <p>Высота борта на миделе, мм</p>
+                    </td>
+                    <td valign="top" width="50%">
+                      <p>&nbsp;500</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" width="50%">
+                      <p>Высота транца, мм</p>
+                    </td>
+                    <td valign="top" width="50%">
+                      <p>&nbsp;380</p>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
               <button class="show_all">подробнее</button>
             </div>
           </div>

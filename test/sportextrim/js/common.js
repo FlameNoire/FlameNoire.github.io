@@ -40,6 +40,19 @@
 
     $('.product_spec .show_all').click(function () {
         $('.product_spec_list').toggleClass("active");
+        $('.product_spec_tb').toggleClass("active");
+    });
+    $('.product_list_view a.list').click(function (e) {
+        e.preventDefault();
+        $('.product_list_view a').removeClass("active");
+        $(this).addClass("active");
+        $('.products_wrap').addClass("products_wrap__list_view");
+    });
+    $('.product_list_view a.bar').click(function (e) {
+        e.preventDefault();
+        $('.product_list_view a').removeClass("active");
+        $(this).addClass("active");
+        $('.products_wrap').removeClass("products_wrap__list_view");
     });
 
     $( "#deliveryShop" ).selectmenu();
@@ -95,7 +108,7 @@
         $.magnificPopup.close();
     });
 
-    $('.back_call').magnificPopup({
+    $('.back_call_form_popup').magnificPopup({
         items: {
             src: '#callPopup'
         },
@@ -110,6 +123,38 @@
     $('.thank_btn').click(function () {
         $.magnificPopup.close();
     });
+    $('.custom_popup .cancel_btn').click(function () {
+        $.magnificPopup.close();
+    });
+
+    /*this.cartSumValue = 0;
+    this.countCart = function () {
+        cartSumValue = 0;
+
+        $('.product_item').each(function () {
+            var input = $(this).find('.ui-spinner-input'),
+                amount = input.val(),
+                price = $(this).find('.cost .val').data('cost'),
+                summ = amount * parseFloat(price);
+            console.log(amount);
+            console.log(price);
+            console.log(summ);
+            cartSumValue += summ;
+            console.log(cartSumValue);
+        });
+        $('.end_summ .val').html(cartSumValue + ' РУБ');
+    };
+    countCart();
+
+    $('.ui-spinner-button').each(function () {
+        var $thisInput = $(this).closest('.ui-spinner').find('.ui-spinner-input');
+        console.log($thisInput);
+       $(this).on('click', function () {
+           console.log($thisInput.val());
+           console.log(cartSumValue);
+           countCart();
+       });
+    });*/
 
     $('.authorization_form .close_btn').click(function (e) {
         e.preventDefault();
@@ -123,13 +168,13 @@
         infinite: true,
         speed: 300,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         responsive: [
             {
                 breakpoint: 1199,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 1,
                     centerMode: true,
                     variableWidth: true
                 }
@@ -138,7 +183,7 @@
                 breakpoint: 991,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 1
                 }
             },
             {
@@ -172,8 +217,16 @@
             infinite: true,
             speed: 0,
             // centerMode: true,
-            variableWidth: true
+            variableWidth: true,
+            focusOnSelect: true
         });
+/*        $('.shop_photo').click(function (e) {
+            e.preventDefault();
+            $('.shops_photos_popup').toggleClass('show').fadeIn(300);
+        });
+        $('.photos_close_btn').click(function () {
+            $('.shops_photos_popup').toggleClass('show').fadeOut(300);
+        });*/
 
         $('.shop_photo').magnificPopup({
             items: {
@@ -215,6 +268,7 @@
             vertical: true,
             slidesToShow: 3,
             verticalSwiping: true,
+            focusOnSelect: true,
             infinite: true,
             responsive: [
                 {
@@ -242,6 +296,10 @@
                     }
                 }
             ]
+        });
+
+        $('.product_photos_big .img_popup_link').magnificPopup({
+            type: 'image'
         });
     });
 

@@ -300,7 +300,7 @@ button {
     left: 0;
     width: 100%;
     height: 2px;
-    background: url(../img/line-2.png);
+    background: url(../assets/img/line-2.png);
     mix-blend-mode: overlay; }
   .top_form .form-group {
     position: relative;
@@ -388,14 +388,14 @@ button {
   .lang_block:hover .lang_list {
     display: block; }
   .lang_block:hover .btn_lang {
-    background-image: url(../img/arr-3-up.png); }
+    background-image: url(../assets/img/arr-3-up.png); }
   .lang_block .btn_lang {
     display: block;
     padding-right: 13px;
     width: 57px;
     color: #fff;
     line-height: 34px;
-    background: url(../img/arr-3-b.png) no-repeat right top 14px;
+    background: url(../assets/img/arr-3-b.png) no-repeat right top 14px;
     border-bottom: 2px solid rgba(44, 54, 81, 0.97); }
   .lang_block .lang_list {
     display: none;
@@ -588,7 +588,7 @@ button {
 .s_top .scroll_btn {
   bottom: 70px; }
   .s_top .scroll_btn .arr_b span {
-    background: url(../img/arr-double-3-b.png) no-repeat center;
+    background: url(../assets/img/arr-double-3-b.png) no-repeat center;
     -webkit-animation: arrow_bottom_2 5s ease infinite;
             animation: arrow_bottom_2 5s ease infinite; }
 
@@ -612,9 +612,9 @@ button {
       display: inline-block;
       width: 30px;
       height: 18px;
-      background: url(../img/arr-double-1-b.png) no-repeat center; }
+      background: url(../assets/img/arr-double-1-b.png) no-repeat center; }
   .scroll_btn .arr_b:hover span {
-    background: url(../img/arr-double-3-b.png) no-repeat center;
+    background: url(../assets/img/arr-double-3-b.png) no-repeat center;
     -webkit-animation: arrow_bottom 1.5s ease infinite;
             animation: arrow_bottom 1.5s ease infinite; }
 
@@ -762,9 +762,9 @@ button {
       display: inline-block;
       width: 30px;
       height: 18px;
-      background: url(../img/arr-double-1-b.png) no-repeat center; }
+      background: url(../assets/img/arr-double-1-b.png) no-repeat center; }
   .gallery_show_btn .arr_b:hover span {
-    background: url(../img/arr-double-3-b.png) no-repeat center;
+    background: url(../assets/img/arr-double-3-b.png) no-repeat center;
     -webkit-animation: arrow_bottom 1.5s ease infinite;
             animation: arrow_bottom 1.5s ease infinite; }
 
@@ -1416,7 +1416,7 @@ button {
     margin-top: -62px;
     margin-left: -208px;
     z-index: 10;
-    background: url("../img/shadow.png"); }
+    background: url("../assets/img/shadow.png"); }
   .foggy_btn canvas {
     position: absolute;
     top: 0;
@@ -1475,13 +1475,13 @@ button {
     margin-bottom: 20px;
     visibility: hidden; }
     .socials a:hover .ic_tg {
-      background-image: url(../img/telegram-hov.png); }
+      background-image: url(../assets/img/telegram-hov.png); }
     .socials a:hover .ic_inst {
-      background-image: url(../img/instagram-hov.png); }
+      background-image: url(../assets/img/instagram-hov.png); }
     .socials a:hover .ic_be {
-      background-image: url(../img/behance-hov.png); }
+      background-image: url(../assets/img/behance-hov.png); }
     .socials a:hover .ic_fb {
-      background-image: url(../img/facebook-hov.png); }
+      background-image: url(../assets/img/facebook-hov.png); }
     .socials a:hover .text {
       color: #fff;
       opacity: 1; }
@@ -1514,13 +1514,13 @@ button {
       -o-transition: all .2s linear;
       transition: all .2s linear; }
   .socials .ic_tg {
-    background: url(../img/telegram.png) no-repeat top left; }
+    background: url(../assets/img/telegram.png) no-repeat top left; }
   .socials .ic_inst {
-    background: url(../img/instagram.png) no-repeat top left; }
+    background: url(../assets/img/instagram.png) no-repeat top left; }
   .socials .ic_be {
-    background: url(../img/behance.png) no-repeat top left; }
+    background: url(../assets/img/behance.png) no-repeat top left; }
   .socials .ic_fb {
-    background: url(../img/facebook.png) no-repeat top left; }
+    background: url(../assets/img/facebook.png) no-repeat top left; }
 
 .mobile body, .tablet body {
   position: relative !important;
@@ -1842,7 +1842,7 @@ button {
   .scr-2 header .select-options {
     padding-top: 60px; }
   .select-styled:before {
-    background: url("../img/arr-double-2-b.png") no-repeat right 0px top 19px; }
+    background: url("../assets/img/arr-double-2-b.png") no-repeat right 0px top 19px; }
   .scr-3 header .link {
     height: 58px;
     line-height: 58px;

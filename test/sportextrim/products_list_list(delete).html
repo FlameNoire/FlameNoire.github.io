@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Oswald:200,300,400,500,600,700|Ubuntu:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery-ui.min.css">
   <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
@@ -28,11 +28,11 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top_nav_collapse">
               <img src="img/menu_burger-2.png" alt=" ">
             </button>
-            <a href="index.html" class="logo"><img src="img/logo-2.png" alt="logo"></a>
+            <a href="#" class="logo"><img src="img/logo-2.png" alt="logo"></a>
             <a href="tel:88003010619" class="back_call">
               <i><img src="img/call-1.png" alt="call"></i>
             </a>
-            <a href="index.html" class="cart">
+            <a href="#" class="cart">
               <img src="img/cart-1.png" alt="cart">
               <span class="cart_items_num">21</span>
             </a>
@@ -145,182 +145,171 @@
       </ul>
       <div class="row products_list_outer">
         <div class="col-md-3">
-          <div id="mobFilter" class="main_filter_outer">
-            <div class="header">
-              <button class="back_btn btns"><img src="img/arrow-3-left.png" alt=" ">назад</button>
+          <div class="main_filter filter_selected">
+            <div class="filter_group">
+              <p>Вы выбрали:</p>
+              <br>
+              <ul>
+                <li>
+                  <span class="name">Цена от:</span>
+                  <span class="value">60000 руб</span>
+                  <button class="filter_cancel"><img src="img/delete.png" alt=" "></button>
+                </li>
+                <li>
+                  <span class="name">Цена до: </span>
+                  <span class="value">1610000 руб</span>
+                  <button class="filter_cancel"><img src="img/delete.png" alt=" "></button>
+                </li>
+                <li>
+                  <span class="name">Бренд: </span>
+                  <span class="value">XtremeCraft</span>
+                  <button class="filter_cancel"><img src="img/delete.png" alt=" "></button>
+                </li>
+                <li>
+                  <span class="name">Тип двигателя: </span>
+                  <span class="value">4-х тактный</span>
+                  <button class="filter_cancel"><img src="img/delete.png" alt=" "></button>
+                </li>
+                <li>
+                  <span class="name">Тип двигателя: </span>
+                  <span class="value">водометные</span>
+                  <button class="filter_cancel"><img src="img/delete.png" alt=" "></button>
+                </li>
+              </ul>
+              <br>
+              <p class="filtered_products_amount">Подобрано <span>30</span> товаров из <span>224</span></p>
+              <a href="#" class="link clear_all">очистить все</a>
             </div>
-            <form class="filter_form">
-              <div class="main_filter filter_selected">
-                <div class="filter_group">
-                  <p>Вы выбрали:</p>
-                  <br>
-                  <ul>
-                    <li>
-                      <span class="name">Цена от:</span>
-                      <span class="value">60000 руб</span>
-                      <button class="filter_cancel"><img src="img/delete.png" alt=" "></button>
-                    </li>
-                    <li>
-                      <span class="name">Цена до: </span>
-                      <span class="value">1610000 руб</span>
-                      <button class="filter_cancel"><img src="img/delete.png" alt=" "></button>
-                    </li>
-                    <li>
-                      <span class="name">Бренд: </span>
-                      <span class="value">XtremeCraft</span>
-                      <button class="filter_cancel"><img src="img/delete.png" alt=" "></button>
-                    </li>
-                    <li>
-                      <span class="name">Тип двигателя: </span>
-                      <span class="value">4-х тактный</span>
-                      <button class="filter_cancel"><img src="img/delete.png" alt=" "></button>
-                    </li>
-                    <li>
-                      <span class="name">Тип двигателя: </span>
-                      <span class="value">водометные</span>
-                      <button class="filter_cancel"><img src="img/delete.png" alt=" "></button>
-                    </li>
-                  </ul>
-                  <br>
-                  <p class="filtered_products_amount">Подобрано <span>30</span> товаров из <span>224</span></p>
-                  <a href="#" class="link clear_all">очистить все</a>
+          </div>
+          <div class="main_filter products_filter">
+            <p class="filter_title"><img src="img/filter.png" alt=" "> Фильтр</p>
+            <p class="title">Категории</p>
+            <div class="filter_group">
+              <div class="checkbox">
+                <input type="checkbox" id="category_1">
+                <label for="category_1"></label>
+                <span>Катера из алюминия</span>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="category_2">
+                <label for="category_2"></label>
+                <span>Катера из пластика</span>
+              </div>
+            </div>
+            <p class="title">Цена</p>
+            <div class="filter_group">
+              <div class="price_filter">
+                <div class="values">
+                  <div class="input">
+                    <label for="startPrice">от</label>
+                    <input type="number" id="startPrice">
+                  </div>
+                  <div class="input">
+                    <label for="endPrice">до</label>
+                    <input type="number" id="endPrice">
+                  </div>
+                </div>
+                <div id="slider-range"></div>
+              </div>
+            </div>
+            <p class="title">Бренд (лодки)</p>
+            <div class="filter_group">
+              <div class="hide_block" style="height: 298px">
+                <div class="checkbox">
+                  <input type="checkbox" id="mark_1">
+                  <label for="mark_1"></label>
+                  <span>XtremeCraft</span>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="mark_2">
+                  <label for="mark_2"></label>
+                  <span>БЕРКУТ</span>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="mark_3">
+                  <label for="mark_3"></label>
+                  <span>ТАКТИКА</span>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="mark_4">
+                  <label for="mark_4"></label>
+                  <span>ВОЛЖАНКА</span>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="mark_5">
+                  <label for="mark_5"></label>
+                  <span>Салют</span>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="mark_6">
+                  <label for="mark_6"></label>
+                  <span>Корвет</span>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="mark_7">
+                  <label for="mark_7"></label>
+                  <span>СПЭВ</span>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="mark_8">
+                  <label for="mark_8"></label>
+                  <span>Wyatboat</span>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="mark_9">
+                  <label for="mark_9"></label>
+                  <span>WindBoat</span>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="mark_10">
+                  <label for="mark_10"></label>
+                  <span>RusBoat</span>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="mark_11">
+                  <label for="mark_11"></label>
+                  <span>RusBoat</span>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="mark_12">
+                  <label for="mark_12"></label>
+                  <span>RusBoat</span>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="mark_13">
+                  <label for="mark_13"></label>
+                  <span>RusBoat</span>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="mark_14">
+                  <label for="mark_14"></label>
+                  <span>Салют</span>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="mark_15">
+                  <label for="mark_15"></label>
+                  <span>Салют</span>
                 </div>
               </div>
-              <div class="main_filter products_filter">
-                <p class="filter_title"><img src="img/filter.png" alt=" "> Фильтр</p>
-                <p class="title">Категории</p>
-                <div class="filter_group">
-                  <div class="checkbox">
-                    <input type="checkbox" id="category_1">
-                    <label for="category_1"></label>
-                    <span>Катера из алюминия</span>
-                  </div>
-                  <div class="checkbox">
-                    <input type="checkbox" id="category_2">
-                    <label for="category_2"></label>
-                    <span>Катера из пластика</span>
-                  </div>
-                </div>
-                <p class="title">Цена</p>
-                <div class="filter_group">
-                  <div class="price_filter">
-                    <div class="values">
-                      <div class="input">
-                        <label for="startPrice">от</label>
-                        <input type="number" id="startPrice">
-                      </div>
-                      <div class="input">
-                        <label for="endPrice">до</label>
-                        <input type="number" id="endPrice">
-                      </div>
-                    </div>
-                    <div id="slider-range"></div>
-                  </div>
-                </div>
-                <p class="title">Бренд (лодки)</p>
-                <div class="filter_group">
-                  <div class="hide_block" style="height: 298px">
-                    <div class="checkbox">
-                      <input type="checkbox" id="mark_1">
-                      <label for="mark_1"></label>
-                      <span>XtremeCraft</span>
-                    </div>
-                    <div class="checkbox">
-                      <input type="checkbox" id="mark_2">
-                      <label for="mark_2"></label>
-                      <span>БЕРКУТ</span>
-                    </div>
-                    <div class="checkbox">
-                      <input type="checkbox" id="mark_3">
-                      <label for="mark_3"></label>
-                      <span>ТАКТИКА</span>
-                    </div>
-                    <div class="checkbox">
-                      <input type="checkbox" id="mark_4">
-                      <label for="mark_4"></label>
-                      <span>ВОЛЖАНКА</span>
-                    </div>
-                    <div class="checkbox">
-                      <input type="checkbox" id="mark_5">
-                      <label for="mark_5"></label>
-                      <span>Салют</span>
-                    </div>
-                    <div class="checkbox">
-                      <input type="checkbox" id="mark_6">
-                      <label for="mark_6"></label>
-                      <span>Корвет</span>
-                    </div>
-                    <div class="checkbox">
-                      <input type="checkbox" id="mark_7">
-                      <label for="mark_7"></label>
-                      <span>СПЭВ</span>
-                    </div>
-                    <div class="checkbox">
-                      <input type="checkbox" id="mark_8">
-                      <label for="mark_8"></label>
-                      <span>Wyatboat</span>
-                    </div>
-                    <div class="checkbox">
-                      <input type="checkbox" id="mark_9">
-                      <label for="mark_9"></label>
-                      <span>WindBoat</span>
-                    </div>
-                    <div class="checkbox">
-                      <input type="checkbox" id="mark_10">
-                      <label for="mark_10"></label>
-                      <span>RusBoat</span>
-                    </div>
-                    <div class="checkbox">
-                      <input type="checkbox" id="mark_11">
-                      <label for="mark_11"></label>
-                      <span>RusBoat</span>
-                    </div>
-                    <div class="checkbox">
-                      <input type="checkbox" id="mark_12">
-                      <label for="mark_12"></label>
-                      <span>RusBoat</span>
-                    </div>
-                    <div class="checkbox">
-                      <input type="checkbox" id="mark_13">
-                      <label for="mark_13"></label>
-                      <span>RusBoat</span>
-                    </div>
-                    <div class="checkbox">
-                      <input type="checkbox" id="mark_14">
-                      <label for="mark_14"></label>
-                      <span>Салют</span>
-                    </div>
-                    <div class="checkbox">
-                      <input type="checkbox" id="mark_15">
-                      <label for="mark_15"></label>
-                      <span>Салют</span>
-                    </div>
-                  </div>
-                  <a href="#" class="link show_all">показать все <span>5</span></a>
-                </div>
-                <p class="title">Тип двигателя</p>
-                <div class="filter_group">
-                  <div class="checkbox">
-                    <input type="checkbox" id="check_1">
-                    <label for="check_1"></label>
-                    <span>4-х тактный</span>
-                  </div>
-                  <div class="checkbox">
-                    <input type="checkbox" id="check_2">
-                    <label for="check_2"></label>
-                    <span>2-х тактный</span>
-                  </div>
-                  <div class="checkbox">
-                    <input type="checkbox" id="check_3">
-                    <label for="check_3"></label>
-                    <span>водометные</span>
-                  </div>
-                </div>
+              <a href="#" class="link show_all">показать все <span>5</span></a>
+            </div>
+            <p class="title">Тип двигателя</p>
+            <div class="filter_group">
+              <div class="checkbox">
+                <input type="checkbox" id="check_1">
+                <label for="check_1"></label>
+                <span>4-х тактный</span>
               </div>
-            </form>
-            <div class="footer">
-              <button class="cancel_btn btns">отменить</button>
-              <button class="show_btn btns">показать<img src="img/arrow-3-right.png" alt=" "></button>
+              <div class="checkbox">
+                <input type="checkbox" id="check_2">
+                <label for="check_2"></label>
+                <span>2-х тактный</span>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="check_3">
+                <label for="check_3"></label>
+                <span>водометные</span>
+              </div>
             </div>
           </div>
         </div>
@@ -345,8 +334,8 @@
               </ul>
             </div>
             <div class="product_list_view">
-              <a href="#" class="btns list"></a>
-              <a href="#" class="btns bar active"></a>
+              <a href="#" class="btns list active"></a>
+              <a href="products_list.html" class="btns bar"></a>
             </div>
           </div>
           <div class="products_sort_filter_mob">
@@ -368,30 +357,14 @@
               </select>
             </div>
             <div class="product_list_view">
-              <a href="#" class="btns list"></a>
-              <a href="#" class="btns bar active"></a>
+              <a href="#" class="btns list active"></a>
+              <a href="#" class="btns bar"></a>
             </div>
             <button id="mobFilterBtn" class="mob_filter_btn"><img src="img/filter-2.png" alt=" ">Фильтр</button>
           </div>
-          <div class="products_wrap">
+          <div class="products_wrap products_wrap__list_view">
             <div class="product">
               <a href="product.html">
-                <p class="product_title">Мотор TOHATSU M5 BD S</p>
-                <div class="product_image"><img src="img/motor-1.jpg" alt=" "></div>
-                <div class="product_price">61 900 руб</div>
-                <div class="buy">купить <i><img src="img/arrow-3-right.png" alt=" "></i></div>
-              </a>
-            </div>
-            <div class="product">
-              <a href="#">
-                <p class="product_title">Погружной лодочный мотор HONDA BF 2.3</p>
-                <div class="product_image"><img src="img/motor-2.jpg" alt=" "></div>
-                <div class="product_price">48 900 руб</div>
-                <div class="buy">купить <i><img src="img/arrow-3-right.png" alt=" "></i></div>
-              </a>
-            </div>
-            <div class="product">
-              <a href="#">
                 <p class="product_title">Мотоцикл YAMAHA YBR 125</p>
                 <div class="product_image"><img src="img/yamaha.jpg" alt=" "></div>
                 <div class="product_price">149 000 РУБ</div>
@@ -400,49 +373,65 @@
             </div>
             <div class="product">
               <a href="#">
-                <p class="product_title">Детский квадроцикл BALTMOTORS 700EFI</p>
-                <div class="product_image"><img src="img/quadrocicle.jpg" alt=" "></div>
-                <div class="product_price">61 900 руб</div>
-                <div class="buy">купить <i><img src="img/arrow-3-right.png" alt=" "></i></div>
-              </a>
-            </div>
-            <div class="product">
-              <a href="#">
-                <p class="product_title">Мотор TOHATSU M5 BD S</p>
                 <div class="product_image"><img src="img/motor-1.jpg" alt=" "></div>
+                <p class="product_title">Мотор TOHATSU M5 BD S</p>
                 <div class="product_price">61 900 руб</div>
                 <div class="buy">купить <i><img src="img/arrow-3-right.png" alt=" "></i></div>
               </a>
             </div>
             <div class="product">
               <a href="#">
-                <p class="product_title">Погружной лодочный мотор HONDA BF 2.3</p>
                 <div class="product_image"><img src="img/motor-2.jpg" alt=" "></div>
+                <p class="product_title">Погружной лодочный мотор HONDA BF 2.3</p>
                 <div class="product_price">48 900 руб</div>
                 <div class="buy">купить <i><img src="img/arrow-3-right.png" alt=" "></i></div>
               </a>
             </div>
             <div class="product">
               <a href="#">
-                <p class="product_title">Детский квадроцикл BALTMOTORS 700EFI</p>
                 <div class="product_image"><img src="img/quadrocicle.jpg" alt=" "></div>
+                <p class="product_title">Детский квадроцикл BALTMOTORS 700EFI</p>
                 <div class="product_price">61 900 руб</div>
                 <div class="buy">купить <i><img src="img/arrow-3-right.png" alt=" "></i></div>
               </a>
             </div>
             <div class="product">
+              <a href="product.html">
+                <p class="product_title">Мотоцикл YAMAHA YBR 125</p>
+                <div class="product_image"><img src="img/yamaha.jpg" alt=" "></div>
+                <div class="product_price">149 000 РУБ</div>
+                <div class="buy">купить <i><img src="img/arrow-3-right.png" alt=" "></i></div>
+              </a>
+            </div>
+            <div class="product">
               <a href="#">
-                <p class="product_title">Мотор TOHATSU M5 BD S</p>
                 <div class="product_image"><img src="img/motor-1.jpg" alt=" "></div>
+                <p class="product_title">Мотор TOHATSU M5 BD S</p>
                 <div class="product_price">61 900 руб</div>
                 <div class="buy">купить <i><img src="img/arrow-3-right.png" alt=" "></i></div>
               </a>
             </div>
             <div class="product">
               <a href="#">
-                <p class="product_title">Погружной лодочный мотор HONDA BF 2.3</p>
                 <div class="product_image"><img src="img/motor-2.jpg" alt=" "></div>
+                <p class="product_title">Погружной лодочный мотор HONDA BF 2.3</p>
                 <div class="product_price">48 900 руб</div>
+                <div class="buy">купить <i><img src="img/arrow-3-right.png" alt=" "></i></div>
+              </a>
+            </div>
+            <div class="product">
+              <a href="#">
+                <div class="product_image"><img src="img/quadrocicle.jpg" alt=" "></div>
+                <p class="product_title">Детский квадроцикл BALTMOTORS 700EFI</p>
+                <div class="product_price">61 900 руб</div>
+                <div class="buy">купить <i><img src="img/arrow-3-right.png" alt=" "></i></div>
+              </a>
+            </div>
+            <div class="product">
+              <a href="#">
+                <div class="product_image"><img src="img/quadrocicle.jpg" alt=" "></div>
+                <p class="product_title">Детский квадроцикл BALTMOTORS 700EFI</p>
+                <div class="product_price">61 900 руб</div>
                 <div class="buy">купить <i><img src="img/arrow-3-right.png" alt=" "></i></div>
               </a>
             </div>

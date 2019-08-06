@@ -25,14 +25,28 @@
     </div>
   </div>
   <div id="callPopup" class="custom_popup call_popup">
+    <div class="popup_header">
+      <p class="popup_title"></p>
+    </div>
     <div class="inner custom_form">
+      <div class="popup_caption">
+        <p>Контакт- центр работает для вас </p>
+        <p class="bold">ежедневно с 8:00 до 23:00</p>
+      </div>
       <form action="http://smth.com/smth.php" method="post">
         <label for="username">ФИО<span>*</span></label>
         <input type="text" id="username" placeholder="Введите ваше имя" required>
         <label for="user_phone">Ваш номер телефона<span>*</span></label>
         <input type="text" id="user_phone" placeholder="Введите ваш телефон" required>
-        <br><br>
-        <button type="submit" class="submit_btn">отправить <i><img src="img/arrow-2-right.png" alt=" "></i></button>
+        <div class="checkbox">
+          <input type="checkbox" id="check_1">
+          <label for="check_1"></label>
+          <span>Я принимаю <a href="#">Политику конфиденциальности</a></span>
+        </div>
+        <div class="buttons_wrap">
+          <button class="cancel_btn">отменить</button>
+          <button type="submit" class="submit_btn">ожидаю звонок <i><img src="img/arrow-2-right.png" alt=" "></i></button>
+        </div>
       </form>
     </div>
   </div>
@@ -49,7 +63,7 @@
               <img src="img/menu_burger-2.png" alt=" ">
             </button>
             <a href="index.html" class="logo"><img src="img/logo-2.png" alt="logo"></a>
-            <a href="#" class="back_call">
+            <a href="tel:88003010619" class="back_call">
               <i><img src="img/call-1.png" alt="call"></i>
             </a>
             <a href="#" class="cart">
@@ -60,13 +74,13 @@
           
           <a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
 
-          <a href="#" class="back_call">
+          <div class="back_call">
             <i><img src="img/call.png" alt="call"></i>
-            <div class="text">
+            <div class="text back_call_form_popup">
               <div class="number">8 800 301 06 19</div>
               <span>Обратный звонок</span>
             </div>
-          </a>
+          </div>
 
           <div class="collapse navbar-collapse" id="top_nav_collapse">
             <button class="menu_close"><img src="img/close-2.png" alt=" "></button>
