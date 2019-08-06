@@ -127,35 +127,6 @@
         $.magnificPopup.close();
     });
 
-    /*this.cartSumValue = 0;
-    this.countCart = function () {
-        cartSumValue = 0;
-
-        $('.product_item').each(function () {
-            var input = $(this).find('.ui-spinner-input'),
-                amount = input.val(),
-                price = $(this).find('.cost .val').data('cost'),
-                summ = amount * parseFloat(price);
-            console.log(amount);
-            console.log(price);
-            console.log(summ);
-            cartSumValue += summ;
-            console.log(cartSumValue);
-        });
-        $('.end_summ .val').html(cartSumValue + ' РУБ');
-    };
-    countCart();
-
-    $('.ui-spinner-button').each(function () {
-        var $thisInput = $(this).closest('.ui-spinner').find('.ui-spinner-input');
-        console.log($thisInput);
-       $(this).on('click', function () {
-           console.log($thisInput.val());
-           console.log(cartSumValue);
-           countCart();
-       });
-    });*/
-
     $('.authorization_form .close_btn').click(function (e) {
         e.preventDefault();
         $('.authorization_form').fadeOut(300);
@@ -220,13 +191,6 @@
             variableWidth: true,
             focusOnSelect: true
         });
-/*        $('.shop_photo').click(function (e) {
-            e.preventDefault();
-            $('.shops_photos_popup').toggleClass('show').fadeIn(300);
-        });
-        $('.photos_close_btn').click(function () {
-            $('.shops_photos_popup').toggleClass('show').fadeOut(300);
-        });*/
 
         $('.shop_photo').magnificPopup({
             items: {
@@ -299,7 +263,16 @@
         });
 
         $('.product_photos_big .img_popup_link').magnificPopup({
-            type: 'image'
+            type: 'image',
+            gallery:{
+                enabled:true
+            }
+        });
+        $('.shops_slider .img_popup_link').magnificPopup({
+            type: 'image',
+            gallery:{
+                enabled:true
+            }
         });
     });
 
