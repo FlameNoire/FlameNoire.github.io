@@ -169,28 +169,34 @@ $(function() {
         }
     });
 
-    if (!(navigator.userAgent.indexOf("Firefox") > -1)) {
 
-        var $window = $(window);
-        var scrollTime = 1;
-        var scrollDistance = 250;
+    // document.addEventListener("mousewheel DOMMouseScroll", function (e) {
+    //
+    // }, { passive: false });
 
-        $window.on("mousewheel DOMMouseScroll", function(event){
-
-            event.preventDefault();
-
-            var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
-            var scrollTop = $window.scrollTop();
-            var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-
-            TweenMax.to($window, scrollTime, {
-                scrollTo : { y: finalScroll, autoKill:true },
-                ease: Power1.easeOut,
-                overwrite: 5
-            });
-        });
-
-    }
+    // if (!(navigator.userAgent.indexOf("Firefox") > -1)) {
+    //
+    //     var $window = $(window);
+    //     var scrollTime = 1;
+    //     var scrollDistance = 550;
+    //
+    //     $window.on("mousewheel DOMMouseScroll", function(event){
+    //
+    //         // event.preventDefault();
+    //
+    //         var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+    //         var scrollTop = $window.scrollTop();
+    //         var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+    //         console.log('delta - ' + delta, 'scrollTop - ' + scrollTop, 'finalScroll - ' + finalScroll);
+    //
+    //         TweenMax.to($window, scrollTime, {
+    //             scrollTo : { y: finalScroll, autoKill:true },
+    //             ease: Power1.easeOut,
+    //             overwrite: 5
+    //         });
+    //     });
+    //
+    // }
 
 
     if (device.mobile() || (device.tablet())) {
