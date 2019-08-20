@@ -11,80 +11,8 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
-
-  <script src="js/amcharts/amcharts.js"></script>
-  <script src="js/amcharts/pie.js"></script>
-  <script src="js/amcharts/plugins/export/export.min.js"></script>
+  
   <link rel="stylesheet" href="js/amcharts/plugins/export/export.css" type="text/css" media="all" />
-  <script src="js/amcharts/themes/light.js"></script>
-
-  <!-- Pie chart code -->
-  <script>
-      var chart1 = AmCharts.makeChart( "pie_chart_1", {
-          "type": "pie",
-          "theme": "light",
-          "minRadius": 50,
-          "dataProvider": [ {
-              "category": "Ethereum",
-              "litres": 450
-          }, {
-              "category": "Copy of smthing",
-              "litres": 350
-          }, {
-              "category": "Sunshine",
-              "litres": 65
-          }, {
-              "category": "One more name",
-              "litres": 75
-          }, {
-              "category": "Another",
-              "litres": 60
-          } ],
-          "valueField": "litres",
-          "titleField": "category",
-          "labelRadius": 20,
-          "labelText": '[[title]]',
-          "balloon":{
-              "fixedPosition":true,
-              "enabled": false  // if true show value of pie slice on hover event
-          },
-          "export": {
-              "enabled": true
-          }
-      } );
-      var chart2 = AmCharts.makeChart( "pie_chart_2", {
-          "type": "pie",
-          "theme": "light",
-          "minRadius": 50,
-          "dataProvider": [ {
-              "category": "Ethereum",
-              "litres": 450
-          }, {
-              "category": "Copy of smthing",
-              "litres": 350
-          }, {
-              "category": "Sunshine",
-              "litres": 65
-          }, {
-              "category": "One more name",
-              "litres": 75
-          }, {
-              "category": "Another",
-              "litres": 60
-          } ],
-          "valueField": "litres",
-          "titleField": "category",
-          "labelRadius": 20,
-          "labelText": '[[title]]',
-          "balloon":{
-              "fixedPosition":true,
-              "enabled": false  // if true show value of pie slice on hover event
-          },
-          "export": {
-              "enabled": true
-          }
-      } );
-  </script>
 
 </head>
 <body id="home_page">
@@ -609,7 +537,78 @@
 <script src="js/html5shiv/html5shiv.min.js"></script>
 <script src="js/html5shiv/respond.min.js"></script>
 <![endif]-->
+  <script src="js/amcharts/amcharts.js"></script>
+  <script src="js/amcharts/pie.js"></script>
+  <script src="js/amcharts/plugins/export/export.min.js"></script>
+  <script src="js/amcharts/themes/light.js"></script>
 
+  <!-- Pie chart code -->
+  <script>
+      var chart1 = AmCharts.makeChart( "pie_chart_1", {
+          "type": "pie",
+          "theme": "light",
+          "minRadius": 50,
+          "dataProvider": [ {
+              "category": "Ethereum",
+              "litres": 450
+          }, {
+              "category": "Copy of smthing",
+              "litres": 350
+          }, {
+              "category": "Sunshine",
+              "litres": 65
+          }, {
+              "category": "One more name",
+              "litres": 75
+          }, {
+              "category": "Another",
+              "litres": 60
+          } ],
+          "valueField": "litres",
+          "titleField": "category",
+          "labelRadius": 20,
+          "labelText": '[[title]]',
+          "balloon":{
+              "fixedPosition":true,
+              "enabled": false  // if true show value of pie slice on hover event
+          },
+          "export": {
+              "enabled": true
+          }
+      } );
+      var chart2 = AmCharts.makeChart( "pie_chart_2", {
+          "type": "pie",
+          "theme": "light",
+          "minRadius": 50,
+          "dataProvider": [ {
+              "category": "Ethereum",
+              "litres": 450
+          }, {
+              "category": "Copy of smthing",
+              "litres": 350
+          }, {
+              "category": "Sunshine",
+              "litres": 65
+          }, {
+              "category": "One more name",
+              "litres": 75
+          }, {
+              "category": "Another",
+              "litres": 60
+          } ],
+          "valueField": "litres",
+          "titleField": "category",
+          "labelRadius": 20,
+          "labelText": '[[title]]',
+          "balloon":{
+              "fixedPosition":true,
+              "enabled": false  // if true show value of pie slice on hover event
+          },
+          "export": {
+              "enabled": true
+          }
+      } );
+  </script>
 
 <script src="js/jquery-2.0.2.js"></script>
 <script src="js/bootstrap.min.js"></script>
