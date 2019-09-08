@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru-en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>MERV</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+
+<body>
+
+  <div class="cover">
+    <div id="coverBg" class="cover_bg">
+    </div>
+    <div class="bg_text">
+      <div class="bg_text_item bg_text-1"><img src="img/bg-text.png" alt=" "></div>
+      <div class="bg_text_item bg_text-2"><img src="img/bg-text.png" alt=" "></div>
+      <div class="bg_text_item bg_text-3"><img src="img/bg-text.png" alt=" "></div>
+    </div>
+    <div class="content">
+      <div class="top_block">
+        <a href="/" class="logo">
+          <img src="img/logo-1.png" alt=" ">
+        </a>
+        <div class="text"><span>is coming soon . . .</span></div>
+      </div>
+      <div class="engage_date">
+        <div class="inner">
+          <div class="month"><span>november</span></div>
+          <div id="dateCount" class="year"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<!--<script src="js/jquery-3.2.1.min.js"></script>-->
+	<script src="js/countUp.min.js" type="module"></script>
+	<script type="module">
+      import { CountUp } from './js/countUp.min.js';
+      window.onload = function () {
+          var easingFn = function (t, b, c, d) {
+              var ts = (t /= d) * t;
+              var tc = ts * t;
+              return b + c * (tc + -3 * ts + 3 * t);
+          }
+          var options = {
+              startVal: 2000,
+              duration: 3,
+              easingFn: easingFn,
+              useGrouping: false,
+              separator: '',
+          };
+
+          setTimeout(function () {
+              var dateCount = new CountUp('dateCount', 2026, options);
+              dateCount.start(
+                  function () {
+                      dateCount.update(2019);
+                  }
+              );
+          }, 1400)
+
+
+          var mouseX, mouseY;
+          var cX, cY, kX, kY, k;
+          var ww = window.innerWidth;
+          var wh = window.innerHeight;
+          var tracX, tracY;
+          cX = ww / 2;
+          cY = wh / 2;
+          console.log("center X = " + cX + "\n" + "center Y = " + cY);
+          document.addEventListener("mousemove", function(e){
+              mouseX = e.pageX;
+              mouseY = e.pageY;
+              tracX = ((4 * mouseX) / 570) + 40;
+              tracY = ((4 * mouseY) / 400) + 50;
+              kX = Math.abs(mouseX - cX) / cX / 30;
+              kY = Math.abs(mouseY - cY) / cY / 50;
+              k = kX + kY;
+              console.log("center X = " + cX + "\n" + "center Y = " + cY);
+              console.log("mouse X = " + mouseX + "\n" + "mouse Y = " + mouseY);
+              console.log("mouse kX = " + kX + "\n" + "mouse kY = " + kY + "\n" + "mouse k = " + k);
+              console.log(tracX);
+              document.getElementById("coverBg").setAttribute("style", "background-position: " + tracX + "% " + tracY + "%");
+              document.getElementById("coverBg").style.transform = "scale(" + (1.06 - k) + ")";
+          });
+
+      }
+  </script>
+</body>
+</html>

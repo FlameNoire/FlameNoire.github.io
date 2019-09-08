@@ -1,0 +1,111 @@
+@media only screen and (max-width : 1600px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width : 1440px) {
+  html {
+    font-size: 8px;
+  }
+  .cover .content {
+    padding-top: 9rem;
+    padding-left: 8rem;
+  }
+  .bg_text {
+    padding-top: 10rem;
+  }
+}
+@media only screen and (max-width : 1199px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media only screen and (max-width : 1024px) and (orientation: portrait) {
+  html {
+    font-size: 10px;
+  }
+  .cover .content {
+    padding-right: 8rem;
+    padding-bottom: 10rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bg_text .bg_text_item img {
+    width: 180rem;
+    max-width: none;
+  }
+  .engage_date {
+    margin-right: auto;
+    margin-bottom: 10rem;
+    justify-content: center;
+    .year {
+      height: 48rem;
+    }
+  }
+}
+@media only screen and (max-width : 991px) {
+  html {
+    font-size: 5px;
+  }
+  .engage_date .month {
+    margin-bottom: 10rem;
+  }
+}
+@media only screen and (max-width : 991px) and (orientation: portrait) {
+  html {
+    font-size: 8px;
+  }
+  .cover .logo {
+    margin-right: 15rem;
+  }
+  .engage_date {
+    margin-bottom: 20rem;
+  }
+}
+@media only screen and (max-width : 767px) {
+  html {
+    font-size: 4.5px;
+  }
+}
+@media only screen and (max-width : 767px) and (orientation: portrait) {
+  html {
+    font-size: 7px;
+  }
+}
+@media only screen and (max-width : 640px) {
+  html {
+    font-size: 4px;
+  }
+}
+@media only screen and (max-width : 640px) and (orientation: portrait) {
+  html {
+    font-size: 5px;
+  }
+  .engage_date {
+    margin-bottom: 40rem;
+  }
+}
+@media only screen and (max-width : 480px) {
+  html {
+    font-size: 5px;
+  }
+  .cover .logo {
+    margin-right: 0;
+  }
+  .cover .top_block {
+    justify-content: space-between;
+  }
+  .engage_date {
+    .inner {
+      width: 50rem;
+    }
+    .month {
+      font-size: 8rem;
+    }
+    .year {
+      font-size: 25rem;
+    }
+  }
+}
