@@ -1,0 +1,1034 @@
+//@import "vars";
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+  .carousel_post {
+    width: 610px;
+    height: 500px;
+  }
+  .posts_carousel_arrows {
+    width: 610px;
+  }
+  .missing_btn {
+    right: 0;
+    width: 300px;
+  }
+}
+@media (min-width: 1620px) {
+  .container {
+    max-width: 1620px;
+  }
+  .lost_found_item .image img {
+    min-width: 100%;
+  }
+}
+@media (max-width: 1449.98px) {
+  .lost_found_item .ctn {
+    padding: 20px 15px 30px 30px;
+  }
+  .vip_post {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .posts_carousel {
+    .carousel_post {
+      margin-right: 60px;
+    }
+  }
+  .carousel_post {
+    width: 560px;
+    height: 450px;
+  }
+  .posts_carousel_arrows {
+    width: 560px;
+  }
+
+  .main_footer {
+    overflow: hidden;
+  }
+}
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1279.98px) {
+  .container {
+    max-width: 100%;
+  }
+  .top_navigation {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    li {
+      margin-right: 30px;
+    }
+  }
+
+  .btn-1, .btn-2 {
+    width: 292px;
+    height: 55px;
+    font-size: 14px;
+  }
+  .s_top {
+    .bg_cat_img {
+      left: 450px;
+    }
+    .bg-1 {
+      background-position: -188px 0;
+    }
+  }
+  .vip_post {
+    margin-right: 40px;
+    margin-left: 30px;
+    &:before {
+      left: -27px;
+      bottom: -28px;
+      border-width: 6px;
+    }
+  }
+  .posts_carousel {
+    .carousel_post {
+      margin-right: 40px;
+    }
+  }
+  .carousel_post {
+    width: 450px;
+    height: 340px;
+    .title {
+      font-size: 14px;
+      line-height: 120.53%;
+    }
+    .post_desc {
+      padding: 20px 30px;
+    }
+  }
+  .posts_carousel_arrows {
+    width: 450px;
+  }
+
+  .posts .s_title {
+    font-size: 18px;
+    line-height: 141.5%;
+  }
+  .latest_posts {
+    padding-right: 60px;
+  }
+  .post_item .post_desc {
+    padding-top: 5px;
+  }
+  .post_item .title {
+    font-size: 20px;
+    line-height: 118.03%;
+    br {
+      display: none;
+    }
+  }
+  .post_item .text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .post_item .post_tags a {
+    width: 33.85px;
+    height: 33.28px;
+    margin-right: 12px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .sidebar {
+    width: 280px;
+  }
+  .post_item_sm .post_image {
+    height: 190px;
+  }
+  .post_item_sm .post_desc {
+    padding: 25px 20px 20px 25px;
+  }
+  .post_item_sm .title {
+    br {
+      display: none;
+    }
+  }
+  .categories_item {
+    margin-right: 35px;
+  }
+
+  .text_section {
+    height: 500px;
+    background-position: -150px 0;
+    background-size: auto 94%;
+  }
+  .text_section .link-1 {
+    font-size: 13px;
+    line-height: 170.66%;
+    margin-bottom: 10px;
+  }
+  .text_section .s_title {
+    font-size: 18px;
+    line-height: 98%;
+    margin-bottom: 25px;
+  }
+  .text_section .text {
+    font-size: 13px;
+    line-height: 112.66%;
+    width: 300px;
+    margin-bottom: 25px;
+  }
+  .text_section .link-2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 170.66%;
+  }
+
+  .scroll_top {
+    width: 200px;
+    img {
+      margin-bottom: 0;
+    }
+    a {
+      margin-bottom: 30px;
+    }
+  }
+  .lost_found_posts {
+    grid-template-columns: 1fr 160px 160px 160px 1fr;
+    grid-template-rows: 250px 220px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .lost_found {
+    .missing_btn {
+      right: 0;
+      top: 175px;
+      width: 250px;
+      img {
+        margin-bottom: 0;
+      }
+    }
+    .s_title {
+      font-size: 30px;
+      line-height: 141.5%;
+      margin-bottom: 10px;
+    }
+    .caption {
+      margin-bottom: 25px;
+      font-size: 14px;
+      line-height: 141.5%;
+    }
+  }
+  .lost_found_item.item-sm .name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .lost_found_item.item-sm .info_item {
+    margin-bottom: 8px;
+  }
+  .lost_found_item.item-sm .text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .subscribe {
+    padding-top: 170px;
+    height: 450px;
+    background-size: auto 95%;
+  }
+  .subscribe .s_title {
+    font-size: 30px;
+    line-height: 102.5%;
+    margin-bottom: 20px;
+  }
+  .subscribe .caption {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 159%;
+  }
+  .subscribe_form .submit_btn {
+    height: 55px;
+    font-size: 14px;
+  }
+  input[type="text"], input[type="email"] {
+    height: 55px;
+    font-size: 14px;
+  }
+
+  .main_footer {
+    padding-top: 0;
+    border-top: none;
+  }
+  .main_footer .f_logo {
+    margin-right: 40px;
+  }
+  .footer_menu {
+    margin-right: 50px;
+    .menu_block {
+      margin-right: 50px;
+      ul {
+        column-gap: 50px;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1279.98px) {
+  .post_item .post_image {
+    height: 222px;
+    width: 300px;
+    margin-right: 30px;
+  }
+  .lost_found_item.item-sm {
+    .text {
+      height: 60px;
+      overflow: hidden;
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+  .btn-1 {
+    height: 40px;
+    width: 206px;
+  }
+  .s_top .s_title {
+    font-size: 55px;
+    line-height: 78.9%;
+  }
+  .s_top .text {
+    font-size: 14px;
+    line-height: 123.5%;
+  }
+  .s_top .bg_cat_img {
+    width: 330px;
+    bottom: -58px;
+    left: 381px;
+  }
+  .s_top .bg-1 {
+    background-position: -256px 0;
+  }
+
+  .vip_post {
+    margin-right: 30px;
+    &:before {
+      border-width: 4px;
+    }
+    .carousel_post {
+      margin-right: 0;
+    }
+  }
+  .vip_post .decor-text {
+    width: 86px;
+    bottom: -28px;
+    left: -36px;
+  }
+  .carousel_post {
+    width: 290px;
+    height: 238px;
+    overflow: visible;
+  }
+  .carousel_post .post_desc {
+    padding: 15px 10px 15px 15px;
+    width: 210px;
+    height: 108px;
+    bottom: 16px;
+    left: 20px;
+  }
+  .carousel_post .title {
+    margin-bottom: 6px;
+    max-height: 64px;
+    overflow: hidden;
+  }
+  .posts_carousel .carousel_post {
+    margin-right: 30px;
+  }
+  .posts_carousel_arrows {
+    width: 290px;
+  }
+
+  .posts {
+    padding-top: 50px;
+    .container {
+      display: block;
+    }
+  }
+  .latest_posts {
+    padding-right: 0;
+    margin-bottom: 45px;
+  }
+  .lost_found_item .ctn .text {
+    max-height: 125px;
+    overflow: hidden;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .top_posts .inner {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .post_item_sm {
+    width: 33.3333%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .post_item_sm .post_image {
+    height: auto;
+  }
+
+  .categories .inner {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .categories_item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .scroll_top {
+    width: 57px;
+    right: 20px;
+  }
+  .lost_found {
+    .missing_btn {
+      width: 200px;
+      right: 20px;
+      top: 188px;
+    }
+  }
+  .lost_found_posts {
+    display: flex;
+    flex-wrap: wrap;
+    .lost_found_item {
+      width: calc(33.333% - 10px);
+      margin-right: 5px;
+      margin-left: 5px;
+      margin-bottom: 10px;
+      .image {
+        height: 337px;
+        img {
+          width: auto;
+        }
+      }
+    }
+  }
+  .lost_found_item.item-sm .ctn {
+    padding: 20px 15px 30px 30px;
+    .name {
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 141.5%;
+      color: #26262A;
+    }
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+    .info_item {
+      margin-right: 40px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 8px;
+      }
+    }
+    .text {
+      padding-top: 10px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 162%;
+    }
+  }
+  .lost_found_item.item-sm .place {
+    padding: 20px 35px 22px 35px;
+    right: 25px;
+    bottom: 25px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    img {
+      width: 27px;
+      height: 36px;
+    }
+  }
+  .lost_found .bg-decor-2 {
+    position: absolute;
+    top: 188px;
+    left: 7px;
+  }
+
+  .main_footer {
+    .container {
+      flex-wrap: wrap;
+    }
+  }
+  .footer_menu {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    order: 1;
+    justify-content: space-between;
+  }
+  .main_footer .f_logo {
+    order: 2;
+  }
+  .f_socials {
+    margin-right: 27px;
+    order: 2;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .main_header {
+    background-color: #50D1FE;
+  }
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .logo {
+      order: 1;
+      width: auto;
+      margin-right: 17px;
+    }
+    .socials {
+      order: 3;
+      margin-left: auto;
+    }
+  }
+  .navbar_toggler {
+    order: 2;
+    display: block;
+    img {
+      display: block;
+    }
+  }
+  .top_navigation {
+    display: none;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-right: 0;
+    width: 100%;
+    order: 4;
+    background-color: #50D1FE;
+    text-align: center;
+    li {
+      margin-right: 0;
+      a {
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+  .s_top {
+    padding-top: 100px;
+    padding-bottom: 215px;
+    text-align: center;
+    .buttons {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .s_top .inner {
+    padding-top: 5px;
+  }
+  .s_top .s_title {
+    width: 100%;
+  }
+  .s_top .bg_cat_img {
+    width: 147px;
+    bottom: 18px;
+    left: 50%;
+    margin-left: -70px;
+  }
+  .s_top .bg_wrap {
+    width: 100%;
+  }
+  .s_top .bg-1 {
+    left: 50%;
+    margin-left: -385px;
+    width: 770px;
+    background-repeat: no-repeat;
+    background-size: 110% auto;
+    background-position: -296px 0;
+  }
+  .s_top .bg-2 {
+    background-position: 0 -59px;
+  }
+  .s_top .bg-3 {
+    left: 20px;
+    top: 72px;
+    background: url(../img/bg-6.svg) no-repeat top center;
+    transform: scale(2.1);
+  }
+
+  .s_posts_carousel {
+    padding-top: 15px;
+  }
+
+  .vip_post {
+    margin-left: 15px;
+  }
+  .post_item {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  .post_item .post_image {
+    height: 222px;
+    width: 300px;
+    margin-right: 30px;
+  }
+  .post_item_sm {
+    width: 50%;
+  }
+
+  .text_section {
+    position: relative;
+    background: url(../img/bg-4.svg) no-repeat left top -50px;
+    padding-top: 120px;
+    height: 465px;
+    background-size: auto 95%;
+    .bg_cat_img {
+      display: block;
+      position: absolute;
+      bottom: 127px;
+      left: 327px;
+      width: 200px;
+    }
+    .bg_img {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 157px;
+      left: 0;
+      bottom: 0;
+      background: url(../img/bg-7.svg) repeat -187px 0;
+      z-index: 10;
+      background-size: cover;
+    }
+    .link-1, .s_title {
+      width: 70%;
+    }
+    .text {
+      width: 60%;
+    }
+    .link-2 {
+       width: 50%;
+      display: block;
+    }
+  }
+
+  .lost_found {
+    margin-top: -50px;
+  }
+  .lost_found .missing_btn {
+    top: 549px;
+    right: 0;
+    width: 188px;
+    z-index: 200;
+  }
+  .lost_found_posts {
+    justify-content: center;
+    margin-right: -8px;
+    margin-left: -8px;
+    .lost_found_item {
+      width: 280px;
+      margin-bottom: 20px;
+      margin-right: 8px;
+      margin-left: 8px;
+      .image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .footer_menu {
+    .menu_block {
+      margin-right: 30px;
+      ul {
+        column-gap: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 639.98px) {
+  .s_posts_carousel {
+    padding-bottom: 40px;
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .vip_post {
+    margin-bottom: 60px;
+    margin-left: 30px;
+    width: 290px;
+    height: 238px;
+  }
+  .posts_carousel {
+    width: 100%;
+  }
+  .posts_carousel_arrows {
+    width: 100%;
+  }
+  .post_item {
+    display: block;
+  }
+  .post_item .post_image {
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+    }
+  }
+  .post_item .post_desc {
+    padding-top: 25px;
+  }
+  .post_item .text {
+    margin-bottom: 5px;
+    height: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .post_item .new_text {
+    width: 130px;
+    left: auto;
+    right: 10px;
+    top: -28px;
+  }
+  .text_section {
+    padding-top: 100px;
+  }
+  .text_section .bg_cat_img {
+    left: 60%;
+  }
+
+  .categories .inner {
+    justify-content: space-between;
+  }
+
+  .lost_found {
+    margin-top: -70px;
+  }
+  .lost_found .missing_btn {
+    top: 523px;
+  }
+  .subscribe_form .submit_btn {
+    flex-shrink: 0;
+  }
+
+  .lost_found_posts .lost_found_item {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    .place {
+      padding: 10px 13px 13px 13px;
+      font-weight: 600;
+      font-size: 14px;
+      img {
+        width: 13.61px;
+        height: 18.14px;
+      }
+    }
+    .ctn {
+      padding: 15px 10px 15px 20px;
+      .info_item {
+        margin-bottom: 7px;
+      }
+    }
+    .name {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    .text {
+      padding-top: 5px;
+      font-size: 14px;
+    }
+    &.item-sm {
+      .ctn {
+        padding: 15px 10px 15px 20px;
+        .info_item {
+          margin-bottom: 7px;
+        }
+      }
+      .name {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      .text {
+        padding-top: 5px;
+        font-size: 14px;
+      }
+    }
+  }
+  .lost_found_posts .lost_found_item .image {
+    height: 310px;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .s_top .bg-3 {
+    transform: none;
+  }
+
+  .s_posts_carousel {
+    .container {
+      justify-content: center;
+    }
+  }
+  .vip_post {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    &:before {
+      width: calc(100% - 30px);
+      left: 0;
+      bottom: -25px;
+    }
+    .carousel_post {
+      margin-left: 30px;
+    }
+  }
+  .posts_carousel_inner {
+    display: block;
+  }
+  .posts_carousel {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    .carousel_post {
+      margin-right: 0;
+    }
+  }
+  .carousel_post {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    .post_desc {
+      width: 280px;
+      height: 108px;
+    }
+  }
+  .posts_carousel_arrows {
+    width: 100%;
+  }
+
+
+  .post_item_sm {
+    width: 100%;
+  }
+  .categories .inner {
+    //justify-content: center;
+  }
+
+  .lost_found_posts .lost_found_item .image {
+    height: 290px;
+  }
+  .lost_found .missing_btn {
+    top: 504px;
+  }
+
+  .main_footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    .container {
+      display: block;
+      text-align: center;
+    }
+  }
+  .footer_menu {
+    margin-bottom: 0;
+    margin-right: 0;
+    display: none;
+    order: 2;
+    &.mob {
+      display: block;
+    }
+    .menu_block {
+      margin-bottom: 15px;
+      margin-right: 0;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+          padding-left: 10px;
+          padding-right: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .main_footer .f_logo {
+    margin-right: 0;
+    order: 1;
+    margin-bottom: 10px;
+    p {
+      display: none;
+    }
+  }
+  .f_socials {
+    margin-right: 0;
+    order: 3;
+    display: none;
+    .socials {
+      justify-content: center;
+    }
+  }
+
+  .subscribe {
+    padding-top: 150px;
+    padding-bottom: 30px;
+    height: 490px;
+    background-size: auto 140%;
+    background-position: -316px -36px;
+    .follow {
+      display: block;
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 102.5%;
+      .title {
+        margin-bottom: 15px;
+        text-align: center;
+      }
+    }
+    .socials {
+      justify-content: center;
+    }
+  }
+  .subscribe_form .form_group {
+    flex-direction: column;
+  }
+  .subscribe_form input[type="text"], .subscribe_form input[type="email"] {
+    margin-right: 0;
+    margin-bottom: 13px;
+    width: 100%;
+  }
+
+  .subscribe_form .submit_btn {
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479.98px) {
+  .carousel_post .post_desc {
+    width: 210px;
+    height: 108px;
+  }
+  .carousel_post .title {
+    margin-bottom: 6px;
+  }
+  .vip_post .carousel_post {
+    margin-left: 25px;
+  }
+  .vip_post:before {
+    bottom: -22px;
+  }
+  .vip_post .decor-text {
+    width: 65px;
+    bottom: -25px;
+    left: -32px;
+  }
+  .text_section {
+    padding-top: 80px;
+  }
+
+  .categories .inner {
+    justify-content: flex-start;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .categories_item {
+    width: 33.3333%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .lost_found .buttons_wrap {
+    flex-direction: column;
+    align-items: center;
+    .buttons {
+      margin-right: 0;
+      margin-bottom: 13px;
+      z-index: 20;
+    }
+  }
+  .lost_found .missing_btn {
+    top: 519px;
+  }
+  .lost_found_posts .lost_found_item .image {
+    height: 225px;
+  }
+  .lost_found_posts .lost_found_item {
+    .ctn {
+      padding: 10px 10px 15px 15px;
+      .info_item {
+        margin-bottom: 7px;
+        font-size: 12px;
+      }
+    }
+    .name {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+    .text {
+      padding-top: 0px;
+      font-size: 12px;
+      height: 57px;
+      overflow: hidden;
+    }
+    &.item-sm {
+      .ctn {
+        padding: 10px 10px 15px 15px;
+        .info_item {
+          margin-bottom: 7px;
+        }
+      }
+      .name {
+        font-size: 21px;
+        margin-bottom: 10px;
+      }
+      .text {
+        padding-top: 0px;
+        font-size: 12px;
+        height: 57px;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .main_footer {
+    font-size: 14px;
+  }
+  .footer_menu .menu_block {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media only screen and (max-width : 399.98px) {
+  .lost_found_posts .lost_found_item .image {
+    height: 210px;
+  }
+  .lost_found .missing_btn {
+    top: 505px;
+  }
+}
+
+
