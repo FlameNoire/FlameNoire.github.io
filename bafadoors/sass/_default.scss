@@ -1,0 +1,142 @@
+@import "fonts";
+@import "vars";
+
+html, body {
+  height: 100%;
+}
+html {
+  //scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  //width: 100vw;
+  font-family: 'Sf Pro Display', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  background: #2D313B;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  min-width: 320px;
+  flex: 1 0 auto;
+  overflow: hidden;
+}
+.main_footer {
+  flex-shrink: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0; }
+ul li {
+  list-style: none; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color .2s;
+  &:hover, &:focus {
+    text-decoration: none;
+    color: #15B9F3;
+    outline: none;
+  }
+}
+p {
+  margin-bottom: 0;
+}
+video {
+  display: flex;
+  max-width: 100%;
+}
+input {
+  outline: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+button {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  outline: none!important;
+  transition: all .2s;
+  i, img {
+    transition: all .2s;
+  }
+}
+.bold {
+  font-weight: 700;
+}
+.accent {
+  color: $accent-color;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.s_title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.page_title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.buttons_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.buttons {
+  padding: 19px 25px;
+  border-radius: 10em;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s;
+}
+.btn-1 {
+  max-width: 231px;
+  height: 56px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1F2023;
+  background: $accent-color;
+  &:hover {
+    background: #fff;
+    color: #1F2023;
+  }
+  &:focus {
+    color: #1F2023;
+  }
+}
+.btn-2 {
+  height: 56px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: #272B35;
+  &:hover {
+    background: #fff;
+    color: #1F2023;
+  }
+  &:focus {
+    color: #1F2023;
+  }
+}
