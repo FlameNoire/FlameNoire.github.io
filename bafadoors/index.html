@@ -23,7 +23,7 @@
         <div class="form_field">
           <input type="text" placeholder="Ваше имя">
         </div>
-        <div class="form_field">
+        <div class="form_field phone_input">
           <input type="text" placeholder="+7 (999) 999-99-99">
         </div>
       </form>
@@ -56,7 +56,7 @@
             </div>
             <ul class="mob_navigation">
               <li>
-                <a href="index.html">О бренде</a>
+                <a href="index.html#about">О бренде</a>
               </li>
               <li>
                 <a href="catalog.html">Фурнитура</a>
@@ -70,7 +70,7 @@
             </ul>
             <ul class="top_navigation">
               <li>
-                <a href="index.html">О бренде</a>
+                <a href="index.html#about">О бренде</a>
               </li>
               <li>
                 <a href="#collections">Колекции</a>
@@ -132,9 +132,9 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col- col-lg-9 col-xl-6">
+          <div class="col- col-lg-7 col-xl-6">
             <div class="content">
-              <h1 class="main_title wow fadeInLeft" style="animation-delay: 0.1s"><span class="bafa"><span class="accent">B</span>afa<small>стильные межкомнатные двери</small></span></h1>
+              <h1 class="main_title wow fadeInLeft" style="animation-delay: 0.1s"><span class="bafa"><span class="accent">b</span>afa<small>стильные межкомнатные двери</small></span></h1>
               <p class="text_1 wow fadeInLeft" style="animation-delay: 0.2s">От производителя стальных дверей <span class="accent">Torex</span></p>
               <p class="text_2 wow fadeInLeft" style="animation-delay: 0.3s">Отделки дверей Bafa полностью совпадают <br> с отделками входных дверей <span class="accent">Torex</span> по фактуре, цвету и рисунку</p>
 
@@ -160,7 +160,7 @@
       <div class="bottom_arrow animated fadeInDown" style="animation-delay: 0.7s"><img src="img/arrow-down.svg" alt=" "></div>
     </section>
 
-    <section class="s_about">
+    <section id="about" class="s_about">
       <div class="container">
         <div class="row">
           <div class="col- col-lg-6 col-xl-7">
@@ -191,13 +191,6 @@
     </section>
 
     <section class="doors_banner">
-      <div class="bg_img">
-        <!--<picture>-->
-        <!--<source srcset="img/bafa-logo-sm.svg" media="(max-width: 991.98px)">-->
-        <!--<source srcset="img/bafa-logo.svg" media="(min-width: 992px)">-->
-        <!--<img src="img/bafa-logo-sm.svg" alt="bafa">-->
-        <!--</picture>-->
-      </div>
       <div class="container">
         <h2 class="s_title">Bafa и Torex</h2>
         <p class="text_1">
@@ -306,7 +299,7 @@
                 <a href="collection.html" class="image">
                   <h3 class="title">Коллекция Bafa <span class="accent">MATRIX</span></h3>
                   <img src="img/door-11.png" alt=" ">
-                  <img src="img/door-13.png" alt=" ">
+                  <img src="img/S1WG.png" alt=" ">
                 </a>
                 <div class="image_shadow"><img src="img/door-shadow.png" alt=" "></div>
 
@@ -314,7 +307,8 @@
               </div>
             </div>
           </div>
-          <!--<div class="collection slide-3">
+          <!--
+          <div class="collection slide-3">
             <div class="container">
               <div class="slide_num">3</div>
               <div class="collection_desc">
@@ -358,7 +352,8 @@
                 <a href="#" class="buttons btn-1">Посмотреть всю коллекцию</a>
               </div>
             </div>
-          </div>-->
+          </div>
+          -->
         </div>
 
         <div class="collections_gallery_arrows">
@@ -413,7 +408,7 @@
             <div class="form_field">
               <input type="text" placeholder="Ваше имя">
             </div>
-            <div class="form_field">
+            <div class="form_field phone_input">
               <input type="text" placeholder="+7 (999) 999-99-99">
             </div>
           </form>
@@ -452,6 +447,7 @@
     </section>
 
     <section class="s_map">
+      <a href="http://maps.yandex.ru/?text=55.738939,37.526285" target="_blank" class="map_link"><img src="img/bafa-marker.svg" alt="Bafa"></a>
       <div class="map"></div>
     </section>
   </div>
@@ -464,10 +460,12 @@
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.hoverIntent.min.js"></script>
+<script src="js/jquery.malihu.PageScroll2id.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/common.js"></script>
 </body>
 

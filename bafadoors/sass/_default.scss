@@ -140,3 +140,20 @@ button {
     color: #1F2023;
   }
 }
+
+@media (min-width: 992px) {
+  .buttons {
+    padding: 1.9rem 2.5rem;
+  }
+  .btn-1 {
+    max-width: 23.1rem;
+    height: 5.6rem;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+  .btn-2 {
+    height: 5.6rem;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+}

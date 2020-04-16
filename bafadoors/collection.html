@@ -23,7 +23,7 @@
         <div class="form_field">
           <input type="text" placeholder="Ваше имя">
         </div>
-        <div class="form_field">
+        <div class="form_field phone_input">
           <input type="text" placeholder="+7 (999) 999-99-99">
         </div>
       </form>
@@ -56,7 +56,7 @@
           </div>
           <ul class="mob_navigation">
             <li>
-              <a href="index.html">О бренде</a>
+              <a href="index.html#about">О бренде</a>
             </li>
             <li>
               <a href="catalog.html">Фурнитура</a>
@@ -70,7 +70,7 @@
           </ul>
           <ul class="top_navigation">
             <li>
-              <a href="index.html">О бренде</a>
+              <a href="index.html#about">О бренде</a>
             </li>
             <li class="active">
               <a href="#collections">Колекции</a>
@@ -252,6 +252,32 @@
           </div>
         </div>
       </div>
+
+<!--
+
+      <nav class="page_navigation" aria-label="page navigation">
+        <ul class="pagination">
+          <li class="page_item page_item-prev disabled">
+            <a class="page_link" href="#" aria-label="Previous">
+              <img src="img/arrow-left.svg" alt=" ">
+            </a>
+          </li>
+          <li class="page_item active"><a class="page_link" href="#">1</a></li>
+          <li class="page_item"><a class="page_link" href="#">2</a></li>
+          <li class="page_item"><a class="page_link" href="#">3</a></li>
+          <li class="page_item"><a class="page_link" href="#">4</a></li>
+          <li class="page_item"><a class="page_link" href="#">5</a></li>
+          <li class="page_item"><span class="dots">...</span></li>
+          <li class="page_item"><a class="page_link" href="#">10</a></li>
+          <li class="page_item page_item-next">
+            <a class="page_link" href="#" aria-label="Next">
+              <img src="img/arrow-right.svg" alt=" ">
+            </a>
+          </li>
+        </ul>
+      </nav>
+-->
+
       <div class="plain_text">
         <div class="container">
           <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов</p>
@@ -268,7 +294,7 @@
             <div class="form_field">
               <input type="text" placeholder="Ваше имя">
             </div>
-            <div class="form_field">
+            <div class="form_field phone_input">
               <input type="text" placeholder="+7 (999) 999-99-99">
             </div>
           </form>
@@ -307,6 +333,7 @@
     </section>
 
     <section class="s_map">
+      <a href="http://maps.yandex.ru/?text=55.738939,37.526285" target="_blank" class="map_link"><img src="img/bafa-marker.svg" alt="Bafa"></a>
       <div class="map"></div>
     </section>
 
@@ -320,10 +347,12 @@
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.hoverIntent.min.js"></script>
+<script src="js/jquery.malihu.PageScroll2id.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/common.js"></script>
 </body>
 

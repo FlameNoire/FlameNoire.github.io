@@ -38,7 +38,7 @@
           </div>
           <ul class="mob_navigation">
             <li>
-              <a href="index.html">О бренде</a>
+              <a href="index.html#about">О бренде</a>
             </li>
             <li class="active">
               <a href="catalog.html">Фурнитура</a>
@@ -52,7 +52,7 @@
           </ul>
           <ul class="top_navigation">
             <li>
-              <a href="index.html">О бренде</a>
+              <a href="index.html#about">О бренде</a>
             </li>
             <li>
               <a href="#collections">Колекции</a>
@@ -108,68 +108,72 @@
     <main class="page page_catalog">
       <div class="top">
         <div class="container">
-          <h1 class="s_title wow fadeInRight" style="animation-delay: 0s">Фурнитура</h1>
-
-          <ul class="catalog_filter wow flipInX" style="animation-delay: 0.3s">
-            <li class="active"><a href="#">Все</a></li>
-            <li><a href="#" data-cat-id="1">Ручки</a></li>
-            <li><a href="#" data-cat-id="2">Петли</a></li>
-            <li><a href="#" data-cat-id="3">Механизмы</a></li>
-            <li><a href="#" data-cat-id="4">Сантехнические звёртки</a></li>
-            <li><a href="#" data-cat-id="5">Цилиндры</a></li>
-            <li><a href="#" data-cat-id="6">Накладки</a></li>
-            <li><a href="#" data-cat-id="7">Роздвижные системы</a></li>
-          </ul>
+          <h1 class="s_title wow fadeInDown" style="animation-delay: 0s">Фурнитура</h1>
         </div>
+        <div id="catalogCatFilter">
+          <div class="container">
+            <ul class="catalog_filter wow flipInX" style="animation-delay: 0.3s">
+              <li class="active"><a href="#">Все</a></li>
+              <li><a href="#" data-cat-id="1">Ручки</a></li>
+              <li><a href="#" data-cat-id="2">Петли</a></li>
+              <li><a href="#" data-cat-id="3">Механизмы</a></li>
+              <li><a href="#" data-cat-id="4">Сантехнические звёртки</a></li>
+              <li><a href="#" data-cat-id="5">Цилиндры</a></li>
+              <li><a href="#" data-cat-id="6">Накладки</a></li>
+              <li><a href="#" data-cat-id="7">Роздвижные системы</a></li>
+            </ul>
+          </div>
+        </div>
+
       </div>
-      <div class="catalog_items wow fadeInUp" style="animation-delay: 0.4s">
+      <div class="catalog_items wow" style="animation-delay: 0.4s">
         <div class="container">
           <div class="catalog_item">
-            <div class="image">
+            <a href="#" class="image">
               <img src="img/furniture-1.png" alt=" ">
-            </div>
+            </a>
             <p class="text">Накладка WC Siba R02 античная бронза</p>
           </div>
           <div class="catalog_item">
-            <div class="image">
+            <a href="#" class="image">
               <img src="img/furniture-2.png" alt=" ">
-            </div>
+            </a>
             <p class="text">Накладка WC Siba R02 античная бронза</p>
           </div>
           <div class="catalog_item">
-            <div class="image">
+            <a href="#" class="image">
               <img src="img/furniture-3.png" alt=" ">
-            </div>
+            </a>
             <p class="text">Накладка WC Siba R02 античная бронза</p>
           </div>
           <div class="catalog_item">
-            <div class="image">
+            <a href="#" class="image">
               <img src="img/furniture-4.png" alt=" ">
-            </div>
+            </a>
             <p class="text">Накладка WC Siba R02 античная бронза</p>
           </div>
           <div class="catalog_item">
-            <div class="image">
+            <a href="#" class="image">
               <img src="img/furniture-5.png" alt=" ">
-            </div>
+            </a>
             <p class="text">Накладка WC Siba R02 античная бронза</p>
           </div>
           <div class="catalog_item">
-            <div class="image">
+            <a href="#" class="image">
               <img src="img/furniture-6.png" alt=" ">
-            </div>
+            </a>
             <p class="text">Накладка WC Siba R02 античная бронза</p>
           </div>
           <div class="catalog_item">
-            <div class="image">
+            <a href="#" class="image">
               <img src="img/furniture-7.png" alt=" ">
-            </div>
+            </a>
             <p class="text">Накладка WC Siba R02 античная бронза</p>
           </div>
           <div class="catalog_item">
-            <div class="image">
+            <a href="#" class="image">
               <img src="img/furniture-8.png" alt=" ">
-            </div>
+            </a>
             <p class="text">Накладка WC Siba R02 античная бронза</p>
           </div>
         </div>
@@ -214,7 +218,7 @@
             <div class="form_field">
               <input type="text" placeholder="Ваше имя">
             </div>
-            <div class="form_field">
+            <div class="form_field phone_input">
               <input type="text" placeholder="+7 (999) 999-99-99">
             </div>
           </form>
@@ -253,6 +257,7 @@
     </section>
 
     <section class="s_map">
+      <a href="http://maps.yandex.ru/?text=55.738939,37.526285" target="_blank" class="map_link"><img src="img/bafa-marker.svg" alt="Bafa"></a>
       <div class="map"></div>
     </section>
 
@@ -266,10 +271,12 @@
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.hoverIntent.min.js"></script>
+<script src="js/jquery.malihu.PageScroll2id.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/common.js"></script>
 </body>
 

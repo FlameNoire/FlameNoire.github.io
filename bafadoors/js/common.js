@@ -4,10 +4,15 @@
         $('.collection_items').toggleClass('active');
         $(this).toggleClass('active');
     });
-    // $('.mask_btn_outer').hoverIntent(function () {
-    //     $('.s_top .img_mask').toggleClass('active');
-    //     $(this).toggleClass('active');
-    // });
+    $('.mask_btn_outer').hoverIntent(function () {
+        $('.s_top .img_mask .right').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+
+    $('.phone_input input').on('focus', function () {
+        $('.phone_input').addClass('active');
+    });
+    $('.phone_input input').mask("+7(999) 999-99-99");
 
     var wow = new WOW(
         {
@@ -15,7 +20,8 @@
             animateClass: 'animated',
             offset:       50,
             mobile:       false,
-            live:         true
+            live:         true,
+            resetAnimation: true
         }
     );
     wow.init();
@@ -24,7 +30,7 @@
         dots: true,
         arrows: true,
         slidesToShow: 1,
-        infinite: false,
+        infinite: true,
         fade: true,
         prevArrow: '.collections_gallery_prev',
         nextArrow: '.collections_gallery_next',
@@ -38,7 +44,7 @@
         dots: false,
         arrows: true,
         slidesToShow: 1,
-        infinite: false,
+        infinite: true,
         fade: true,
         prevArrow: '.product_gallery_prev',
         nextArrow: '.product_gallery_next',
@@ -48,13 +54,14 @@
         asNavFor: $productSliderTop,
         dots: false,
         arrows: false,
+        // centerMode: true,
         slidesToShow: 6,
         speed: 200,
         // slidesToScroll: 2,
         swipeToSlide: true,
         variableWidth: true,
         focusOnSelect: true,
-        infinite: false,
+        infinite: true,
         responsive: [
             {
                 breakpoint: 1800,
@@ -105,6 +112,14 @@
         // });
 
         // catalogContainer.html(msg)
+
+        // Animation test / Delete in the end
+        $('.catalog_items').removeClass('animated');
+        setTimeout(function () {
+            $('.catalog_items').addClass('animated');
+        }, 300)
+
+
     })
 
     // Catalog Pagination
@@ -121,7 +136,21 @@
         // });
 
         // catalogContainer.html(msg)
-    })
+
+    });
+
+
+    $(".top_navigation li a").mPageScroll2id();
+
+    $(window).on("scroll", function () {
+        var st = $(document).scrollTop();
+
+        if (st > 200) {
+            $('#catalogCatFilter').addClass("stick");
+        } else {
+            $('#catalogCatFilter').removeClass("stick");
+        }
+    });
 
 })(jQuery);
 
